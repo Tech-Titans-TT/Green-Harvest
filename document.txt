@@ -1,0 +1,6 @@
+Css de sections altında kendi sectionlarınızın adını içeren bir klasör ve 
+içerisine section-1-desktop.css, section-1-tablet.css olarak oluşturabilirsiniz.
+
+Media query ler için örnek css dosyaları oluşturulmuştur.
+
+Style.css dosyası genel css leri içeren dosyadır.
