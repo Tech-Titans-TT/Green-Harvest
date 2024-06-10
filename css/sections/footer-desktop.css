@@ -1,3 +1,27 @@
-@media screen and (min-width :1280px){
-    
+@media screen and (min-width :1280px) {
+    .section-eight-main-div {
+        display: flex;
+    }
+
+    .section-eight-logo-div {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .section-eight-list-contact {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .section-eight-logo-div-whether {
+        font-size: 1.6rem;
+    }
+
+    .section-eight-contacts-p {
+        font-size: 1.8rem;
+    }
+
+    .section-eight-list-contact {
+
+        flex-direction: row;
+
+    }
 }

@@ -1,1 +1,35 @@
-@media screen and (min-width :768px) {}
+@media screen and (min-width :768px) {
+    .section-eight-logo-div {
+        max-width: 265px;
+    }
+
+    .section-eight-list-contact {
+        justify-content: space-between;
+
+
+    }
+
+    .section-eight-list-item {
+        font-size: 3.2rem;
+    }
+
+    .section-eight-contacts {
+        font-size: 1.8rem;
+    }
+
+    .section-eight-logo-div-whether {
+        font-size: 1.6rem;
+    }
+
+    .section-eight-privacy-p>a,
+    .section-eight-privacy-p {
+        font-size: 1.8rem;
+    }
+
+    .section-eight-main-div {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+}
