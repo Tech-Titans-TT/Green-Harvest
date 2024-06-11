@@ -8,11 +8,19 @@
 
 :root {
     --primary-color: #141414;
+    --primary-color-rgb : 20,20,20;
     --secondary-color: #576F35;
     --thirth-color: #7A3145;
     --fourth-color: #FBFBFB;
+    --fourth-color-rgb: 251,251,251;
     --font-family-standard: "Inter Tight", sans-serif;
 }
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
 
 html {
     font-size: 10px;
@@ -33,18 +41,18 @@ a {
 .container {
     width: 100%;
     max-width: 1440px;
-    padding: 20px;
+    padding: 80px 20px;
     margin: 0 auto;
 }
 
 @media screen and (min-width :768px) {
     .container {
-        padding: 32px;
+        padding: 0 32px;
     }
 }
 
 @media screen and (min-width :1280px) {
     .container {
-        padding: 100px;
+        padding: 100px 100px;
     }
 }
