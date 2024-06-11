@@ -1,15 +1,16 @@
 .advertisement{
     height: min-content;
 }
-.advertisement .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: initial 1rem;
+.advertisement .container .title{
+    width: 100%;
+    padding: 8rem 1rem;
     text-transform: uppercase;
+
 }
-.advertisement .title{
+.advertisement .discount{
+    display: block;
+}
+.advertisement .discount{
     background-color: var(--secondary-color);
     color: #fff;
     border-radius: 12px;

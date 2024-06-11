@@ -16,16 +16,18 @@
     --font-family-standard: "Inter Tight", sans-serif;
 }
 
+body{
+    height: 6000px;
+}
+
 button{
+    border: none;
     outline: none;
     cursor: pointer;
 }
-
-
 html {
     font-size: 10px;
 }
-
 ul {
     list-style: none;
 }
