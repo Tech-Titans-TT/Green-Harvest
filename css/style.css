@@ -53,6 +53,6 @@ a {
 
 @media screen and (min-width :1280px) {
     .container {
-        padding: 100px;
+        padding: 100px 100px;
     }
 }
