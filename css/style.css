@@ -33,13 +33,13 @@ a {
 .container {
     width: 100%;
     max-width: 1440px;
-    padding: 20px;
+    padding: 80px 20px;
     margin: 0 auto;
 }
 
 @media screen and (min-width :768px) {
     .container {
-        padding: 32px;
+        padding: 0 32px;
     }
 }
 
