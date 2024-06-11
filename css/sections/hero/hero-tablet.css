@@ -1,0 +1,24 @@
+@media screen and (max-width :1180px) {
+    .container {
+        padding: 100px;
+    }
+    .section-hero{
+    display: flex;
+    flex-direction: column;
+        
+    }
+    .hero-right img{
+    width: 100%;
+    }
+    .hero-left{
+    padding-left:32px;
+    padding-right: 32px;
+    }
+    .hero-left-text-box{
+    width: 100%;
+    gap:25px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 50px;
+    }
+}
