@@ -8,11 +8,14 @@
 
 :root {
     --primary-color: #141414;
+    --primary-color-rgb : 20,20,20;
     --secondary-color: #576F35;
     --thirth-color: #7A3145;
     --fourth-color: #FBFBFB;
+    --fourth-color-rgb: 251,251,251;
     --font-family-standard: "Inter Tight", sans-serif;
 }
+
 
 html {
     font-size: 10px;
