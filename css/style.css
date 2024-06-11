@@ -8,16 +8,23 @@
 
 :root {
     --primary-color: #141414;
+    --primary-color-rgb : 20,20,20;
     --secondary-color: #576F35;
     --thirth-color: #7A3145;
     --fourth-color: #FBFBFB;
+    --fourth-color-rgb: 251,251,251;
     --font-family-standard: "Inter Tight", sans-serif;
 }
 
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 html {
     font-size: 10px;
 }
-
 ul {
     list-style: none;
 }
@@ -45,6 +52,6 @@ a {
 
 @media screen and (min-width :1280px) {
     .container {
-        padding: 100px;
+        padding: 100px 100px;
     }
 }

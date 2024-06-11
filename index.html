@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header/header-mobile.css" />
+  <link rel="stylesheet" href="./css/header/header-tablet.css" />
+  <link rel="stylesheet" href="./css/header/header-desktop.css" />
   <!-- Section : Advertisement CSS -->
   <link rel="stylesheet" href="./css/advertisement/advertisement-style.css" />
   <link rel="stylesheet" href="./css/advertisement/advertisement-tablet.css" />
@@ -26,7 +29,26 @@
 </head>
 
 <body class="inter-tight">
-  <header></header>
+  <!-- Header Tutus -->
+  <header>
+    <nav class="header-nav">
+      <img src="./assets/svg/logo.svg" alt="" />
+      <div class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-list-item">
+            <a class="header-menu-list-item-link" href="">how it works</a>
+          </li>
+          <li class="header-menu-list-item">
+            <a class="header-menu-list-item-link" href="">vegetables</a>
+          </li>
+          <li class="header-menu-list-item">
+            <a class="header-menu-list-item-link" href="">reviews</a>
+          </li>
+        </ul>
+        <button class="header-menu-button">shop now</button>
+      </div>
+    </nav>
+  </header>
   <main>
     <!-- Hero Gulay-->
     <section class="section-hero container">
@@ -39,18 +61,18 @@
             you.
           </p>
         </div>
-
       </div>
       <div class="hero-right">
-        <img src="assets/images/image-3.png" alt="Vegetables Baskets">
+        <img src="assets/images/image-3.png" alt="Vegetables Baskets" />
       </div>
     </section>
-
-
+    <!-- Advertisement Mehmet -->
     <section class="advertisement">
       <div class="container">
-        <h2 class="title">Discount up to 40%!</h2>
-        <p class="description">Taste the vitamins and keep your health</p>
+        <h2 class="title">
+          <span class="discount">Discount up to 40%!</span> Taste the vitamins
+          and keep your health
+        </h2>
       </div>
     </section>
     <!-- Organic Vegetables Pinar Task-->
@@ -149,7 +171,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Your order Heza -->
     <section class="your-order">
       <div class="your-order-title-text">
         <h1>FRESH HARVEST BOX HAS GOT YOU COVERED</h1>
