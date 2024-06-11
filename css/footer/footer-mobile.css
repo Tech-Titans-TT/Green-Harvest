@@ -1,22 +1,22 @@
 @media screen and (min-width :375px) {
-    .section-eight-list-contact {
+    .footer-list-contact {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .section-eight-logo-div {
+    .footer-logo-div {
         display: flex;
         flex-direction: column;
         gap: 14px;
 
     }
 
-    .section-eight-logo {
+    .footer-logo {
         max-width: 168px;
     }
 
-    .section-eight-logo-div-whether {
+    .footer-logo-div-whether {
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 18px;
@@ -25,39 +25,40 @@
 
     }
 
-    .section-eight-contacts {
+    .footer-contacts {
         display: flex;
         flex-direction: column;
         gap: 14px;
     }
 
-    .section-eight-list-contact {
+    .footer-list-contact {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .section-eight-main-div {
+    .footer-main-div {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .section-eight-footer {
+    .footer-main-container {
         background-color: var(--thirth-color);
         display: flex;
         flex-direction: column;
         gap: 80px;
+        padding: 80px 20px;
 
     }
 
-    .section-eight-list {
+    .footer-list {
         display: flex;
         flex-direction: column;
         gap: 14px;
     }
 
-    .section-eight-list-item {
+    .footer-list-item {
         color: var(--fourth-color);
         font-size: 2.8rem;
         font-weight: 600;
@@ -66,7 +67,7 @@
         text-align: left;
     }
 
-    .section-eight-contacts-p {
+    .footer-contacts-p {
         color: var(--fourth-color);
         font-size: 1.4rem;
         font-weight: 600;
@@ -76,8 +77,8 @@
 
     }
 
-    .section-eight-privacy-p,
-    .section-eight-privacy-p>a {
+    .footer-privacy-p,
+    .footer-privacy-p>a {
         color: rgba(251, 251, 251, 0.5);
         font-size: 1.2rem;
         font-weight: 500;
@@ -86,7 +87,7 @@
         text-align: left;
     }
 
-    .section-eight-privacy {
+    .footer-privacy {
         display: flex;
         justify-content: space-between;
     }
