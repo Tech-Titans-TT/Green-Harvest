@@ -4,9 +4,15 @@
        
        
         width: 100%;
+<<<<<<< HEAD:css/sections/organic-vegetables/organic-vegetables-desktop.css
         background-color: var(--thirth-color);
         padding: 100px;
         gap: 50px;
+=======
+        background-color: #7A3145;
+        /* padding: 10rem; */
+        gap: 5rem;
+>>>>>>> eb24991bc17522d3a4a8275c6e91d621b5a6572d:css/main/organic-vegetables/organic-vegetables-desktop.css
     }
 
     .organic-vegetables-div {
@@ -20,6 +26,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+<<<<<<< HEAD:css/sections/organic-vegetables/organic-vegetables-desktop.css
         gap: 25px;
         max-width: 626px;
         max-height: 193px;
@@ -27,6 +34,15 @@
         margin-top: 100px;
         margin-right: 554px;
         margin-bottom: 50px;
+=======
+        gap: 2.5rem;
+        /* max-width: 62.6rem;
+        max-height: 19.3rem;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        margin-right: 55.4rem;
+        margin-bottom: 5rem; */
+>>>>>>> eb24991bc17522d3a4a8275c6e91d621b5a6572d:css/main/organic-vegetables/organic-vegetables-desktop.css
     }
 
     .organic-vegetables-main-header {
@@ -79,12 +95,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+<<<<<<< HEAD:css/sections/organic-vegetables/organic-vegetables-desktop.css
         gap: 21px;
     
         margin-top: 50px;
         margin-left: 100px;
         margin-right: 100px;
         margin-bottom: 100px;
+=======
+        gap: 2.1rem;
+/*     
+        margin-top: 5rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 10rem; */
+>>>>>>> eb24991bc17522d3a4a8275c6e91d621b5a6572d:css/main/organic-vegetables/organic-vegetables-desktop.css
 
 
     }
