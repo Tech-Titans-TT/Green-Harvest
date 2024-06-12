@@ -8,7 +8,10 @@ padding:0;
 font-family: var(--font-family-standard);
 }
 .hero-left{
+box-sizing: border-box;
+flex: 1 1 50%;
 background-color: var(--secondary-color);
+color: var(--fourth-color);
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -44,11 +47,12 @@ padding-bottom: 50px;
 flex: 1 1 50%;
 display: flex;
 align-items: center;
-padding: 0%;
+padding: 0;
 
 }
 
 .hero-right img {
 max-width: 100%;
-height: auto;
+height: 100%;
+object-fit:cover;
 }
