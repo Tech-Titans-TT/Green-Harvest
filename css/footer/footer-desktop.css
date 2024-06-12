@@ -1,18 +1,30 @@
 @media screen and (min-width :1280px) {
     .footer-main-div {
         display: flex;
+        gap: 302px;
     }
 
     .footer-logo-div {
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2);
+        gap: 25px;
     }
 
     .footer-list-contact {
-        width: calc(100% / 2 - 10px);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+
+        gap: 121px;
+        width: calc(100% / 2);
     }
 
     .footer-logo-div-whether {
         font-size: 1.6rem;
+    }
+
+    .footer-contacts {
+        gap: 25px;
     }
 
     .footer-contacts-p,
@@ -20,14 +32,14 @@
         font-size: 1.8rem;
     }
 
-    .footer-main-container {
+    .footer-list {
+        width: 50%;
+        gap: 25px;
+    }
+
+    .footer-main-container .container {
         padding-bottom: 50px;
         padding-top: 50px;
     }
 
-    .footer-list-contact {
-
-        flex-direction: row;
-
-    }
 }
