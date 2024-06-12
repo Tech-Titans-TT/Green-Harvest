@@ -1,22 +1,30 @@
 @media screen and (min-width :1280px) {
     .footer-main-div {
         display: flex;
+        gap: 302px;
     }
 
     .footer-logo-div {
         width: calc(100% / 2);
+        gap: 25px;
     }
 
     .footer-list-contact {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+
+
         gap: 121px;
         width: calc(100% / 2);
     }
 
     .footer-logo-div-whether {
         font-size: 1.6rem;
+    }
+
+    .footer-contacts {
+        gap: 25px;
     }
 
     .footer-contacts-p,
@@ -26,9 +34,10 @@
 
     .footer-list {
         width: 50%;
+        gap: 25px;
     }
 
-    .footer-main-container {
+    .footer-main-container .container {
         padding-bottom: 50px;
         padding-top: 50px;
     }
