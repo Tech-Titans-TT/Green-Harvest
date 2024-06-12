@@ -1,32 +1,32 @@
 @media screen and (min-width :768px) {
-    .section-eight-logo-div {
+    .footer-logo-div {
         max-width: 265px;
     }
 
-    .section-eight-list-contact {
+    .footer-list-contact {
         justify-content: space-between;
 
 
     }
 
-    .section-eight-list-item {
+    .footer-list-item>a {
         font-size: 3.2rem;
     }
 
-    .section-eight-contacts {
+    .footer-contacts {
         font-size: 1.8rem;
     }
 
-    .section-eight-logo-div-whether {
+    .footer-logo-div-whether {
         font-size: 1.6rem;
     }
 
-    .section-eight-privacy-p>a,
-    .section-eight-privacy-p {
+    .footer-privacy-p>a,
+    .footer-privacy-p {
         font-size: 1.8rem;
     }
 
-    .section-eight-main-div {
+    .footer-main-div {
         display: flex;
         flex-direction: row;
 

@@ -1,0 +1,10 @@
+@media screen and (min-width :1280px){
+    .advertisement .discount{
+        display: inline-block;
+    }
+    .advertisement .description, .advertisement .title{
+        flex-basis: content;
+        font-size: 7.6rem;
+        line-height: 8rem;
+    }
+}

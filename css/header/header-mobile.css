@@ -1,0 +1,14 @@
+@media screen and (min-width :375px){
+    .header-nav{
+        background-color: red;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        padding: 0px 16px;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        top: 32px;
+        transition: 0.3s all ease-in-out;
+    }
+}
