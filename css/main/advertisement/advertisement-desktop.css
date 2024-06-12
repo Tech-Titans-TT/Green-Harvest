@@ -1,3 +1,6 @@
+@import url('./advertisement-style.css');
+@import url('./advertisement-tablet.css');
+
 @media screen and (min-width :1280px){
     .advertisement .container{
         padding: 100px;
