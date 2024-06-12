@@ -9,6 +9,7 @@
   width: 100%;
   top: 32px;
   transition: 0.3s all ease-in-out;
+  z-index: 50;
 }
 .header-menu {
   display: none;
@@ -27,7 +28,6 @@
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s ease-in-out;
 }
-
 .header-menu-list-item:hover {
   background-color: var(--fourth-color);
 }
@@ -40,7 +40,7 @@
 }
 .header-hamburger-bar {
   cursor: pointer;
-  content: url(/Green-Harvest/assets/svg/menu-bar-responsive.svg);
+  content: url(../../assets/svg/menu-bar.svg);
 }
 /* button css */
 .header-menu-button {
@@ -76,7 +76,6 @@
 .header-menu-button:hover::after {
   transform: translate(0, 0);
 }
-
 .header-menu-button:hover {
   color: var(--fourth-color);
   will-change: transform;
