@@ -12,7 +12,7 @@
       content="This page is about Green Harvest, and Healtly shopping page."
     />
     <title>Green Harvest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><!DOCTYPE html>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <!-- Main CSS -->
@@ -281,10 +281,16 @@
             <h2>ORDERING <span class="span-from-us">FROM US</span> IS QUICK AND EASY! 
               FILL OUT <span class="span-the-form">THE FORM</span> BELOW AND WILL CONTACT YOU !</h2>
     
-            <div class="your-order-form inter-tight">
-              <input id="name" class="your-order-input" type="text" placeholder="Full Name">
-              <input id="email" class="your-order-input" type="email" placeholder="Email">
-              <textarea id="comment" class="your-order-input inter-tight" rows="3" placeholder="Comment"></textarea>
+            <div class="your-order-form">
+              <label for="name">
+                <input id="name" class="your-order-input" type="text" placeholder="Full Name" />
+              </label>
+              <label for="email">
+                <input id="email" class="your-order-input" type="email" placeholder="Email" />
+              </label>
+              <label for="comment">                
+                <textarea id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"></textarea>
+              </label>              
        
               <button class="your-order-button" type="submit">SEND</button>
             </div>
