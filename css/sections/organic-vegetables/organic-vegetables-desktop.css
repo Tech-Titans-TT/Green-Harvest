@@ -4,9 +4,9 @@
        
        
         width: 100%;
-        background-color: #7A3145;
-        padding: 10rem;
-        gap: 5rem;
+        background-color: var(--thirth-color);
+        padding: 100px;
+        gap: 50px;
     }
 
     .organic-vegetables-div {
@@ -20,50 +20,50 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 2.5rem;
-        max-width: 62.6rem;
-        max-height: 19.3rem;
-        margin-left: 10rem;
-        margin-top: 10rem;
-        margin-right: 55.4rem;
-        margin-bottom: 5rem;
+        gap: 25px;
+        max-width: 626px;
+        max-height: 193px;
+        margin-left: 100px;
+        margin-top: 100px;
+        margin-right: 554px;
+        margin-bottom: 50px;
     }
 
     .organic-vegetables-main-header {
         display: flex;
         flex-direction: column;
-        max-width: 50.8rem;
-        max-height: 12.8rem;
-        margin-right: 11.8rem;
+        max-width: 508px;
+        max-height: 128px;
+        margin-right: 118px;
 
 
     }
 
     #organic-setting {
         font-size: 6.4rem;
-        color: #FBFBFB;
-        line-height: 6.4rem;
+        color: var(--fourth-color);
+        line-height: 64px;
         font-weight: 600;
-        letter-spacing: -1, 5%;
+        letter-spacing: -1,5%;
     }
 
     #vegetables-setting {
         font-size: 6.4rem;
         color: #FBFBFB4D;
-        line-height: 6.4rem;
+        line-height: 64px;
         font-weight: 600;
-        letter-spacing: -1, 5%;
+        letter-spacing: -1,5%;
     }
 
     .organic-vegetables-main-paragraph {
-        width: 62.6rem;
-        height: 4rem;
+        width: 626px;
+        height: 40px;
         font-weight: 500;
         font-size: 1.6rem;
-        line-height: 2rem;
-        color: #FBFBFB;
-        margin-top: 2.5rem;
-        margin-bottom: 5rem;
+        line-height: 20px;
+        color: var(--fourth-color);
+        margin-top: 25px;
+        margin-bottom: 50px;
 
     }
 
@@ -79,26 +79,26 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2.1rem;
+        gap: 21px;
     
-        margin-top: 5rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        margin-bottom: 10rem;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
 
 
     }
 
     .organic-vegetables-img-li-elements {
 
-        width: 34.6rem;
-        height: 37.9rem;
-        border-radius: 4rem;
-        padding: 3.2rem;
-        gap: 1rem;
-       width: calc((100% - 4.2rem) / 3);
+        width: 346px;
+        height: 379px;
+        border-radius: 40px;
+        padding: 32px;
+        gap: 10px;
+       width: calc((100% - 42px) / 3);
         list-style-type: none;
-        background-color: #FBFBFB;
+        background-color: var(--fourth-color);
 
     }
 
@@ -109,49 +109,50 @@
         flex-direction: column;
         justify-content: center;
 
-        max-width: 28.2rem;
-        max-height: 31.5rem;
-        gap: 1rem;
-        margin: 3.2rem;
+        max-width: 282px;
+        max-height: 315px;
+        gap: 10px;
+        margin: 32px;
 
     }
 
     .organic-vegetables-card-content {
         display: flex;
         flex-direction: column;
-        margin-right: 15.7rem;
-        margin-bottom: 1rem;
+        margin-right: 157px;
+        margin-bottom: 10px;
         margin-left: 0;
-        max-width: 12.5rem;
-        gap: 1.2rem;
+        margin-top: 0;
+        max-width: 125px;
+        gap: 12px;
     }
 
     .organic-vegetables-card-content-name {
-        width: 12.5rem;
+        width: 125px;
         font-weight: 600;
         font-size: 3.2rem;
-        line-height: 3.2rem;
-        letter-spacing: -1, 5%;
-        color: #7A3145;
+        line-height: 32px;
+        letter-spacing: -1,5%;
+        color: var(--thirth-color);
 
     }
 
     .organic-vegetables-card-content-price {
-        width: 7.6rem;
+        width: 76px;
         font-weight: 600;
         font-size: 1.4rem;
-        line-height: 1.8rem;
-        letter-spacing: -1, 5%;
-        color: #141414;
+        line-height: 18px;
+        letter-spacing: -1,5%;
+        color: var(--primary-color);
 
     }
 
     .organic-vegetables-img-png {
        width: 100%;
-        margin-left: 3.2rem;
-        margin-right: 3.2rem;
-        margin-bottom: 3.2rem;
-        margin-top: 1rem;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 32px;
+        margin-top: 10px;
 
     }
 
