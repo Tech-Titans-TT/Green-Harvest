@@ -5,7 +5,7 @@
        
         width: 100%;
         background-color: #7A3145;
-        padding: 10rem;
+        /* padding: 10rem; */
         gap: 5rem;
     }
 
@@ -21,12 +21,12 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 2.5rem;
-        max-width: 62.6rem;
+        /* max-width: 62.6rem;
         max-height: 19.3rem;
         margin-left: 10rem;
         margin-top: 10rem;
         margin-right: 55.4rem;
-        margin-bottom: 5rem;
+        margin-bottom: 5rem; */
     }
 
     .organic-vegetables-main-header {
@@ -80,11 +80,11 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 2.1rem;
-    
+/*     
         margin-top: 5rem;
         margin-left: 10rem;
         margin-right: 10rem;
-        margin-bottom: 10rem;
+        margin-bottom: 10rem; */
 
 
     }
