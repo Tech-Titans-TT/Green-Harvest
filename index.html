@@ -14,43 +14,34 @@
     <title>Green Harvest</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/sections/organic-vegetables/organic-vegetables-desktop.css"
-    />
+    <!-- Header CSS -->
     <link rel="stylesheet" href="./css/header/header-style.css" />
     <link rel="stylesheet" href="./css/header/header-mobile.css" />
     <link rel="stylesheet" href="./css/header/header-tablet.css" />
     <link rel="stylesheet" href="./css/header/header-desktop.css" />
-    <!-- Section : Advertisement CSS -->
-    <link rel="stylesheet" href="./css/advertisement/advertisement-style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/advertisement/advertisement-tablet.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/advertisement/advertisement-desktop.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/section-your-order/desktop-section-your-order.css"
-    />
-    <link rel="stylesheet" href="./css/sections/hero/hero-desktop.css" />
-    <link rel="stylesheet" href="./css/sections/hero/hero-tablet.css" />
-    <link rel="stylesheet" href="./css/sections/hero/hero-mobile.css" />
-    <link rel="stylesheet" href="./css/reviews/reviews-style.css" />
-    <link rel="stylesheet" href="./css/reviews/reviews-desktop.css" />
-    <link rel="stylesheet" href="./css/reviews/reviews-tablets.css" />
-    <link rel="stylesheet" href="./css/reviews/reviews-mobile.css" />
-    <link rel="stylesheet" href="./css/your-order/desktop-your-order.css" />
-    <link rel="stylesheet" href="./css/your-order/tablet-your-order.css" />
-    <link rel="stylesheet" href="./css/your-order/mobile-your-order.css" />
+    <!-- Hero CSS -->
+    <link rel="stylesheet" href="./css/main/hero/hero-desktop.css" />
+    <link rel="stylesheet" href="./css/main/hero/hero-tablet.css" />
+    <link rel="stylesheet" href="./css/main/hero/hero-mobile.css" />
+    <!-- Advertisement CSS -->
+    <link rel="stylesheet" href="./css/main/advertisement/advertisement-style.css"/>
+    <link rel="stylesheet" href="./css/main/advertisement/advertisement-tablet.css"/>
+    <link rel="stylesheet" href="./css/main/advertisement/advertisement-desktop.css"/>
+    <!-- Organic Vegetables CSS -->
+    <link rel="stylesheet" href="./css/main/organic-vegetables/organic-vegetables-desktop.css"/>
+    <!-- Reviews CSS -->
+    <link rel="stylesheet" href="./css/main/reviews/reviews-style.css" />
+    <link rel="stylesheet" href="./css/main/reviews/reviews-desktop.css" />
+    <link rel="stylesheet" href="./css/main/reviews/reviews-tablets.css" />
+    <link rel="stylesheet" href="./css/main/reviews/reviews-mobile.css" />
+    <!-- Your Order CSS -->
+    <link rel="stylesheet" href="./css/main/your-order/desktop-your-order.css" />
+    <link rel="stylesheet" href="./css/main/your-order/tablet-your-order.css" />
+    <link rel="stylesheet" href="./css/main/your-order/mobile-your-order.css" />
+    <!-- Footer CSS -->
     <link rel="stylesheet" href="./css/footer/footer-mobile.css" />
     <link rel="stylesheet" href="./css/footer/footer-tablet.css" />
     <link rel="stylesheet" href="./css/footer/footer-desktop.css" />
@@ -66,10 +57,10 @@
               <a class="header-menu-list-item-link" href="">how it works</a>
             </li>
             <li class="header-menu-list-item">
-              <a class="header-menu-list-item-link" href="">vegetables</a>
+              <a class="header-menu-list-item-link" href="#vegetables">vegetables</a>
             </li>
             <li class="header-menu-list-item">
-              <a class="header-menu-list-item-link" href="">reviews</a>
+              <a class="header-menu-list-item-link" href="#reviews">reviews</a>
             </li>
           </ul>
           <button class="header-menu-button">shop now</button>
@@ -77,7 +68,6 @@
       </nav>
     </header>
     <main>
-      <!-- YOUR ORDER HEZA -->
       <!-- Hero Gulay-->
       <section class="section-hero container">
         <div class="hero-left">
@@ -105,7 +95,7 @@
         </div>
       </section>
       <!-- Organic Vegetables Pinar Task-->
-      <section class="organic-vegetables">
+      <section id="vegetables" class="organic-vegetables">
         <div class="organic-vegetables-div">
           <div class="organic-vegetables-section-header-content">
             <div class="organic-vegetables-header-setting">
@@ -235,7 +225,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Reviews -->
       <section id="reviews" class="reviews">
         <div class="container reviews-container">
           <div class="reviews-text-container">
