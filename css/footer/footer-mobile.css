@@ -47,8 +47,9 @@
         background-color: var(--thirth-color);
         display: flex;
         flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
         gap: 80px;
-        padding: 80px 20px;
 
     }
 
