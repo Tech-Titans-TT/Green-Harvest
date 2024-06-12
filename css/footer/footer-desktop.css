@@ -4,11 +4,15 @@
     }
 
     .footer-logo-div {
-        width: calc(100% / 2 - 10px);
+        width: calc(100% / 2);
     }
 
     .footer-list-contact {
-        width: calc(100% / 2 - 10px);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 121px;
+        width: calc(100% / 2);
     }
 
     .footer-logo-div-whether {
@@ -20,14 +24,13 @@
         font-size: 1.8rem;
     }
 
+    .footer-list {
+        width: 50%;
+    }
+
     .footer-main-container {
         padding-bottom: 50px;
         padding-top: 50px;
     }
 
-    .footer-list-contact {
-
-        flex-direction: row;
-
-    }
 }
