@@ -1,0 +1,136 @@
+/* YOUR ORDER HEZA */
+.your-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--thirth-color);
+}
+
+.your-order-title-text {
+    padding-bottom: 50px;
+    gap: 25px;
+    color: var(--fourth-color);    
+    display: flex;
+    flex-direction: column; 
+    max-width: 751px;   
+}
+
+.your-order-title-text h1 {
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.your-order-title-text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.your-order-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+}
+
+.your-order-left-card {
+    background-color: var(--fourth-color);
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 30px;
+    flex-basis: calc((100% - 24px)/2);
+    gap: 24px;
+    padding: 50px;
+}
+
+.your-order-left-card h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 26px;
+    max-width: 428px;
+}
+
+.your-order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 429px;
+    max-height: 306px;
+}
+
+.your-order-input { 
+    border: 1px solid #14141433;
+    border-radius: 30px;
+    padding: 16px 200px 16px 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--primary-color);
+}
+
+.your-order-input::placeholder {
+    color: var(--primary-color)
+}
+
+#comment {
+    padding: 16px 200px 50px 16px;
+    border-radius: 15px;
+}
+
+.your-order-button {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--fourth-color);
+    padding: 16px;
+    border: none;
+}
+
+.your-order-right-card {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 50px;
+    gap: 50px;
+    flex-basis: calc((100% - 24px)/2);
+}
+
+.your-order-image {
+    width: 100%;
+}
+
+.your-order-right-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 357px;
+    max-height: 111px;
+}
+
+.your-order-right-card-text p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--fourth-color);
+    opacity: 0.5;    
+}
+
+.your-order-social-networks {    
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--fourth-color);
+
+}
+
+.your-order-social-networks a {
+    color: var(--fourth-color);
+}
