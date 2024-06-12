@@ -20,6 +20,11 @@
         font-size: 1.8rem;
     }
 
+    .footer-main-container {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
     .footer-list-contact {
 
         flex-direction: row;
