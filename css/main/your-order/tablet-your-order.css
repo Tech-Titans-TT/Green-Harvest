@@ -1,7 +1,70 @@
 @media screen and (min-width :768px){
+    .your-order {
+        gap: 50px;
+    }
+
+    .your-order .container {    
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .your-order-title-text {
+        gap: 25px;
+    }   
+
+    .your-order-title-text h1 {
+        font-size: 6.4rem;
+        line-height: 64px;
+    }
     
+    .your-order-title-text p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 20px;
+    }
 
+    .your-order-card {
+        gap: 25px;
+    }
 
+    .your-order-left-card {
+        gap: 50px 100px;
+    }
+
+   .your-order-form {
+        gap: 25px;
+    }
+
+    .your-order-input {
+        font-size: 1.6rem;
+        line-height: 20px;
+        padding: 16px;
+    }
+
+    .your-order-button {
+        font-size: 1.8rem;
+        line-height: 20px;
+    }
+
+    .your-order-right-card {
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .your-order-right-card-text {
+        gap: 15px;
+    }
+
+    .your-order-right-card-text p {
+        font-size: 1.8rem;
+        line-height: 20px;
+    }
+
+    .your-order-social-networks {
+        font-size: 3.2rem;
+        line-height: 32px;
+        gap: 12px;
+    }
 
 
 
