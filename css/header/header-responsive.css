@@ -1,0 +1,68 @@
+.responsive-menu{
+    background-color: var(--thirth-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.active-responsive-menu {
+    transform: translateX(0);
+  }
+.responsive-close-button{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    cursor: pointer;
+}
+.responsive-menu .header-nav{
+    position: static;
+}
+.responsive-menu .header-menu-list-item{
+    width: 115px;
+    height: 42px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-menu .header-menu-list-item-link{
+    font-size: 1.4rem;
+}
+
+.responsive-menu .header-nav .header-menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.responsive-menu .header-nav{
+    align-items: center;
+    justify-content: center;
+    height: unset;
+    margin-bottom: 200px;
+}
+.responsive-menu .header-menu-button{
+    width: 155px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    height: 50px;
+    gap: 10px;
+    font-size: 1.4rem;
+    bottom: 40px;
+}
