@@ -8,23 +8,26 @@
 
 :root {
     --primary-color: #141414;
-    --primary-color-rgb : 20,20,20;
+    --primary-color-rgb: 20, 20, 20;
     --secondary-color: #576F35;
     --thirth-color: #7A3145;
     --fourth-color: #FBFBFB;
-    --fourth-color-rgb: 251,251,251;
+    --fourth-color-rgb: 251, 251, 251;
     --font-family-standard: "Inter Tight", sans-serif;
 }
 
 
-button{
+button {
     border: none;
     outline: none;
     cursor: pointer;
 }
+
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
+
 ul {
     list-style: none;
 }

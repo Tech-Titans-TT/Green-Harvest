@@ -1,3 +1,5 @@
 @media screen and (min-width :768px){
-    
+    .responsive-header-logo{
+        content: url(/Green-Harvest/assets/svg/logo-responsive.svg);
+    }
 }

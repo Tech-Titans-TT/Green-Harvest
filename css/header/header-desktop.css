@@ -9,6 +9,11 @@
     position: fixed;
     width: 100%;
     top: 32px;
+    transition: 0.3s all ease-in-out;
+  }
+  .active-navbar {
+    top: 0;
+    background-color: var(--secondary-color);
   }
   .header-menu {
     display: flex;
