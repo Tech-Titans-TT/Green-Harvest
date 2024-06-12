@@ -33,7 +33,6 @@
     font-size: 1.6rem;
     line-height: 20px;
     font-weight: 500;
-    line-height: 20px;
     text-align: left;
     margin-right: 28px;
   }
@@ -46,7 +45,7 @@
 
   .hero-right img {
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
   }
 }
