@@ -28,6 +28,7 @@
     .footer-main-container .container {
         padding-top: 32px;
         padding-bottom: 32px;
+        gap: 100px;
     }
 
     .footer-logo-div-whether {
