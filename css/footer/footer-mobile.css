@@ -58,7 +58,7 @@
         gap: 14px;
     }
 
-    .footer-list-item {
+    .footer-list-item>a {
         color: var(--fourth-color);
         font-size: 2.8rem;
         font-weight: 600;
@@ -67,7 +67,8 @@
         text-align: left;
     }
 
-    .footer-contacts-p {
+    .footer-contacts-p,
+    .footer-contacts-p>a {
         color: var(--fourth-color);
         font-size: 1.4rem;
         font-weight: 600;

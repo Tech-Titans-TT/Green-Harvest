@@ -9,7 +9,7 @@
 
     }
 
-    .footer-list-item {
+    .footer-list-item>a {
         font-size: 3.2rem;
     }
 
