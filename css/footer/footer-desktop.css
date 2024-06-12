@@ -15,7 +15,8 @@
         font-size: 1.6rem;
     }
 
-    .footer-contacts-p {
+    .footer-contacts-p,
+    .footer-contacts-p>a {
         font-size: 1.8rem;
     }
 
