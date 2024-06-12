@@ -43,18 +43,21 @@
         gap: 40px;
     }
 
-    .footer-main-container {
+    .footer-main-container .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
         background-color: var(--thirth-color);
         display: flex;
         flex-direction: column;
-        padding-top: 40px;
-        padding-bottom: 40px;
         gap: 80px;
 
     }
 
+    .footer-main-container {}
+
     .footer-list {
         display: flex;
+
         flex-direction: column;
         gap: 14px;
     }
