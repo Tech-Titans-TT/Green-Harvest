@@ -5,7 +5,7 @@
        
         width: 100%;
         background-color: var(--thirth-color);
-        padding: 100px;
+        /* padding: 100px; */
         gap: 50px;
 
        
@@ -35,7 +35,7 @@
     .organic-vegetables-main-header {
         display: flex;
         flex-direction: column;
-        max-width: 508px;
+        max-width: 100%;
         max-height: 128px;
         margin-right: 118px;
 
@@ -84,10 +84,10 @@
         justify-content: center;
         gap: 21px;
     
-        margin-top: 50px;
+        /* margin-top: 50px;
         margin-left: 100px;
         margin-right: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 100px; */
         gap: 2.1rem;
 /*     
         margin-top: 5rem;
