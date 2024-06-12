@@ -1,17 +1,15 @@
 const navbar = document.querySelector('.header-nav');
-
+//scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
-
 window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        // Scroll down
-        navbar.style.top = '-100px'; // Navbar'ı yukarı kaydırarak gizle
+        // Scroll down kismi
+        navbar.style.top = '-100px';
     } else {
-        // Scroll up
-        navbar.style.top = '32px'; // Navbar'ı geri getir
+        //scroll up kismi
+        navbar.style.top = '32px';
     }
-
     lastScrollTop = scrollTop;
 });
