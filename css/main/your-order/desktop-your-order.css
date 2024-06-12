@@ -4,14 +4,13 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    width: 100%;  
-    background-color: var(--thirth-color);
+    width: 100%;
+    background-color: var(--thirth-color);  
 }
 
 .your-order .container {
     padding-top: 100px;
-    padding-bottom: 100px;
-      
+    padding-bottom: 100px;    
 }
 
 .your-order-title-text {
@@ -88,7 +87,7 @@
     font-weight: 500;
     line-height: 20px;
     width: 100%;
-    color: var(--primary-color);    ;
+    color: var(--primary-color);
 }
 
 .your-order-textarea {
