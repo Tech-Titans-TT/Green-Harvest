@@ -1,4 +1,165 @@
 @media screen and (min-width :375px){
+    .your-order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+        background-color: var(--thirth-color);  
+    }
+
+    .your-order .container {
+        padding-top: 80px;
+        padding-bottom: 80px;    
+    }
+
+    .your-order-title-text {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        gap: 29px;
+        color: var(--fourth-color);    
+        
+    }
+
+    .your-order-title-text h1 {
+        font-size: 4.8rem;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: -1.5%;        
+    }
+
+    .your-order .span-harvest {
+        color: var(--fourth-color);
+        opacity: 0.3;
+    }
+
+    .your-order-title-text p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .your-order-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .your-order-left-card {
+        background-color: var(--fourth-color);
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        border-radius: 30px;
+        flex-basis: 100%;
+        gap: 40px;
+        padding: 50px;
+    }
+
+    .your-order-left-card h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: -1.5%;
+    }
+
+    .your-order .span-from-us {
+        color: var(--thirth-color);
+    }
+
+    .your-order .span-the-form {
+        color: var(--secondary-color);
+    }
+
+    .your-order-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .your-order-input {
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -2%;
+        color: var(--secondary-color);
+        padding: 14px;
+        border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+        border-radius: 30px;
+        gap: 10px;
+    }
+
+    #comment {
+        border-radius: 15px;
+        padding: 16px;
+    }
+
+    .your-order-button {
+        background-color: var(--secondary-color);
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -1.5%;
+        color: var(--fourth-color);
+        padding: 16px;
+        border: none;
+        border-radius: 30px;        
+    }
+
+    .your-order-right-card {
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 30px;
+        padding: 40px;
+        gap: 20px;
+        flex-basis: calc((100% - 24px)/2);
+    }
+
+    .your-order-image {
+        width: 100%;
+    }
+
+    .your-order-right-card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .your-order-right-card-text p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -1.5%;
+        color: rgba(var(--fourth-color-rgb), 0.5);
+    }
+
+    .your-order-social-networks {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: -1.5%;
+        color: var(--fourth-color);
+        gap: 8px;
+    }
+
+    .your-order-social-networks a {
+        color: var(--fourth-color);
+    }
+
+
+    
+
+    
+
+
     
 
 
