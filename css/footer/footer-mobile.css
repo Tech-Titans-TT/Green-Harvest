@@ -43,6 +43,11 @@
         gap: 40px;
     }
 
+    .footer-main-container {
+        background-color: var(--thirth-color);
+
+    }
+
     .footer-main-container .container {
         padding-top: 40px;
         padding-bottom: 40px;
