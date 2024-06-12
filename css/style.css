@@ -22,9 +22,13 @@ button {
     outline: none;
     cursor: pointer;
 }
+input{
+    outline: none;
+}
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 ul {
