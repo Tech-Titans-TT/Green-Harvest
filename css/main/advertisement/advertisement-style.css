@@ -1,0 +1,23 @@
+.advertisement{
+    height: min-content;
+}
+.advertisement .container .title{
+    width: 100%;
+    text-transform: uppercase;
+
+}
+.advertisement .discount{
+    display: block;
+}
+.advertisement .discount{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 12px;
+}
+.advertisement .description, .advertisement .title{
+    width: 100%;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: -0.015em;
+}

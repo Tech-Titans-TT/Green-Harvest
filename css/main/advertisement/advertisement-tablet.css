@@ -1,0 +1,12 @@
+@media screen and (min-width :768px){
+    .advertisement .container{
+        padding: 100px 16px;
+    }
+    .advertisement .description, .advertisement .title{
+        font-size: 6.4rem;
+        line-height: 7rem;
+    }
+    .advertisement .discount{
+        display: block;
+    }
+}

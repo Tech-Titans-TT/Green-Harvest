@@ -1,0 +1,172 @@
+@media screen and (min-width :1280px) {
+
+.organic-vegetables {
+       
+       
+        width: 100%;
+        background-color: var(--thirth-color);
+        /* padding: 100px; */
+        gap: 50px;
+
+       
+    }
+
+    .organic-vegetables-div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .organic-vegetables-section-header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5rem;
+        /* max-width: 62.6rem;
+        max-height: 19.3rem;
+        margin-left: 10rem;
+        margin-top: 10rem;
+        margin-right: 55.4rem;
+        margin-bottom: 5rem; */
+
+    }
+
+    .organic-vegetables-main-header {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 128px;
+        margin-right: 118px;
+
+
+    }
+
+    #organic-setting {
+        font-size: 6.4rem;
+        color: var(--fourth-color);
+        line-height: 64px;
+        font-weight: 600;
+        letter-spacing: -1,5%;
+    }
+
+    #vegetables-setting {
+        font-size: 6.4rem;
+        color: #FBFBFB4D;
+        line-height: 64px;
+        font-weight: 600;
+        letter-spacing: -1,5%;
+    }
+
+    .organic-vegetables-main-paragraph {
+        width: 626px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 20px;
+        color: var(--fourth-color);
+        margin-top: 25px;
+        margin-bottom: 50px;
+
+    }
+
+    .organic-vegetables-img-container {
+
+     width: 100%;
+
+    }
+
+    .organic-vegetables-img-ul-div-box {
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 21px;
+    
+        /* margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px; */
+        gap: 2.1rem;
+/*     
+        margin-top: 5rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 10rem; */
+
+
+
+    }
+
+    .organic-vegetables-img-li-elements {
+
+        width: 346px;
+        height: 379px;
+        border-radius: 40px;
+        padding: 32px;
+        gap: 10px;
+       width: calc((100% - 42px) / 3);
+        list-style-type: none;
+        background-color: var(--fourth-color);
+
+    }
+
+    .organic-vegetables-card-total {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 282px;
+        max-height: 315px;
+        gap: 10px;
+        margin: 32px;
+
+    }
+
+    .organic-vegetables-card-content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 157px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 125px;
+        gap: 12px;
+    }
+
+    .organic-vegetables-card-content-name {
+        width: 125px;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 32px;
+        letter-spacing: -1,5%;
+        color: var(--thirth-color);
+
+    }
+
+    .organic-vegetables-card-content-price {
+        width: 76px;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 18px;
+        letter-spacing: -1,5%;
+        color: var(--primary-color);
+
+    }
+
+    .organic-vegetables-img-png {
+       width: 100%;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 32px;
+        margin-top: 10px;
+
+    }
+
+
+}
+
+
