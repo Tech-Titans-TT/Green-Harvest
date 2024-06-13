@@ -81,6 +81,10 @@
             width: 100%;
         }
         
+    .your-order-form .header-menu-button:after{
+        background-color: var(--thirth-color);
+    }
+        
         .your-order-input { 
             border: 1px solid rgba(var(--primary-color-rgb), 0.2);
             border-radius: 30px;
@@ -92,10 +96,7 @@
             color: var(--primary-color);
         }
         
-        .your-order-textarea {
-            resize: none;
-            height: 95px;
-        }
+        
         
         .your-order-input:focus {
             outline: none;
@@ -108,17 +109,6 @@
         
         #comment {
             border-radius: 15px;
-        }
-        
-        .your-order-button {
-            background-color: var(--secondary-color);
-            border-radius: 30px;
-            font-size: 1.8rem;
-            font-weight: 600;
-            line-height: 20px;
-            color: var(--fourth-color);
-            padding: 16px;
-            border: none;
         }
         
         .your-order-right-card {

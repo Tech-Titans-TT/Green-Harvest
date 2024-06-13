@@ -58,7 +58,7 @@
         <div class="header-menu">
           <ul class="header-menu-list">
             <li class="header-menu-list-item">
-              <a class="header-menu-list-item-link" href="">how it works</a>
+              <a class="header-menu-list-item-link" href="#hero">how it works</a>
             </li>
             <li class="header-menu-list-item">
               <a class="header-menu-list-item-link" href="#vegetables">vegetables</a>
@@ -293,19 +293,18 @@
               AND WILL CONTACT YOU !
             </h2>
 
-            <div class="your-order-form">
+            <form class="your-order-form">
               <label for="name">
-                <input id="name" class="your-order-input" type="text" placeholder="Full Name" />
+                <input id="name" autocomplete="name" class="your-order-input" type="text" placeholder="Full Name" />
               </label>
               <label for="email">
-                <input id="email" class="your-order-input" type="email" placeholder="Email" />
+                <input id="email" autocomplete="email"  class="your-order-input" type="email" placeholder="Email" />
               </label>
               <label for="comment">
-                <textarea id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"></textarea>
+                <textarea  id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"></textarea>
               </label>
-
-              <button class="your-order-button" type="submit">SEND</button>
-            </div>
+              <button class="header-menu-button" type="submit">SEND</button>
+            </form>
           </div>
 
           <div class="your-order-right-card">
