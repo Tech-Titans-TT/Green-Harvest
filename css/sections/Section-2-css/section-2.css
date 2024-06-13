@@ -1,11 +1,29 @@
 .section-two-container {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .section-two-container .container {
     padding: 0;
 }
-
+.section-two-container .left-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--thirth-color);
+    z-index: -1;
+}
+.section-two-container .right-bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    z-index: -1;
+}
 .section-two-image-container {
     width: 100%;
     height: 100%;
