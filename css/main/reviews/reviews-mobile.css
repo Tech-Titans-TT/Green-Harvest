@@ -84,11 +84,14 @@
       left: -200%;
     }
   }
-
+  .reviews-card-container:hover *{
+    animation-play-state: paused;
+  }
   .reviews-card {
     position: relative;
     top: 0;
     left: 0;
     animation: autoscroll 14s ease-in-out 1s infinite alternate forwards;
   }
+  
 }
