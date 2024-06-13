@@ -1,30 +1,29 @@
 @media screen and (min-width:768px) {
-    .section-two-container {
-        display: flex;
-        flex-direction: column;
-    }
+  
    
    
     .section-two-image-container {
-        width: 100%;
-        height: 100%;
-        background-color: var(--thirth-color);
-        padding-left: 64px;
-        padding-right: 64px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        
     }
     .section-two-text-container {
         background-color: var(--secondary-color);
         width: 100%;
         height: 100%;
+        padding-left: 159px;
+        padding-right: 159px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .section-two-image {
         width: 100%;
         object-fit: cover;
         height: 100%;
         border-radius: 30px;
-        color: rgba(104, 49, 49, 0.3); 
+        color: rgba(104, 49, 49, 0.3);
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 100px;
+        padding-bottom: 100px; 
     }
     .section-two-main-text {
         font-size: 3.2rem;
