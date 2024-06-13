@@ -29,7 +29,9 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
-
+body {
+    font-family: var(--font-family-standard);
+}
 ul {
     list-style: none;
 }
