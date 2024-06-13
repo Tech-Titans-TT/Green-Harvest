@@ -89,6 +89,6 @@
     position: relative;
     top: 0;
     left: 0;
-    animation: autoscroll 2s ease-in-out 1s 2 alternate forwards;
+    animation: autoscroll 7s ease-in-out 1s infinite alternate forwards;
   }
 }
