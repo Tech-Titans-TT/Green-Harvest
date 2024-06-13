@@ -1,15 +1,24 @@
-.header-nav {
-  background-color: transparent;
+.header-section{
+  position: fixed;
+  width: 100%;
+  z-index: 50;
   height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 32px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.header-nav {
   display: flex;
   align-items: center;
   padding: 0px 20px;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
-  top: 32px;
   transition: 0.3s all ease-in-out;
-  z-index: 50;
+  
 }
 .header-menu {
   display: none;
@@ -21,22 +30,20 @@
   gap: 10px;
   font-size: 1.6rem;
 }
-.header-menu-list-item {
-  border: 1px solid rgba(var(--fourth-color-rgb), 0.5);
-  padding: 12px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: color 0.3s, background-color 0.3s ease-in-out;
-}
-.header-menu-list-item:hover {
+.header-menu-list-item-link:hover {
   background-color: var(--fourth-color);
-}
-.header-menu-list-item:hover .header-menu-list-item-link {
   color: var(--thirth-color);
 }
 .header-menu-list-item-link {
   color: var(--fourth-color);
   text-transform: capitalize;
+  border: 1px solid rgba(var(--fourth-color-rgb), 0.5);
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s ease-in-out;
 }
 .header-hamburger-bar {
   cursor: pointer;
@@ -80,6 +87,10 @@
   color: var(--fourth-color);
   will-change: transform;
   transform: scale(1.05);
+}
+
+.header-section-active {
+  top: -100px;
 }
 
 

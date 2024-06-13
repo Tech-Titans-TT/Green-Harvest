@@ -3,6 +3,7 @@
     background-color: transparent;
     height: 52px;
     padding: 0px 100px;
+    max-width: 1440px;
   }
   .header-menu {
     display: flex;

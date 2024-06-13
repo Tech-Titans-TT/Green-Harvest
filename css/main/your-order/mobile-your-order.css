@@ -58,7 +58,11 @@
         gap: 40px;
         padding: 50px;
     }
-
+    .your-order-textarea {
+        height: 95px;
+        resize: none;
+        outline: none;
+    }
     .your-order-left-card h2 {
         font-size: 2.4rem;
         font-weight: 600;
@@ -92,6 +96,11 @@
         border: 1px solid rgba(var(--primary-color-rgb), 0.2);
         border-radius: 30px;
         gap: 10px;
+        transition: 0.3s ease-in-out border;
+    }
+
+    .your-order-input:focus{
+        border-color: var(--border-color);
     }
 
     #comment {
@@ -109,9 +118,15 @@
         color: var(--fourth-color);
         padding: 16px;
         border: none;
-        border-radius: 30px;        
+        border-radius: 30px;
     }
 
+    .your-order-form .header-menu-button{
+        background-color: var(--secondary-color);
+        color: var(--fourth-color);
+    }
+
+    
     .your-order-right-card {
         background-color: var(--secondary-color);
         display: flex;
@@ -152,6 +167,10 @@
 
     .your-order-social-networks a {
         color: var(--fourth-color);
+        transition: 0.2s ease-in-out color;
+    }
+    .your-order-social-networks a:hover {
+        color: var(--thirth-color);
     }
 
 
