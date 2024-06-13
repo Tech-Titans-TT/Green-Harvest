@@ -12,15 +12,17 @@
     --secondary-color: #576F35;
     --thirth-color: #7A3145;
     --fourth-color: #FBFBFB;
+    --border-color: #3CBC81;
     --fourth-color-rgb: 251, 251, 251;
     --font-family-standard: "Inter Tight", sans-serif;
 }
-
-
 button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+input{
+    outline: none;
 }
 
 html {

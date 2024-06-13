@@ -1,2 +1,42 @@
 @media screen and (min-width: 768px) {
+  .reviews-container {
+    padding: 100px 32px;
+  }
+
+  .reviews-heading {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+
+  .reviews-subheading {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .reviews-card-title {
+    font-size: 1.8rem;
+  }
+
+  .reviews-card-text {
+    font-size: 1.6rem;
+  }
+
+  .reviews-card-container {
+    gap: 18px;
+    height: 258px;
+  }
+
+  @keyframes autoscroll {
+    from {
+      left: 0;
+    }
+    to {
+      left: -51%;
+    }
+  }
+
+  .reviews-card {
+    flex: 0 0 48.5%;
+    animation: autoscroll 7s linear 1s infinite alternate forwards;
+  }
 }

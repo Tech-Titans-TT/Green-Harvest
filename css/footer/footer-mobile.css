@@ -45,15 +45,21 @@
 
     .footer-main-container {
         background-color: var(--thirth-color);
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-        padding: 80px 20px;
 
     }
 
+    .footer-main-container .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: var(--thirth-color);
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+    }
     .footer-list {
         display: flex;
+
         flex-direction: column;
         gap: 14px;
     }
