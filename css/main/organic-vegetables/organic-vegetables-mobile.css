@@ -4,13 +4,13 @@
 
     width: 100%;
     background-color: var(--thirth-color);
-    padding: 80px 20px;
-    gap: 40px;
+   
 }
 
 .organic-vegetables-div {
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 
@@ -33,15 +33,15 @@
     color: var(--fourth-color);
     line-height: 50px;
     font-weight: 600;
-    letter-spacing: -1,5%;
+    letter-spacing: -0.015em;
 }
 
 #vegetables-setting {
     font-size: 4.8rem;
-    color: #FBFBFB4D;
+    color: rgba(var(--fourth-color-rgb), 0.3);
     line-height: 50px;
     font-weight: 600;
-    letter-spacing: -1,5%;
+    letter-spacing: -0.015em;
 }
 
 .organic-vegetables-main-paragraph {
