@@ -29,7 +29,9 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
-
+body {
+    font-family: var(--font-family-standard);
+}
 ul {
     list-style: none;
 }
@@ -48,6 +50,10 @@ a {
     padding: 80px 20px;
     margin: 0 auto;
 }
+
+
+/*Animation*/
+
 
 @media screen and (min-width :768px) {
     .container {
