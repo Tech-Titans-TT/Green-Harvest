@@ -48,6 +48,10 @@ a {
     margin: 0 auto;
 }
 
+
+/*Animation*/
+
+
 @media screen and (min-width :768px) {
     .container {
         padding: 0 32px;
