@@ -31,12 +31,12 @@
       left: 0;
     }
     to {
-      left: -50%;
+      left: -51%;
     }
   }
 
   .reviews-card {
     flex: 0 0 48.5%;
-    animation: autoscroll 2s ease-in-out 1s 2 alternate forwards;
+    animation: autoscroll 7s linear 1s infinite alternate forwards;
   }
 }

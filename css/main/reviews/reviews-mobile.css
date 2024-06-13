@@ -38,6 +38,10 @@
     height: 238px;
   }
 
+  .reviews-card-container::-webkit-scrollbar {
+    display: none;
+  }
+
   .reviews-card {
     display: flex;
     flex-direction: column;
@@ -80,17 +84,13 @@
       left: -200%;
     }
   }
-
+  .reviews-card-container:hover * {
+    animation-play-state: paused;
+  }
   .reviews-card {
     position: relative;
     top: 0;
     left: 0;
-    animation: autoscroll 2s ease-in-out 1s 2 alternate forwards;
-  }
-
-  ::-webkit-scrollbar,
-  ::-webkit-scrollbar-track,
-  ::-webkit-scrollbar-thumb {
-    display: none;
+    animation: autoscroll 14s linear 1s infinite alternate forwards;
   }
 }

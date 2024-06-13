@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Şubat, Bekir, Heza, Mustafa, Bahattin, Gülay, Pınar, Mehmet"
+    />
+    <meta
+      name="description"
+      content="This page is about Green Harvest, and Healtly shopping page."
+    />
+    <title>Green Harvest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="./css/header/header-style.css" />
+    <link rel="stylesheet" href="./css/header/header-mobile.css" />
+    <link rel="stylesheet" href="./css/header/header-tablet.css" />
+    <link rel="stylesheet" href="./css/header/header-desktop.css" />
+    <!-- Hero CSS -->
+    <link rel="stylesheet" href="./css/main/hero/hero-desktop.css" />
+    <link rel="stylesheet" href="./css/main/hero/hero-tablet.css" />
+    <link rel="stylesheet" href="./css/main/hero/hero-mobile.css" />
+    <!-- Advertisement CSS -->
+    <link
+      rel="stylesheet"
+      href="./css/main/advertisement/advertisement-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main/advertisement/advertisement-tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main/advertisement/advertisement-desktop.css"
+    />
+    <!-- Organic Vegetables CSS -->
+    <link rel="stylesheet" href="./css/main/organic-vegetables/organic-vegetables-mobile.css" />
+    <link rel="stylesheet" href="./css/main/organic-vegetables/organic-vegetables-tablet.css" />
+    <link
+      rel="stylesheet"
+      href="./css/main/organic-vegetables/organic-vegetables-desktop.css"
+    />
+    
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Şubat, Bekir, Heza, Mustafa, Bahattin, Gülay, Pınar, Mehmet" />
-  <meta name="description" content="This page is about Green Harvest, and Healtly shopping page." />
-  <title>Green Harvest</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <!DOCTYPE html>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./css/style.css" />
-  <!-- Header CSS -->
-  <link rel="stylesheet" href="./css/header/header-style.css" />
-  <link rel="stylesheet" href="./css/header/header-responsive.css" />
-  <link rel="stylesheet" href="./css/header/header-tablet.css" />
-  <link rel="stylesheet" href="./css/header/header-desktop.css" />
-  <!-- Hero CSS -->
-  <link rel="stylesheet" href="./css/main/hero/hero-mobile.css" />
-  <link rel="stylesheet" href="./css/main/hero/hero-tablet.css" />
-  <link rel="stylesheet" href="./css/main/hero/hero-desktop.css" />
-
-
-  <!-- Advertisement CSS -->
-  <link rel="stylesheet" href="./css/main/advertisement/advertisement-style.css" />
-  <link rel="stylesheet" href="./css/main/advertisement/advertisement-tablet.css" />
-  <link rel="stylesheet" href="./css/main/advertisement/advertisement-desktop.css" />
-  <!-- Organic Vegetables CSS -->
-  <link rel="stylesheet" href="./css/main/organic-vegetables/organic-vegetables-desktop.css" />
-  <!-- Reviews CSS -->
-  <link rel="stylesheet" href="./css/main/reviews/reviews-mobile.css" />
-  <link rel="stylesheet" href="./css/main/reviews/reviews-tablets.css" />
-  <link rel="stylesheet" href="./css/main/reviews/reviews-desktop.css" />
-
+    <!-- Reviews CSS -->
+    <link rel="stylesheet" href="./css/main/reviews/reviews-style.css" />
+    <link rel="stylesheet" href="./css/main/reviews/reviews-desktop.css" />
+    <link rel="stylesheet" href="./css/main/reviews/reviews-tablets.css" />
+    <link rel="stylesheet" href="./css/main/reviews/reviews-mobile.css" />
     <!-- Your Order CSS -->
     <link rel="stylesheet" href="./css/main/your-order/mobile-your-order.css"/>
     <link rel="stylesheet" href="./css/main/your-order/tablet-your-order.css" />
@@ -44,30 +64,36 @@
     <!-- Footer CSS -->
     <link rel="stylesheet" href="./css/footer/footer-mobile.css" />
     <link rel="stylesheet" href="./css/footer/footer-tablet.css" />
-    <link rel="stylesheet" href="./css/footer/footer-desktop.css" />
-  </head>
+    <link rel="stylesheet" href="./css/footer/footer-desktop.css" />  
+
+ 
+</head>
 
 <body class="inter-tight">
   <!-- Header Tutus -->
   <header>
-    <nav class="header-nav">
-      <img src="./assets/svg/logo.svg" alt="logo" />
-      <div class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-list-item">
-            <a class="header-menu-list-item-link" href="">how it works</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a class="header-menu-list-item-link" href="#vegetables">vegetables</a>
-          </li>
-          <li class="header-menu-list-item">
-            <a class="header-menu-list-item-link" href="#reviews">reviews</a>
-          </li>
-        </ul>
-        <button class="header-menu-button">shop now</button>
-      </div>
-      <img class="header-hamburger-bar" src="./assets/svg/menu-bar.svg" alt="hamburger" />
-    </nav>
+    <section class="header-section">
+      <nav class="header-nav">
+        <a href="#hero">
+          <img src="./assets/svg/logo.svg" alt="logo" />
+        </a>
+        <div class="header-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-list-item">
+              <a class="header-menu-list-item-link" href="#hero">how it works</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a class="header-menu-list-item-link" href="#vegetables">vegetables</a>
+            </li>
+            <li class="header-menu-list-item">
+              <a class="header-menu-list-item-link" href="#reviews">reviews</a>
+            </li>
+          </ul>
+          <button class="header-menu-button">shop now</button>
+        </div>
+        <img class="header-hamburger-bar" src="./assets/svg/menu-bar.svg" alt="hamburger" />
+      </nav>
+    </section>
     <div class="responsive-menu">
       <img class="responsive-close-button" src="./assets/svg/close-menu-1.svg" alt="logo" />
       <nav class="header-nav">
@@ -88,7 +114,7 @@
   </header>
   <main>
     <!-- Hero Gulay-->
-    <section class="section-hero">
+    <section id="hero" class="section-hero">
       <div class="container">
         <div class="hero-left">
           <div class="hero-left-text-box inter-tight">
@@ -108,6 +134,42 @@
 
       </div>
 
+    </section>
+    <!-- How It Works Bekir-->
+    <section class="section-two-container">
+      <div class="container flex-container">
+        <div class="section-two-image-container">
+            <img src="./assets/images/image-2.png" alt="woman cutting fruit" class="section-two-image">
+          </div>
+          <div class="section-two-text-container">
+            <div class="main-text-container">
+              <p class="section-two-main-text inter-tight">
+                TO ORDER YOUR <span class="main-text-span"> VEGETABLE</span> BASKET,SIMPLY FOLLOW THESE<span class="main-text-span"> EASY STEPS</span>
+              </p>
+            </div>
+            <div class="support-text-container">
+              <p class="section-two-support-text inter-tight">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit without ever leaving your home.</p>
+            </div>
+            <div class="list-container">
+              <ol class="ordered-list-text">
+               <li class="list-text inter-tight">
+                  <img src="./assets/images/1Number one.png" alt="number one image" class="list-items-images">
+                  <p class="list-item-paragraph-text">Just choose <span class="ordered-list-span-text inter-tight">the vegetable</span> you want to order by clicking on the checkboxes <span class="ordered-list-span-text inter-tight">next to it.</span></p>   
+               </li>
+               <li class="list-text inter-tight">
+                <img src="./assets/images/2Number two.png" alt="number two image" class="list-items-images">
+                <p class="list-item-paragraph-text">Click on <span class="ordered-list-span-text inter-tight">the basket</span>and fill out the form.</p> 
+               </li>
+               <li class="list-text inter-tight">
+                <img src="./assets/images/3Number three.png" alt="number three image" class="list-items-images">
+               <p class="list-item-paragraph-text">Sit back and relax! Your <span class="ordered-list-span-text inter-tight">fresh vegetables</span> basket will be delivered.</p> 
+              </li>
+             </ol>
+            </div>
+        </div>
+      </div>
+      <div class="left-bg"></div>
+      <div class="right-bg"></div>
     </section>
     <!-- Advertisement Mehmet -->
     <section class="advertisement">
@@ -289,19 +351,18 @@
               AND WILL CONTACT YOU !
             </h2>
 
-            <div class="your-order-form">
+            <form class="your-order-form">
               <label for="name">
-                <input id="name" class="your-order-input" type="text" placeholder="Full Name" />
+                <input id="name" autocomplete="name" class="your-order-input" type="text" placeholder="Full Name" />
               </label>
               <label for="email">
-                <input id="email" class="your-order-input" type="email" placeholder="Email" />
+                <input id="email" autocomplete="email"  class="your-order-input" type="email" placeholder="Email" />
               </label>
               <label for="comment">
-                <textarea id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"></textarea>
+                <textarea  id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"></textarea>
               </label>
-
-              <button class="your-order-button" type="submit">SEND</button>
-            </div>
+              <button class="header-menu-button" type="submit">SEND</button>
+            </form>
           </div>
 
           <div class="your-order-right-card">
@@ -320,6 +381,7 @@
         </div>
       </div>
     </section>
+    
   </main>
   <!-- Footer Bahaddin -->
   <footer class="footer-main-container">
