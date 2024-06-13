@@ -1,15 +1,11 @@
 .header-nav {
-  background-color: transparent;
-  height: 32px;
   display: flex;
   align-items: center;
   padding: 0px 20px;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
-  top: 32px;
   transition: 0.3s all ease-in-out;
-  z-index: 50;
+  
 }
 .header-menu {
   display: none;
@@ -80,6 +76,19 @@
   color: var(--fourth-color);
   will-change: transform;
   transform: scale(1.05);
+}
+
+.header-section{
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 32px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
 }
 
 
