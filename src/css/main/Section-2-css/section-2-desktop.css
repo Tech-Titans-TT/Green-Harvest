@@ -3,15 +3,15 @@
 @import url('./section-2-tablet.css');
 
 @media screen and (min-width :1280px) {
-    .section-two-container {
+    .how-it-works-container {
         display: flex;
         justify-content: center;
     }
-    .section-two-container .container {
+    .how-it-works-container .container {
         padding: 0;
     }
     
-    .section-two-image-container {
+    .how-it-works-image-container {
         width: 100%;
         height: 100%;
         background-color: var(--thirth-color);
@@ -19,7 +19,7 @@
         align-items: center;
         flex: 1 1 50%;
     }
-    .section-two-text-container {
+    .how-it-works-text-container {
         background-color: var(--secondary-color);
         width: 100%;
         height: 100%;
@@ -30,7 +30,7 @@
         padding: 100px;
         flex: 1 1 50%;
     }
-    .section-two-image {
+    .how-it-works-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -54,7 +54,7 @@
         color: rgba(251, 251, 251, 0.3);
     }
     
-    .section-two-main-text {
+    .how-it-works-main-text  {
         font-size: 3.2rem;
         font-weight: 600;
         line-height: 32px;
@@ -64,7 +64,7 @@
     .support-text-container {
     
     }
-    .section-two-support-text {
+    .how-it-works-support-text {
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 20px;
@@ -111,7 +111,7 @@
         line-height: 20px;
         font-size: 16px;
     } 
-    .section-two-container .left-bg, .section-two-container .right-bg{
+    .how-it-works-container .left-bg, .how-it-works-container .right-bg{
         width: 50%;
     }
 }
