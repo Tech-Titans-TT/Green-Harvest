@@ -8,11 +8,21 @@ const anchors = document.querySelectorAll('a[href^="#"]');
 let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  console.log(scrollTop);
   // scroll ile navbar gizlenmesi
   scrollTop > lastScrollTop
     ? navbar.classList.add("header-section-active")
     : navbar.classList.remove("header-section-active");
   lastScrollTop = scrollTop;
+  
+  headerLinks.forEach((link => {
+    if(scrollTop == 0 ){
+      link.classList.remove('bg-green')
+    }
+    if (scrollTop > 5 && scrollTop <= 1442){
+      link.classList.add('bg-green')
+    }
+  }))
 });
 
 //responsive menu acilip kapanma olayi

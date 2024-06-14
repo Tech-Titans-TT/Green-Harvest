@@ -25,4 +25,13 @@
     background-color: var(--fourth-color);
     z-index: -1;
   }
+
+  .bg-green{
+    background-color: var(--thirth-color);
+    border-color: transparent;
+  }
+  .bg-green:hover{
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+  }
 }
