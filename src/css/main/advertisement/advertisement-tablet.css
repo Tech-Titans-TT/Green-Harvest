@@ -2,6 +2,15 @@
     .advertisement .container{
         padding: 100px 16px;
     }
+    .advertisement .discount{
+        margin-left: -16px;
+    }
+    
+    .advertisement .discount, .advertisement .title{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
     .advertisement .description, .advertisement .title{
         font-size: 6.4rem;
         line-height: 7rem;
