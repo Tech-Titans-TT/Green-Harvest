@@ -1,6 +1,6 @@
-@import url('./section-2.css');
-@import url('./section-2-mobile.css');
-@import url('./section-2-tablet.css');
+@import url('./how-it-works.css');
+@import url('./how-it-works-mobile.css');
+@import url('./how-it-works-tablet.css');
 
 @media screen and (min-width :1280px) {
     .how-it-works-container {
