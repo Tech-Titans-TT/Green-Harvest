@@ -1,0 +1,31 @@
+@import url('./header-style.css');
+@import url('./header-responsive.css');
+@import url('./header-tablet.css');
+@media screen and (min-width: 1280px) {
+  .header-nav {
+    background-color: transparent;
+    height: 52px;
+    padding: 0px 100px;
+    max-width: 1440px;
+  }
+  .header-menu {
+    display: flex;
+  }
+  .header-hamburger-bar {
+    display: none;
+  }
+  .responsive-menu {
+    display: none;
+  }
+  .header-menu-button {
+    background-color: var(--thirth-color);
+    color: var(--fourth-color);
+  }
+  .header-menu-button:hover{
+    color: var(--thirth-color);
+  }
+  .header-menu-button::after{
+    background-color: var(--fourth-color);
+    z-index: -1;
+  }
+}

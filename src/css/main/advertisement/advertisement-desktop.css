@@ -1,0 +1,24 @@
+@import url('./advertisement-style.css');
+@import url('./advertisement-tablet.css');
+
+@media screen and (min-width :1280px){
+    .advertisement .container{
+        padding: 100px;
+    }
+    .advertisement .discount{
+        margin-left: -13px;
+    }
+    .advertisement .discount, .advertisement .title{
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    .advertisement .discount{
+        display: inline;
+    }
+    .advertisement .description, .advertisement .title{
+        flex-basis: content;
+        font-size: 7.6rem;
+        line-height: 8rem;
+    }
+
+}
