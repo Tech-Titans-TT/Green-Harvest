@@ -10,7 +10,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: var(--thirth-color);
     z-index: -1;
@@ -19,7 +19,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: var(--secondary-color);
     z-index: -1;
@@ -45,6 +45,7 @@
     align-items: stretch;
     padding: 100px;
     flex: 1 1 50%;
+    row-gap: 25px;
 }
 .section-two-image {
     width: 100%;

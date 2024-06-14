@@ -9,24 +9,24 @@
         width: 100%;
         height: 100%;
         background-color: var(--thirth-color);
-        padding: 40px 20px 40px 20px;
+        padding: 40px 20px;
     }
     .section-two-text-container {
         background-color: var(--secondary-color);
         width: 100%;
         height: 100%;
-        padding: 80px 20px 80px 20px;
+        padding: 80px 20px;
+    }
+    .section-two-container .main-text-container{
+        row-gap: 25px;
     }
     .section-two-image {
         width: 100%;
         object-fit: cover;
         height: 100%;
-        border-radius: 30px;
         color: rgba(104, 49, 49, 0.3);
-        padding-left: 20px;  
-        padding-right: 20px;
-        padding-bottom: 40px;
-        padding-top: 40px;
+        content: url('../../../img/Rectangle\ 42474.png');
+       
     }
     .main-text-span {
         font-weight: 600;
@@ -47,6 +47,7 @@
         font-weight: 500;
         line-height: 20px;
         color: var(--fourth-color);
+        margin-bottom: 25px;
     }
     .list-text {
         display: flex;
