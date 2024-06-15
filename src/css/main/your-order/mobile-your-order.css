@@ -216,9 +216,10 @@ input.error {
 }
 
 #error-message {
+    display: block;
     color: red;
     margin-top: 10px;
-    opacity: 0;
+    /* opacity: 0; */
     font-size: 1.6rem;
     transition: opacity 0.5s ease-in-out;
 

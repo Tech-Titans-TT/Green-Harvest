@@ -6,6 +6,8 @@ const headerLinks = document.querySelectorAll(".header-menu-list-item-link");
 const headerShopButton = document.querySelector(".header-menu-button");
 const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
+const errorMessage = document.getElementById('error-message');
+const input = document.getElementById('name');
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
@@ -86,17 +88,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-function validateForm() {
-  const input = document.getElementById('name');
-  const errorMessage = document.getElementById('error-message');
-  // Temel bir validasyon örneği (örneğin, en az 5 karakter)
-  if (input.checkValidity()) {
 
-    errorMessage.classList.remove('show');
+const setText = (name, message) => {
+  if (name = "name"){
+    errorMessage.textContent = message;
+  }
+}
+
+const setDefaultText = _=>{
+  errorMessage.textContent = '';
+}
+
+function validateForm() {
+  setDefaultText()
+;  // Temel bir validasyon örneği (örneğin, en az 5 karakter)
+  if (input.checkValidity()) {
+    
+    // errorMessage.classList.remove('show');
     input.classList.remove('error');
     input.classList.add('success');
   } else {
-    errorMessage.classList.add('show');
+    // errorMessage.classList.add('show');
+    setText("name","Deneme");
     input.classList.remove('success');
     input.classList.add('error');
   }
