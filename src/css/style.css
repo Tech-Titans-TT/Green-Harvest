@@ -50,7 +50,12 @@ a {
   padding: 80px 20px;
   margin: 0 auto;
 }
-
+.hidden-title{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
 /*QUERIES*/
 
 @media screen and (min-width: 768px) {
