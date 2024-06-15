@@ -51,7 +51,7 @@ a {
   margin: 0 auto;
 }
 
-/*Animation*/
+/*QUERIES*/
 
 @media screen and (min-width: 768px) {
   .container {
@@ -63,4 +63,15 @@ a {
   .container {
     padding: 100px 100px;
   }
+}
+
+/* CARD SCALES */
+
+.scale-card {
+  transition: transform 0.3s ease;
+}
+
+.scale-card:hover,
+.scale-card:focus {
+  transform: scale(1.05);
 }
