@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
     ? navbar.classList.add("header-section-active")
     : navbar.classList.remove("header-section-active");
   lastScrollTop = scrollTop;
-
+  console.log(scrollTop)
   if (scrollTop == 0) {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-green", "bg-bordo", "box-shadow-effect");
@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
     headerLogo.classList.remove("header-drop-shadow");
     hamburgerMenu.classList.remove('header-drop-shadow')
     headerShopButton.classList.remove("box-shadow-effect");
-  } else if (scrollTop > 5 && scrollTop <= 1737) {
+  } else if (scrollTop > 5 && scrollTop <= 1744) {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-green", "border-scroll");
       link.classList.add("bg-bordo", "box-shadow-effect");
@@ -33,13 +33,13 @@ window.addEventListener("scroll", () => {
     hamburgerMenu.classList.add('header-drop-shadow')
     headerShopButton.classList.add("box-shadow-effect");
     headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 1738 && scrollTop <= 2113) {
+  } else if (scrollTop > 1745 && scrollTop <= 2139) {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-bordo");
       link.classList.add("bg-green");
     });
     headerShopButton.classList.add("bg-green");
-  }else if(scrollTop > 3608 && scrollTop <= 4288){
+  }else if(scrollTop > 3411 && scrollTop <= 4104){
     headerLinks.forEach((link) => {
       link.classList.add("bg-green");
       link.classList.remove("bg-bordo");
