@@ -45,7 +45,6 @@
     align-items: stretch;
     padding: 100px;
     flex: 1 1 50%;
-    row-gap: 25px;
 }
 .how-it-works-image {
     width: 100%;
@@ -61,9 +60,7 @@
     justify-content: center;
     align-items: center;
 }
-.main-text-container {
 
-}
 .main-text-span {
     font-weight: 600;
     font-size: 3.2rem;
@@ -79,9 +76,7 @@
     letter-spacing: -1.5%;
     color: var(--fourth-color);
 }
-.support-text-container {
 
-}
 .how-it-works-support-text {
     font-size: 1.6rem;
     font-weight: 500;
@@ -105,7 +100,7 @@
     border-radius: 15px;
     padding: 12px 25px 12px 24px;
     gap: 24px;
-    margin-top: 20px;
+
     
 }
 

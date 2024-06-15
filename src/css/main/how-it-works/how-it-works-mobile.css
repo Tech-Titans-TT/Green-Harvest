@@ -17,15 +17,15 @@
         height: 100%;
         padding: 80px 20px;
     }
-    .how-it-works-container .main-text-container{
+      .how-it-works-container .main-text-container{
         row-gap: 25px;
-    }
+    }  
     .how-it-works-image {
         width: 100%;
         object-fit: cover;
         height: 100%;
         color: rgba(104, 49, 49, 0.3);
-        content: url('../../../img/Rectangle\ 42474.png');
+        content: url('../../../img/woman-cutting-fruits-mobile.png');
        
     }
     .main-text-span {
@@ -48,6 +48,7 @@
         line-height: 20px;
         color: var(--fourth-color);
         margin-bottom: 25px;
+        margin-top: 25px; 
     }
     .list-text {
         display: flex;
@@ -80,5 +81,6 @@
         width: 52px;
         height: 52px;
     }
- 
+
 }  
+    
