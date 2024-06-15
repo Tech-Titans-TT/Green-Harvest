@@ -1,4 +1,5 @@
 <!-- Your Order Heza -->
+
 <section class="your-order inter-tight">
   <div class="container">
     <div class="your-order-title-text">
@@ -24,6 +25,7 @@
           <label for="name">
             <input id="name" autocomplete="name" class="your-order-input" type="text" placeholder="Full Name"
               required />
+            <div id="error-message" class="hidden">* Lütfen isim alanını doldurunuz</div>
           </label>
           <label for="email">
             <input id="email" autocomplete="email" class="your-order-input" type="email" placeholder="Email" required />
@@ -32,7 +34,9 @@
             <textarea id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"
               required></textarea>
           </label>
-          <button class="header-menu-button" type="submit">SEND</button>
+          <button class="header-menu-button" type="button" onclick="validateForm()">SEND</button>
+
+
         </form>
       </div>
 
@@ -51,4 +55,5 @@
       </div>
     </div>
   </div>
+  <script src="../../../main.js"></script>
 </section>

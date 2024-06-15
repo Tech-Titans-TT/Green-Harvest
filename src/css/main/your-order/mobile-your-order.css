@@ -102,13 +102,6 @@
 
 }
 
-input:focus {
-    border-color: rgba(122, 49, 69, 1);
-}
-
-input:hover {
-    border-color: rgba(122, 49, 69, 1);
-}
 
 
 
@@ -196,4 +189,42 @@ input:hover {
 
 .your-order-social-networks a:hover {
     color: var(--thirth-color);
+}
+
+input:hover {
+    border-color: rgba(122, 49, 69, 1);
+}
+
+input:focus {
+    border-color: rgba(122, 49, 69, 1);
+}
+
+/* Başarılı (success) durumu */
+input.success {
+    border-color: rgba(60, 188, 129, 1);
+    ;
+}
+
+/* Hata (fail) durumu */
+input.error {
+    border-color: rgba(231, 74, 59, 1);
+}
+
+.hidden {
+    display: none;
+    text-align: center;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    opacity: 0;
+    font-size: 1.6rem;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+#error-message.show {
+    display: flex;
+    opacity: 1;
 }

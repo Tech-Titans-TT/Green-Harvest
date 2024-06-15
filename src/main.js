@@ -38,13 +38,13 @@ window.addEventListener("scroll", () => {
       link.classList.add("bg-green");
     });
     headerShopButton.classList.add("bg-green");
-  }else if(scrollTop > 3411 && scrollTop <= 4104){
+  } else if (scrollTop > 3411 && scrollTop <= 4104) {
     headerLinks.forEach((link) => {
       link.classList.add("bg-green");
       link.classList.remove("bg-bordo");
     });
-      headerShopButton.classList.add("bg-green");
-  } else{
+    headerShopButton.classList.add("bg-green");
+  } else {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-green");
       link.classList.add("bg-bordo");
@@ -86,3 +86,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+function validateForm() {
+  const input = document.getElementById('name');
+  const errorMessage = document.getElementById('error-message');
+  // Temel bir validasyon örneği (örneğin, en az 5 karakter)
+  if (input.checkValidity()) {
+
+    errorMessage.classList.remove('show');
+    input.classList.remove('error');
+    input.classList.add('success');
+  } else {
+    errorMessage.classList.add('show');
+    input.classList.remove('success');
+    input.classList.add('error');
+  }
+}
