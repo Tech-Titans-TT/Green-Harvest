@@ -1,15 +1,19 @@
 @media screen and (min-width :768px){
-    .responsive-header-logo{
-        content: url(/Green-Harvest/assets/svg/logo-responsive.svg);
+    .header-nav .header-logo{
+        height: 18px;
     }
     .header-nav{
         padding: 0px 32px;
     }
-    .header-hamburger-bar{
-        content: url(../../assets/svg/menu-bar.svg);
-    }
+    .header-hamburger-bar {
+        content: url(../../svg/menu-bar.svg);
+      }
 
     .responsive-menu{
         width: 45vw;
+    }
+    .responsive-close-button{
+        height: 40px;
+        width: 40px;
     }
 }

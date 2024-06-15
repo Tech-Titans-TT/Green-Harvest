@@ -1,4 +1,4 @@
-@import url('./header-style.css');
+@import url('./header-desktop.css');
 @import url('./header-responsive.css');
 @import url('./header-tablet.css');
 @media screen and (min-width: 1280px) {
@@ -26,15 +26,24 @@
   }
   .header-menu-button::after{
     background-color: var(--fourth-color);
-    z-index: -1;
   }
 
-  .bg-green{
+  .bg-bordo{
     background-color: var(--thirth-color);
     border-color: transparent;
   }
-  .bg-green:hover{
-    background-color: var(--secondary-color);
-    color: var(--fourth-color);
+  .bg-bordo:hover{
+    background-color: var(--fourth-color);
+    color: var(--thirth-color);
+    
   }
+  .bg-green{
+    background-color: var(--secondary-color);
+    border-color: transparent;
+  }
+  .border-scroll{
+    border: 1px solid rgba(var(--fourth-color-rgb), 0.5);
+  }
+  
+  
 }

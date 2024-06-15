@@ -3,34 +3,62 @@ const hamburgerMenu = document.querySelector(".header-hamburger-bar");
 const closeMenu = document.querySelector(".responsive-close-button");
 const responsiveMenu = document.querySelector(".responsive-menu");
 const headerLinks = document.querySelectorAll(".header-menu-list-item-link");
+const headerShopButton = document.querySelector(".header-menu-button");
 const anchors = document.querySelectorAll('a[href^="#"]');
+const headerLogo = document.querySelector(".header-logo");
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
-  console.log(scrollTop);
   // scroll ile navbar gizlenmesi
   scrollTop > lastScrollTop
     ? navbar.classList.add("header-section-active")
     : navbar.classList.remove("header-section-active");
   lastScrollTop = scrollTop;
-  
-  headerLinks.forEach((link => {
-    if(scrollTop == 0 ){
-      link.classList.remove('bg-green')
-    }
-    if (scrollTop > 5 && scrollTop <= 1442){
-      link.classList.add('bg-green')
-    }
-  }))
-});
 
+  if (scrollTop == 0) {
+    headerLinks.forEach((link) => {
+      link.classList.remove("bg-green", "bg-bordo", "box-shadow-effect");
+      link.classList.add("border-scroll");
+    });
+    headerLogo.classList.remove("header-drop-shadow");
+    hamburgerMenu.classList.remove('header-drop-shadow')
+    headerShopButton.classList.remove("box-shadow-effect");
+  } else if (scrollTop > 5 && scrollTop <= 1737) {
+    headerLinks.forEach((link) => {
+      link.classList.remove("bg-green", "border-scroll");
+      link.classList.add("bg-bordo", "box-shadow-effect");
+    });
+    headerLogo.classList.add("header-drop-shadow");
+    hamburgerMenu.classList.add('header-drop-shadow')
+    headerShopButton.classList.add("box-shadow-effect");
+    headerShopButton.classList.remove("bg-green");
+  } else if (scrollTop > 1738 && scrollTop <= 2113) {
+    headerLinks.forEach((link) => {
+      link.classList.remove("bg-bordo");
+      link.classList.add("bg-green");
+    });
+    headerShopButton.classList.add("bg-green");
+  }else if(scrollTop > 3608 && scrollTop <= 4288){
+    headerLinks.forEach((link) => {
+      link.classList.add("bg-green");
+      link.classList.remove("bg-bordo");
+    });
+      headerShopButton.classList.add("bg-green");
+  } else{
+    headerLinks.forEach((link) => {
+      link.classList.remove("bg-green");
+      link.classList.add("bg-bordo");
+    });
+    headerShopButton.classList.remove("bg-green");
+  }
+});
 //responsive menu acilip kapanma olayi
 responsiveMenu.classList.remove("active-responsive-menu");
-hamburgerMenu.addEventListener("click", function () {
+hamburgerMenu.addEventListener("click", () => {
   responsiveMenu.classList.add("active-responsive-menu");
 });
-closeMenu.addEventListener("click", function () {
+closeMenu.addEventListener("click", () => {
   responsiveMenu.classList.remove("active-responsive-menu");
 });
 // linklere tiklandiginda responsive menu kapatilmasi
@@ -39,9 +67,9 @@ headerLinks.forEach((link) => {
     responsiveMenu.classList.remove("active-responsive-menu");
   });
 });
-
 //anchor olayi duzgun calismasi
 document.addEventListener("DOMContentLoaded", function () {
+  window.scrollTo(0, 0);
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
