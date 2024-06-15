@@ -15,7 +15,6 @@ window.addEventListener("scroll", () => {
     ? navbar.classList.add("header-section-active")
     : navbar.classList.remove("header-section-active");
   lastScrollTop = scrollTop;
-  console.log(scrollTop)
   if (scrollTop == 0) {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-green", "bg-bordo", "box-shadow-effect");
