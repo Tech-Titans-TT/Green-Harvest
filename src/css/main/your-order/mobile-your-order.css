@@ -99,11 +99,18 @@
     border-radius: 30px;
     gap: 10px;
 
+
 }
 
-.your-order-input:focus {
-    border-color: var(--border-color);
+input:focus {
+    border-color: rgba(122, 49, 69, 1);
 }
+
+input:hover {
+    border-color: rgba(122, 49, 69, 1);
+}
+
+
 
 #comment {
     border-radius: 15px;
