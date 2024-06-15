@@ -6,6 +6,18 @@ const headerLinks = document.querySelectorAll(".header-menu-list-item-link");
 const headerShopButton = document.querySelector(".header-menu-button");
 const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
+const bodyDOM = document.querySelector('body')
+const circleDOM = document.querySelector(".circleSVG circle");
+
+
+//circle calculate function
+const calculateBodyView = _ => {
+ const viewHeight = bodyDOM.offsetHeight;
+ console.log("sayfa boyutu",viewHeight);
+}
+
+
+
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
@@ -51,6 +63,12 @@ window.addEventListener("scroll", () => {
     });
     headerShopButton.classList.remove("bg-green");
   }
+
+    //Circle
+
+
+
+
 });
 //responsive menu acilip kapanma olayi
 responsiveMenu.classList.remove("active-responsive-menu");
@@ -68,7 +86,6 @@ headerLinks.forEach((link) => {
 });
 //anchor olayi duzgun calismasi
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Calisti");
   window.scrollTo(0, 0);
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -86,4 +103,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+  calculateCircle();
+    // console.log();
+    // circleDOM.style.strokeDashoffset = 160;
+
 });
+
+window.onload = function() {
+  calculateBodyView();
+};
+
+
+
