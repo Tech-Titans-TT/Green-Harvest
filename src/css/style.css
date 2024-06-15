@@ -64,3 +64,24 @@ a {
     padding: 100px 100px;
   }
 }
+
+.how-it-works-scale {
+  transition: transform 0.3s ease;
+}
+
+.how-it-works-scale:hover,
+.how-it-works-scale:focus {
+  transform: scale(1.05);
+}
+
+.scale-element {
+  transition: transform 0.3s ease;
+}
+
+.scale-hover {
+  overflow: hidden;
+}
+
+.scale-hover:hover .scale-element {
+  transform: scale(1.15);
+}
