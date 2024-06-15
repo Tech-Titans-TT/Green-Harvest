@@ -64,22 +64,3 @@ a {
     padding: 100px 100px;
   }
 }
-
-/* CARD SCALES */
-
-.scale-card {
-  transition: transform 0.3s ease;
-}
-
-.scale-card:hover,
-.scale-card:focus {
-  transform: scale(1.05);
-}
-
-.scale-card-second:hover .scale-img {
-  transform: scale(1.1);
-}
-
-.scale-img {
-  transition: transform 0.3s ease;
-}
