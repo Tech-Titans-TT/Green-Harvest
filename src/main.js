@@ -68,6 +68,7 @@ headerLinks.forEach((link) => {
 });
 //anchor olayi duzgun calismasi
 document.addEventListener("DOMContentLoaded", function () {
+  console.log("Calisti");
   window.scrollTo(0, 0);
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
