@@ -50,7 +50,7 @@ a {
   padding: 80px 20px;
   margin: 0 auto;
 }
-.hidden-title{
+.hidden-title {
   visibility: hidden;
   height: 0;
   width: 0;
@@ -77,4 +77,23 @@ a {
 .scale-card:hover,
 .scale-card:focus {
   transform: scale(1.05);
+}
+
+.back-to-top-container {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+.back-to-top-inner-container {
+  position: relative;
+}
+
+.chevron-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
