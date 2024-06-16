@@ -83,17 +83,27 @@ a {
 }
 
 .back-to-top-container {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 80px;
   position: fixed;
   right: 30px;
   bottom: 30px;
+  background: rgba(0,0,0, 0.5);
+  opacity: 0;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  mix-blend-mode: color-dodge;
 }
 
 .back-to-top-inner-container {
   position: relative;
   opacity: 0.5;
   transition: opacity 0.3s ease;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bi-chevron-up {
@@ -101,13 +111,15 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
-  fill: #5d9933;
-}
+  fill: var(--fourth-color);
 
-.back-to-top-inner-container:hover {
+}
+.back-to-top-container:hover {
   opacity: 1;
 }
-
+.opacity-half{
+  opacity: 0.5;
+}
 body::-webkit-scrollbar {
   width: 7px;
 }
