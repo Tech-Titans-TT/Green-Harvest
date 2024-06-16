@@ -21,52 +21,31 @@
           CONTACT YOU !
         </h2>
 
-        <form class="your-order-form">
+        <form class="your-order-form" id="myForm">
           <label for="name">
-            <input
-              id="name"
-              autocomplete="name"
-              class="your-order-input"
-              type="text"
-              placeholder="Full Name"
-              required
-            />
-            <div id="error-message" class=""></div>
+            <input id="name" autocomplete="name" class="your-order-input" type="text" placeholder="Full Name"
+              required />
+            <p id="error-message-name" class="hidden"></p>
           </label>
           <label for="email">
-            <input
-              id="email"
-              autocomplete="email"
-              class="your-order-input"
-              type="email"
-              placeholder="Email"
-              required
-            />
+            <input id="email" autocomplete="email" class="your-order-input" type="email" placeholder="Email" required />
+            <p id="error-message-email" class="hidden"></p>
+
           </label>
           <label for="comment">
-            <textarea
-              id="comment"
-              class="your-order-input your-order-textarea inter-tight"
-              placeholder="Comment"
-              required
-            ></textarea>
+            <textarea id="comment" class="your-order-input your-order-textarea inter-tight" placeholder="Comment"
+              required></textarea>
+            <p id="error-message-comment" class="hidden"></p>
+
           </label>
-          <button
-            class="header-menu-button"
-            type="button"
-            onclick="validateForm()"
-          >
+          <button id="submitButton" class="header-menu-button" type="button" onclick="validateForm(event)">
             SEND
           </button>
         </form>
       </div>
 
       <div class="your-order-right-card">
-        <img
-          class="your-order-image"
-          src="../../img/image-4.png"
-          alt="your-order-image"
-        />
+        <img class="your-order-image" src="../../img/image-4.png" alt="your-order-image" />
 
         <div class="your-order-right-card-text">
           <p class="you-order-card-text-p">Follow us on our social networks:</p>

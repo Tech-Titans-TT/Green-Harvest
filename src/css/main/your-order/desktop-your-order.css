@@ -111,6 +111,7 @@
 
     #comment {
         border-radius: 15px;
+        color: var(--primary-color);
     }
 
     .your-order-right-card {

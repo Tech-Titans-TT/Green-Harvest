@@ -199,33 +199,32 @@ input:focus {
     border-color: rgba(122, 49, 69, 1);
 }
 
-/* Başarılı (success) durumu */
-input.success {
-    border-color: rgba(60, 188, 129, 1);
-    ;
-}
-
-/* Hata (fail) durumu */
-input.error {
-    border-color: rgba(231, 74, 59, 1);
-}
 
 .hidden {
     display: none;
-    text-align: center;
 }
 
-#error-message {
-    display: block;
+#error-message-name,
+#error-message-email,
+#error-message-comment {
     color: red;
-    margin-top: 10px;
-    /* opacity: 0; */
     font-size: 1.6rem;
-    transition: opacity 0.5s ease-in-out;
+
 
 }
 
-#error-message.show {
-    display: flex;
+.show {
+
+    display: block;
     opacity: 1;
+}
+
+input.error,
+textarea.error {
+    border-color: rgba(231, 74, 59, 1);
+}
+
+input.success,
+textarea.success {
+    border-color: rgba(60, 188, 129, 1);
 }
