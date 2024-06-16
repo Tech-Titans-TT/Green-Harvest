@@ -6,8 +6,14 @@ const headerLinks = document.querySelectorAll(".header-menu-list-item-link");
 const headerShopButton = document.querySelector(".header-menu-button");
 const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
-const errorMessage = document.getElementById('error-message');
-const input = document.getElementById('name');
+const errorMessageName = document.getElementById('error-message-name');
+const errorMessageEmail = document.getElementById('error-message-email');
+const errorMessageComment = document.getElementById('error-message-comment');
+const inputname = document.getElementById('name');
+const inputemail = document.getElementById('email');
+const inputcomment = document.getElementById('comment');
+const submitButton = document.getElementById('submitButton');
+
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
@@ -89,28 +95,75 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const setText = (name, message) => {
-  if (name = "name"){
-    errorMessage.textContent = message;
+
+const setText = (field, message) => {
+  if (field === "name") {
+    errorMessageName.textContent = message;
+    errorMessageName.classList.add('show');
+  } else if (field === "email") {
+    errorMessageEmail.textContent = message;
+    errorMessageEmail.classList.add('show');
+  } else if (field === "comment") {
+    errorMessageComment.textContent = message;
+    errorMessageComment.classList.add('show');
   }
 }
 
-const setDefaultText = _=>{
-  errorMessage.textContent = '';
+const setDefaultText = () => {
+  errorMessageName.textContent = '';
+  errorMessageEmail.textContent = '';
+  errorMessageComment.textContent = '';
+  errorMessageName.classList.remove('show');
+  errorMessageEmail.classList.remove('show');
+  errorMessageComment.classList.remove('show');
 }
 
-function validateForm() {
-  setDefaultText()
-;  // Temel bir validasyon örneği (örneğin, en az 5 karakter)
-  if (input.checkValidity()) {
-    
-    // errorMessage.classList.remove('show');
-    input.classList.remove('error');
-    input.classList.add('success');
+function validateForm(event) {
+
+  event.preventDefault();
+  setDefaultText();
+
+  let isValid = true;
+
+  if (inputname.value.trim() === '') {
+    setText("name", "* Lütfen Full Name alanını boş bırakmayın");
+    inputname.classList.remove('success');
+    inputname.classList.add('error');
+    isValid = false;
   } else {
-    // errorMessage.classList.add('show');
-    setText("name","Deneme");
-    input.classList.remove('success');
-    input.classList.add('error');
+    inputname.classList.remove('error');
+    inputname.classList.add('success');
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(inputemail.value.trim())) {
+    setText("email", "* Lütfen geçerli bir Email adresi giriniz");
+    inputemail.classList.remove('success');
+    inputemail.classList.add('error');
+    isValid = false;
+  } else {
+    inputemail.classList.remove('error');
+    inputemail.classList.add('success');
+  }
+
+  if (inputcomment.value.trim() === '') {
+    setText("comment", "* Lütfen Açıklama alanını boş bırakmayın");
+    inputcomment.classList.remove('success');
+    inputcomment.classList.add('error');
+    isValid = false;
+  } else {
+    inputcomment.classList.remove('error');
+    inputcomment.classList.add('success');
+  }
+
+  if (isValid) {
+    console.log('Form submitted successfully!');
+    // Burada formu AJAX ile sunucuya gönderebilirsiniz
   }
 }
+document.getElementById('myForm').addEventListener('keydown', function (event1) {
+  if (event1.key === 'Enter') {
+    event.preventDefault();
+    submitButton.click();
+  }
+});
