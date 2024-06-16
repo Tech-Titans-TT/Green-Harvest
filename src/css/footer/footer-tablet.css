@@ -34,6 +34,11 @@
         gap: 100px;
     }
 
+    .footer-logo {
+        max-width: 168px;
+        max-height: 16px;
+    }
+
     .footer-logo-div-whether {
         font-size: 1.6rem;
     }

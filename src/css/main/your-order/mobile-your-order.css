@@ -150,6 +150,7 @@
 }
 
 .your-order-right-card-text {
+
     display: flex;
     flex-direction: column;
     gap: 20px;
