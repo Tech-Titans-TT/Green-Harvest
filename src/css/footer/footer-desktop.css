@@ -21,6 +21,11 @@
         width: calc(100% / 2);
     }
 
+    .footer-logo {
+        max-width: 194px;
+        max-height: 18px;
+    }
+
     .footer-logo-div-whether {
         font-size: 1.6rem;
     }

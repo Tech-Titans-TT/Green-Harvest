@@ -1,10 +1,11 @@
 <!-- Your Order Heza -->
+
 <section class="your-order inter-tight">
   <div class="container">
     <div class="your-order-title-text">
-      <h1>
+      <h2>
         FRESH <span class="span-harvest">HARVEST</span> BOX HAS GOT YOU COVERED
-      </h1>
+      </h2>
       <p>
         Our boxes are packed with delicious, nutritious vegetables, perfect for
         anyone looking to eat healthier or support local farmers. Order your box
@@ -20,34 +21,82 @@
           CONTACT YOU !
         </h2>
 
-        <form class="your-order-form">
+        <form class="your-order-form" id="myForm">
           <label for="name">
-            <input id="name" autocomplete="name" class="your-order-input" type="text" placeholder="Full Name" />
+            <input
+              id="name"
+              autocomplete="name"
+              class="your-order-input"
+              type="text"
+              placeholder="Full Name"
+              pattern="[A-Za-z]"
+              required
+            />
+            <p id="error-message-name" class="hidden"></p>
           </label>
           <label for="email">
-            <input id="email" autocomplete="email" class="your-order-input" type="email" placeholder="Email" />
+            <input
+              id="email"
+              autocomplete="email"
+              class="your-order-input"
+              type="email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p id="error-message-email" class="hidden"></p>
           </label>
           <label for="comment">
-            <textarea id="comment" class="your-order-input your-order-textarea inter-tight"
-              placeholder="Comment"></textarea>
+            <textarea
+              id="comment"
+              class="your-order-input your-order-textarea inter-tight"
+              placeholder="Comment"
+              required
+            ></textarea>
+            <p id="error-message-comment" class="hidden"></p>
           </label>
-          <button class="header-menu-button" type="submit">SEND</button>
+          <button
+            id="submitButton"
+            class="header-menu-button"
+            type="button"
+            onclick="validateForm(event)"
+          >
+            SEND
+          </button>
         </form>
       </div>
 
       <div class="your-order-right-card">
-        <figure class="image-container">
-          <img class="your-order-image" src="../../img/image-4.png" alt="your-order-image" />
-        </figure>
+        <div class="your-order-image"></div>
+
+        <!-- <img
+          class="your-order-image"
+          src="../../img/image-4.png"
+          alt="your-order-image"
+        /> -->
 
         <div class="your-order-right-card-text">
-          <p>Follow us on our social networks:</p>
+          <p class="you-order-card-text-p">Follow us on our social networks:</p>
           <div class="your-order-social-networks">
-            <a href="#">instagram</a> / <a href="#">facebook</a> /
-            <a href="#">youtube</a>
+            <a target="_blank" href="https://www.instagram.com/goit.turkiye/"
+              >instagram</a
+            >
+            /
+            <a
+              target="_blank"
+              href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+              >facebook</a
+            >
+            /
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@GoITTurkey?app=desktop"
+              >youtube</a
+            >
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="../../../main.js"></script>
 </section>

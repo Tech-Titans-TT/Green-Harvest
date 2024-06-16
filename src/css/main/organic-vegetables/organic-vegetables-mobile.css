@@ -1,121 +1,124 @@
-
-
 .organic-vegetables {
-
-    width: 100%;
-    background-color: var(--thirth-color);
-   
+  width: 100%;
+  background-color: var(--thirth-color);
 }
 
 .organic-vegetables-div {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-
 .organic-vegetables-section-header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .organic-vegetables-main-header {
-    display: flex;
-    flex-direction: column;
-   
+  display: flex;
+  flex-direction: column;
 }
 
 #organic-setting {
-    font-size: 4.8rem;
-    color: var(--fourth-color);
-    line-height: 50px;
-    font-weight: 600;
-    letter-spacing: -0.015em;
+  font-size: 4.8rem;
+  color: var(--fourth-color);
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 #vegetables-setting {
-    font-size: 4.8rem;
-    color: rgba(var(--fourth-color-rgb), 0.3);
-    line-height: 50px;
-    font-weight: 600;
-    letter-spacing: -0.015em;
+  font-size: 4.8rem;
+  color: rgba(var(--fourth-color-rgb), 0.3);
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 .organic-vegetables-main-paragraph {
-    width: 335px;
-    height: 72px;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 18px;
-    color: var(--fourth-color);
-    
+  width: 335px;
+  height: 72px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 18px;
+  color: var(--fourth-color);
 }
 
 .organic-vegetables-img-container {
-    
-    width: 100%;
+  width: 100%;
 }
 
 .organic-vegetables-img-ul-div-box {
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .organic-vegetables-img-li-elements {
-
-    border-radius: 40px;
-    padding: 32px 26px;
-    gap: 10px;
-    list-style-type: none;
-    background-color: var(--fourth-color);
-
+  border-radius: 40px;
+  padding: 32px 26px;
+  gap: 10px;
+  list-style-type: none;
+  background-color: var(--fourth-color);
 }
 
 .organic-vegetables-card-total {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 14px;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
 }
 
 .organic-vegetables-card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .organic-vegetables-card-content-name {
-   
-    font-weight: 600;
-    font-size: 2.8rem;
-    line-height: 28px;
-    letter-spacing: -0.015em;
-    color: var(--thirth-color);
-
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  color: var(--thirth-color);
 }
 
 .organic-vegetables-card-content-price {
-
-    width: 76px;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 18px;
-    letter-spacing: -0.015em;
-    color: var(--primary-color);
-
+  width: 76px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  color: var(--primary-color);
 }
 
 .organic-vegetables-img-png {
-    width: 100%;
-   
+  width: 100%;
+}
+
+.vegetables-eggplant {
+  content: url(../../../img/eggplant.png);
+}
+
+.vegetables-leek {
+  content: url(../../../img/leek.png);
+}
+
+.vegetables-mashroom {
+  content: url(../../../img/mushroom.png);
+}
+
+.vegetables-corn {
+  content: url(../../../img/corn.png);
+}
+
+.vegetables-potatoes {
+  content: url(../../../img/sweet-potatoes.png);
+}
+
+.vegetables-carrot {
+  content: url(../../../img/carrot.png);
 }
