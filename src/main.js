@@ -162,7 +162,7 @@ function validateForm(event) {
   let isValid = true;
 
   if (inputname.value.trim() === '') {
-    setText("name", "* Lütfen Full Name alanını boş bırakmayın");
+    setText("name", "* Please do not leave the Name Surname field blank.");
     inputname.classList.remove('success');
     inputname.classList.add('error');
     isValid = false;
@@ -173,7 +173,7 @@ function validateForm(event) {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(inputemail.value.trim())) {
-    setText("email", "* Lütfen geçerli bir Email adresi giriniz");
+    setText("email", "* Please enter a valid Email address");
     inputemail.classList.remove('success');
     inputemail.classList.add('error');
     isValid = false;
@@ -183,7 +183,7 @@ function validateForm(event) {
   }
 
   if (inputcomment.value.trim() === '') {
-    setText("comment", "* Lütfen Açıklama alanını boş bırakmayın");
+    setText("comment", "* Please do not leave the Description field blank");
     inputcomment.classList.remove('success');
     inputcomment.classList.add('error');
     isValid = false;
