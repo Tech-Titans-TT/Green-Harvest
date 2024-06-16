@@ -147,6 +147,7 @@
 
 .your-order-image {
   width: 100%;
+  content: url(../../../img/image-4.png);
 }
 
 .your-order-right-card-text {
