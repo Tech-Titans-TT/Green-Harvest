@@ -6,17 +6,24 @@ const headerLinks = document.querySelectorAll(".header-menu-list-item-link");
 const headerShopButton = document.querySelector(".header-menu-button");
 const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
-const bodyDOM = document.querySelector('body')
-const circleDOM = document.querySelector(".circleSVG circle");
+const circleDOM = document.querySelector('.circleSVG circle');
+
+let viewHeight;
+
+window.onload = function() {
+  viewHeight = document.documentElement.offsetHeight;
+};
+
 
 
 //circle calculate function
-const calculateBodyView = _ => {
- const viewHeight = bodyDOM.offsetHeight;
- console.log("sayfa boyutu",viewHeight);
+const calculateCircle = (viewHeight, scrollHeight) => {
+  let dashArray = Math.floor((scrollHeight * 315)/viewHeight);
+  circleDOM.style.strokeDashoffset = `${315 - ( dashArray + (dashArray*0.152))}`;
 }
-
-
+document.addEventListener('scroll',_=>{
+  calculateCircle(document.documentElement.offsetHeight, document.documentElement.scrollTop);
+})
 
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
@@ -103,15 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  calculateCircle();
-    // console.log();
-    // circleDOM.style.strokeDashoffset = 160;
+
 
 });
 
-window.onload = function() {
-  calculateBodyView();
-};
+
 
 
 
