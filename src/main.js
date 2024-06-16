@@ -16,8 +16,6 @@ window.onload = function() {
   viewHeight = document.documentElement.offsetHeight;
 };
 
-
-
 //circle calculate function
 const calculateCircle = (viewHeight, scrollHeight) => {
   let dashArray = Math.floor((scrollHeight * 315)/viewHeight);
