@@ -12,6 +12,8 @@ const errorMessageComment = document.getElementById('error-message-comment');
 const inputname = document.getElementById('name');
 const circleDOM = document.querySelector('.circleSVG circle');
 const backToTop = document.querySelector('.back-to-top-container');
+const scrollThumb = document.querySelector(".scroll-thumb");
+const scrollTrack = document.querySelector(".scroll-track");
 let viewHeight;
 let lastScrollTop = 0;
 
@@ -25,7 +27,6 @@ const calculateCircle = (viewHeight, scrollHeight) => {
     circleDOM.style.strokeDashoffset = `${315 - (dashArray + (dashArray * 0.152))}`;
   }
 }
-
 const inputemail = document.getElementById('email');
 const inputcomment = document.getElementById('comment');
 const submitButton = document.getElementById('submitButton');
@@ -34,6 +35,13 @@ const submitButton = document.getElementById('submitButton');
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight;
+  const viewportHeight = window.innerHeight;
+  const scrollYuzde = window.scrollY / (scrollHeight - viewportHeight);
+
+  //thumb pozisyonu icin
+
+  const thumbHeight = scrollThumb.offsetHeight
   //need to for circle calculate
   let offsetHeight = document.documentElement.offsetHeight;
   calculateCircle(offsetHeight, scrollTop);
