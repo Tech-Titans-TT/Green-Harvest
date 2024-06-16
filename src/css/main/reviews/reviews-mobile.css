@@ -75,6 +75,25 @@
     opacity: 40%;
   }
 
+  .reviews-profile-container {
+    width: 56px;
+    height: 56px;
+  }
+
+  .john-wax-container {
+    content: url("../../../img/john-wax.png");
+  }
+
+  .victoria-container {
+    content: url("../../../img/victoria.png");
+  }
+
+  .ihor-container {
+    content: url("../../../img/ihor.png");
+  }
+
+  /* ANIMATIONS */
+
   @keyframes autoscroll {
     from {
       left: 0;

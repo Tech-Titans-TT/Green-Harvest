@@ -25,7 +25,6 @@
     object-fit: cover;
     height: 100%;
     color: rgba(104, 49, 49, 0.3);
-    content: url("../../../img/Rectangle\ 42474.png");
   }
   .main-text-span {
     font-weight: 600;

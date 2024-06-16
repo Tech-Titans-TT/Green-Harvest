@@ -1,7 +1,7 @@
-@import url('./mobile-your-order.css');
-@import url('./tablet-your-order.css');
+@import url("./mobile-your-order.css");
+@import url("./tablet-your-order.css");
 
-@media screen and (min-width :1280px) {
+@media screen and (min-width: 1280px) {
 
     /* YOUR ORDER HEZA */
     .your-order {
@@ -53,11 +53,9 @@
     }
 
     .your-order-left-card {
-
         padding: 50px;
         flex-basis: calc(100% / 2);
         gap: 50px;
-
     }
 
     .your-order-left-card h2 {
@@ -77,7 +75,7 @@
     .your-order-form {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 15px;
 
         width: 100%;
     }
@@ -97,8 +95,6 @@
         color: var(--primary-color);
     }
 
-
-
     .your-order-input:focus {
         outline: none;
         border-color: var(--secondary-color);
@@ -111,19 +107,19 @@
 
     #comment {
         border-radius: 15px;
+        color: var(--primary-color);
     }
 
     .your-order-right-card {
-
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         border-radius: 30px;
         padding: 50px;
 
-        flex-basis: calc(100% /2);
+        flex-basis: calc(100% / 2);
     }
 
     .your-order-image {
@@ -135,10 +131,6 @@
         font-size: 1.8px;
 
         line-height: 20px;
-
-
-
-
     }
 
     .your-order-right-card-text {

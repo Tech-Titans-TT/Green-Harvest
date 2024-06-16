@@ -120,3 +120,19 @@ a {
 .opacity-half{
   opacity: 0.5;
 }
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(93, 153, 51);
+  transition: all 0.4s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(93, 153, 51, 0.6);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
