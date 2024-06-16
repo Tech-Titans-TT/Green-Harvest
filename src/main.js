@@ -8,6 +8,25 @@ const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
 const errorMessage = document.getElementById('error-message');
 const input = document.getElementById('name');
+const circleDOM = document.querySelector('.circleSVG circle');
+
+let viewHeight;
+
+window.onload = function() {
+  viewHeight = document.documentElement.offsetHeight;
+};
+
+
+
+//circle calculate function
+const calculateCircle = (viewHeight, scrollHeight) => {
+  let dashArray = Math.floor((scrollHeight * 315)/viewHeight);
+  circleDOM.style.strokeDashoffset = `${315 - ( dashArray + (dashArray*0.152))}`;
+}
+document.addEventListener('scroll',_=>{
+  calculateCircle(document.documentElement.offsetHeight, document.documentElement.scrollTop);
+})
+
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
@@ -53,6 +72,12 @@ window.addEventListener("scroll", () => {
     });
     headerShopButton.classList.remove("bg-green");
   }
+
+    //Circle
+
+
+
+
 });
 //responsive menu acilip kapanma olayi
 responsiveMenu.classList.remove("active-responsive-menu");
@@ -87,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+
 });
 
 const setText = (name, message) => {
@@ -114,3 +141,8 @@ function validateForm() {
     input.classList.add('error');
   }
 }
+
+
+
+
+
