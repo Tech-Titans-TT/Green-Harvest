@@ -55,6 +55,7 @@
   }
 
   .your-order-button {
+    margin-top: 10px;
     font-size: 1.8rem;
     line-height: 20px;
   }
