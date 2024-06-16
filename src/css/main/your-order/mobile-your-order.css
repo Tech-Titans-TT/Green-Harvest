@@ -1,230 +1,215 @@
 .your-order {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    background-color: var(--thirth-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  background-color: var(--thirth-color);
 }
 
 .your-order .container {
-    display: flex;
-    flex-direction: column;
-    padding: 80px 20px;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 40px;
 }
 
 .your-order-title-text {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    gap: 29px;
-    color: var(--fourth-color);
-
+  gap: 29px;
+  color: var(--fourth-color);
 }
 
 .your-order-title-text h1 {
-    font-size: 4.8rem;
-    font-weight: 600;
-    line-height: 50px;
-    letter-spacing: -1.5%;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -1.5%;
 }
 
 .your-order .span-harvest {
-    color: var(--fourth-color);
-    opacity: 0.3;
+  color: var(--fourth-color);
+  opacity: 0.3;
 }
 
 .your-order-title-text p {
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 18px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 18px;
 }
 
 .your-order-card {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
 
 .your-order-left-card {
-    background-color: var(--fourth-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    gap: 40px;
-    padding: 40px 20px;
+  background-color: var(--fourth-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  gap: 40px;
+  padding: 40px 20px;
 }
 
 .your-order-textarea {
-    height: 95px;
-    resize: none;
-    outline: none;
+  height: 95px;
+  resize: none;
+  outline: none;
 }
 
 .your-order-left-card h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: -0.015em;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.015em;
 }
 
 .your-order .span-from-us {
-    color: var(--thirth-color);
+  color: var(--thirth-color);
 }
 
 .your-order .span-the-form {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .your-order-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
 }
 
 .your-order-input {
-    width: 100%;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: -0.02em;
-    color: var(--secondary-color);
-    padding: 14px 16px;
-    border: 1px solid rgba(var(--primary-color-rgb), 0.2);
-    border-radius: 30px;
-    gap: 10px;
-
-
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: var(--secondary-color);
+  padding: 14px 16px;
+  border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+  border-radius: 30px;
+  gap: 10px;
 }
 
-
-
-
 #comment {
-    border-radius: 15px;
-    padding: 14px;
-
-
+  border-radius: 15px;
+  padding: 14px;
 }
 
 .your-order-button {
-    background-color: var(--secondary-color);
-    width: 100%;
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -1.5%;
-    color: var(--fourth-color);
-    padding: 16px;
-    border: none;
-    border-radius: 30px;
+  background-color: var(--secondary-color);
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -1.5%;
+  color: var(--fourth-color);
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
 }
 
 .your-order-form .header-menu-button {
-    background-color: var(--secondary-color);
-    color: var(--fourth-color);
+  background-color: var(--secondary-color);
+  color: var(--fourth-color);
 }
 
 .your-order-form .header-menu-button:hover {
-    scale: 0.98;
+  scale: 0.98;
 }
 
 .you-order-card-text-p {
+  font-size: 1.4rem;
 
-    font-size: 1.4rem;
-
-    line-height: 18px;
-    letter-spacing: -0.015em;
-
-
+  line-height: 18px;
+  letter-spacing: -0.015em;
 }
 
 .your-order-right-card {
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 30px;
-    padding: 40px 20px;
-    gap: 20px;
-    flex-basis: calc((100% - 24px)/2);
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 40px 20px;
+  gap: 20px;
+  flex-basis: calc((100% - 24px) / 2);
 }
 
 .your-order-image {
-    width: 100%;
+  width: 100%;
 }
 
 .your-order-right-card-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .your-order-right-card-text p {
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -1.5%;
-    color: rgba(var(--fourth-color-rgb), 0.5);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -1.5%;
+  color: rgba(var(--fourth-color-rgb), 0.5);
 }
 
 .your-order-social-networks {
-    font-size: 2.4rem;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: -1.5%;
-    color: var(--fourth-color);
-    gap: 8px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -1.5%;
+  color: var(--fourth-color);
+  gap: 8px;
 }
 
 .your-order-social-networks a {
-    color: var(--fourth-color);
-    transition: 0.2s ease-in-out color;
+  color: var(--fourth-color);
+  transition: 0.2s ease-in-out color;
 }
 
 .your-order-social-networks a:hover {
-    color: var(--thirth-color);
+  color: var(--thirth-color);
 }
 
 input:hover {
-    border-color: rgba(122, 49, 69, 1);
+  border-color: rgba(122, 49, 69, 1);
 }
 
 input:focus {
-    border-color: rgba(122, 49, 69, 1);
+  border-color: rgba(122, 49, 69, 1);
 }
 
-
 .hidden {
-    display: none;
+  display: none;
 }
 
 #error-message-name,
 #error-message-email,
 #error-message-comment {
-    color: red;
-    font-size: 1.6rem;
-
-
+  color: red;
+  font-size: 1.6rem;
 }
 
 .show {
-
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 input.error,
 textarea.error {
-    border-color: rgba(231, 74, 59, 1);
+  border-color: rgba(231, 74, 59, 1);
 }
 
 input.success,
 textarea.success {
-    border-color: rgba(60, 188, 129, 1);
+  border-color: rgba(60, 188, 129, 1);
 }
