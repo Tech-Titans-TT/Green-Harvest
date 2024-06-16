@@ -8,6 +8,7 @@ const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
 const errorMessage = document.getElementById('error-message');
 const input = document.getElementById('name');
+const circleSvgDOM = document.querySelector(".circleSVG");
 const circleDOM = document.querySelector('.circleSVG circle');
 
 let viewHeight;
@@ -19,16 +20,19 @@ window.onload = function() {
 //circle calculate function
 const calculateCircle = (viewHeight, scrollHeight) => {
   let dashArray = Math.floor((scrollHeight * 315)/viewHeight);
-  circleDOM.style.strokeDashoffset = `${315 - ( dashArray + (dashArray*0.152))}`;
+  if(circleDOM !== undefined && circleDOM !== null){
+    circleDOM.style.strokeDashoffset = `${315 - ( dashArray + (dashArray*0.152))}`;
+  }
 }
-document.addEventListener('scroll',_=>{
-  calculateCircle(document.documentElement.offsetHeight, document.documentElement.scrollTop);
-})
 
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 let lastScrollTop = 0;
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  //need to for circle calculate
+  let offsetHeight = document.documentElement.offsetHeight;
+  calculateCircle(offsetHeight, scrollTop);
+
   // scroll ile navbar gizlenmesi
   scrollTop > lastScrollTop
     ? navbar.classList.add("header-section-active")
