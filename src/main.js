@@ -76,10 +76,10 @@ window.addEventListener("scroll", () => {
 
     //Circle
     if(scrollTop < 100){
-      chevronUpDOM.classList.add('v-hidden');
+      chevronUpDOM?.classList.add('v-hidden');
     }
     else{
-      chevronUpDOM.classList.remove('v-hidden');
+      chevronUpDOM?.classList.remove('v-hidden');
     }
 
 
