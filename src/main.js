@@ -8,9 +8,8 @@ const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
 const errorMessage = document.getElementById('error-message');
 const input = document.getElementById('name');
-const circleSvgDOM = document.querySelector(".circleSVG");
 const circleDOM = document.querySelector('.circleSVG circle');
-
+const chevronUpDOM = document.querySelector('.chevron-up');
 let viewHeight;
 
 window.onload = function() {
@@ -76,7 +75,12 @@ window.addEventListener("scroll", () => {
   }
 
     //Circle
-
+    if(scrollTop < 100){
+      chevronUpDOM.classList.add('v-hidden');
+    }
+    else{
+      chevronUpDOM.classList.remove('v-hidden');
+    }
 
 
 

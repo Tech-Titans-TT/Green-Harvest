@@ -56,6 +56,9 @@ a {
   width: 0;
   overflow: hidden;
 }
+.v-hidden {
+  visibility: hidden;
+}
 /*QUERIES*/
 
 @media screen and (min-width: 768px) {
