@@ -56,11 +56,7 @@ a {
   width: 0;
   overflow: hidden;
 }
-.v-hidden {
-  visibility: hidden;
-}
 /*QUERIES*/
-
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
@@ -81,7 +77,6 @@ a {
 .scale-card:focus {
   transform: scale(1.05);
 }
-
 .back-to-top-container {
   width: 50px;
   height: 50px;
@@ -91,7 +86,6 @@ a {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-
 .back-to-top-inner-container {
   position: relative;
   opacity: 1;
@@ -102,34 +96,39 @@ a {
   align-items: center;
   justify-content: center;
 }
-
 .bi-chevron-up {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
   fill: #5d9933;
-
 }
 .back-to-top-container:hover {
   opacity: 1;
 }
 .opacity-half{
-  opacity: 0.5;
+  opacity: 0.8;
 }
 body::-webkit-scrollbar {
-  width: 7px;
+  display: none;
 }
-
-body::-webkit-scrollbar-thumb {
-  background: rgb(93, 153, 51);
-  transition: all 0.4s ease;
+.scroll-track{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 51;
 }
-
-body::-webkit-scrollbar-thumb:hover {
-  background: rgba(93, 153, 51, 0.6);
+.scroll-thumb{
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 65px;
+  background-color: black;
 }
-
-body::-webkit-scrollbar-track {
-  background: var(--primary-color);
+.scroll-thumb:hover,
+.scroll-thumb:focus {
+  background-color: #5d9933;
 }
