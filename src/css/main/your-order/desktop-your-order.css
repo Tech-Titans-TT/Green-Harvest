@@ -1,168 +1,159 @@
-@import url('./mobile-your-order.css');
-@import url('./tablet-your-order.css');
+@import url("./mobile-your-order.css");
+@import url("./tablet-your-order.css");
 
-@media screen and (min-width :1280px) {
+@media screen and (min-width: 1280px) {
+  /* YOUR ORDER HEZA */
+  .your-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    background-color: var(--thirth-color);
+  }
 
-    /* YOUR ORDER HEZA */
-    .your-order {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        width: 100%;
-        background-color: var(--thirth-color);
-    }
+  .your-order .container {
+    padding: 100px;
+  }
 
-    .your-order .container {
-        padding: 100px;
-    }
+  .your-order-title-text {
+    padding: 0;
+    gap: 25px;
+    color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    width: 69.53%;
+  }
 
-    .your-order-title-text {
-        padding: 0;
-        gap: 25px;
-        color: var(--fourth-color);
-        display: flex;
-        flex-direction: column;
-        width: 69.53%;
-    }
+  .your-order-title-text h1 {
+    padding: 0;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 64px;
+  }
 
-    .your-order-title-text h1 {
-        padding: 0;
-        font-size: 6.4rem;
-        font-weight: 600;
-        line-height: 64px;
-    }
+  .your-order .span-harvest {
+    color: var(--fourth-color);
+    opacity: 0.3;
+  }
 
-    .your-order .span-harvest {
-        color: var(--fourth-color);
-        opacity: 0.3;
-    }
+  .your-order-title-text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+  }
 
-    .your-order-title-text p {
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 20px;
-    }
+  .your-order-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    padding: 0;
+  }
 
-    .your-order-card {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-        width: 100%;
-        padding: 0;
-    }
+  .your-order-left-card {
+    padding: 50px;
+    flex-basis: calc(100% / 2);
+    gap: 50px;
+  }
 
-    .your-order-left-card {
+  .your-order-left-card h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 26px;
+  }
 
-        padding: 50px;
-        flex-basis: calc(100% / 2);
-        gap: 50px;
+  .your-order .span-from-us {
+    color: var(--thirth-color);
+  }
 
-    }
+  .your-order .span-the-form {
+    color: var(--secondary-color);
+  }
 
-    .your-order-left-card h2 {
-        font-size: 2.4rem;
-        font-weight: 600;
-        line-height: 26px;
-    }
+  .your-order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
-    .your-order .span-from-us {
-        color: var(--thirth-color);
-    }
+    width: 100%;
+  }
 
-    .your-order .span-the-form {
-        color: var(--secondary-color);
-    }
+  .your-order-form .header-menu-button:after {
+    background-color: var(--thirth-color);
+  }
 
-    .your-order-form {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+  .your-order-input {
+    border: 1px solid rgba(var(--primary-color-rgb), 0.2);
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+    width: 100%;
+    color: var(--primary-color);
+  }
 
-        width: 100%;
-    }
+  .your-order-input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+  }
 
-    .your-order-form .header-menu-button:after {
-        background-color: var(--thirth-color);
-    }
+  .your-order-input::placeholder {
+    color: var(--primary-color);
+    letter-spacing: -0.015em;
+  }
 
-    .your-order-input {
-        border: 1px solid rgba(var(--primary-color-rgb), 0.2);
-        border-radius: 30px;
-        padding: 16px;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 20px;
-        width: 100%;
-        color: var(--primary-color);
-    }
+  #comment {
+    border-radius: 15px;
+    color: var(--primary-color);
+  }
 
+  .your-order-right-card {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 50px;
 
+    flex-basis: calc(100% / 2);
+  }
 
-    .your-order-input:focus {
-        outline: none;
-        border-color: var(--secondary-color);
-    }
+  .your-order-image {
+    width: 100%;
+    flex: 1;
+  }
 
-    .your-order-input::placeholder {
-        color: var(--primary-color);
-        letter-spacing: -0.015em;
-    }
+  .your-order-card-text-p {
+    font-size: 1.8px;
 
-    #comment {
-        border-radius: 15px;
-    }
+    line-height: 20px;
+  }
 
-    .your-order-right-card {
+  .your-order-right-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-        background-color: var(--secondary-color);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 30px;
-        padding: 50px;
+  .your-order-right-card-text p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--fourth-color);
+    opacity: 0.5;
+  }
 
-        flex-basis: calc(100% /2);
-    }
+  .your-order-social-networks {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--fourth-color);
+  }
 
-    .your-order-image {
-        width: 100%;
-        flex: 1;
-    }
-
-    .your-order-card-text-p {
-        font-size: 1.8px;
-
-        line-height: 20px;
-
-
-
-
-    }
-
-    .your-order-right-card-text {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .your-order-right-card-text p {
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 20px;
-        color: var(--fourth-color);
-        opacity: 0.5;
-    }
-
-    .your-order-social-networks {
-        font-size: 3.2rem;
-        font-weight: 600;
-        line-height: 32px;
-        color: var(--fourth-color);
-    }
-
-    .your-order-social-networks a {
-        color: var(--fourth-color);
-    }
+  .your-order-social-networks a {
+    color: var(--fourth-color);
+  }
 }

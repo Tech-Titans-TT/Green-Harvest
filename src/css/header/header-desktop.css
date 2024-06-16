@@ -41,6 +41,10 @@
     background-color: var(--secondary-color);
     border-color: transparent;
   }
+  .bg-green:hover{
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+  }
   .border-scroll{
     border: 1px solid rgba(var(--fourth-color-rgb), 0.5);
   }
