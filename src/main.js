@@ -12,7 +12,6 @@ const errorMessageComment = document.getElementById("error-message-comment");
 const inputname = document.getElementById("name");
 const circleDOM = document.querySelector(".circleSVG circle");
 const backToTop = document.querySelector(".back-to-top-container");
-const scrollThumb = document.getElementById("scroll-thumb");
 const inputemail = document.getElementById("email");
 const inputcomment = document.getElementById("comment");
 const submitButton = document.getElementById("submitButton");
@@ -29,7 +28,7 @@ window.onload = function () {
 };
 //circle calculate function
 const calculateCircle = (viewHeight, scrollHeight) => {
-  if (circleDOM !== null) {
+  if (circleDOM !== null && circleDOM !== undefined) {
     let dashArray = Math.floor((scrollHeight * 315) / viewHeight);
     circleDOM.style.strokeDashoffset = `${
       315 - (dashArray + dashArray * 0.152)
@@ -105,7 +104,6 @@ headerLinks.forEach((link) => {
 //anchor olayi duzgun calismasi
 document.addEventListener("DOMContentLoaded", function () {
   const scrollThumb = document.getElementById("scroll-thumb");
-  window.scrollTo(0, 0);
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -255,6 +253,3 @@ document
       submitButton.click();
     }
   });
-
-
-
