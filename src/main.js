@@ -4,7 +4,6 @@ const closeMenu = document.querySelector(".responsive-close-button");
 const responsiveMenu = document.querySelector(".responsive-menu");
 const headerLinks = document.querySelectorAll(".header-menu-list-item-link");
 const headerShopButton = document.querySelector(".header-menu-button");
-const anchors = document.querySelectorAll('a[href^="#"]');
 const headerLogo = document.querySelector(".header-logo");
 const errorMessageName = document.getElementById("error-message-name");
 const errorMessageEmail = document.getElementById("error-message-email");
@@ -101,9 +100,14 @@ headerLinks.forEach((link) => {
     responsiveMenu.classList.remove("active-responsive-menu");
   });
 });
-//anchor olayi duzgun calismasi
+
 document.addEventListener("DOMContentLoaded", function () {
   const scrollThumb = document.getElementById("scroll-thumb");
+  const anchors = document.querySelectorAll('a[href^="#"]');
+  //history 0landi scroll basa geldi.
+  history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
+  //anchor olayi duzgun calismasi
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -129,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
           isDragging = false;
           document.removeEventListener("mousemove", onMouseMove);
           document.removeEventListener("mouseup", onMouseUp);
-          window.scrollTo(0,0);
           return;
       }
   
