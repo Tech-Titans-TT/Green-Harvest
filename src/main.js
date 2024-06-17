@@ -40,7 +40,6 @@ const calculateCircle = (viewHeight, scrollHeight) => {
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
-  console.log(scrollTop);
   //need to for circle calculate
   let offsetHeight = document.documentElement.offsetHeight;
   calculateCircle(offsetHeight, scrollTop);

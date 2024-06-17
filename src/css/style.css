@@ -66,6 +66,28 @@ a {
   .container {
     padding: 100px 100px;
   }
+  .scroll-track{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 51;
+  }
+  .scroll-thumb{
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 65px;
+    background-color: var(--primary-color) ;
+    position: absolute;
+    transition: background-color 0.3s ease;
+  }
+  .scroll-thumb:hover,
+  .scroll-thumb:focus {
+    background-color: #5d9933;
+  }
 }
 
 .scale-card {
@@ -110,26 +132,4 @@ a {
 }
 ::-webkit-scrollbar {
   display: none;
-}
-.scroll-track{
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15px;
-  height: 100vh;
-  background-color: transparent;
-  z-index: 51;
-}
-.scroll-thumb{
-  top: 0;
-  right: 0;
-  width: 15px;
-  height: 65px;
-  background-color: var(--primary-color) ;
-  position: absolute;
-  transition: background-color 0.3s ease;
-}
-.scroll-thumb:hover,
-.scroll-thumb:focus {
-  background-color: #5d9933;
 }

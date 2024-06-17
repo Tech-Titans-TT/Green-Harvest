@@ -17,12 +17,11 @@
     transform: translateX(0);
   }
 .responsive-close-button{
-    height: 30px;
-    width: 30px;
     position: absolute;
     top: 30px;
     right: 35px;
     cursor: pointer;
+    transition: 1s all ease-in-out;
 }
 .responsive-menu .header-nav{
     position: static;
