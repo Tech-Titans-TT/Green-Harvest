@@ -27,7 +27,6 @@ input {
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-family-standard);
@@ -109,7 +108,7 @@ a {
 .opacity-half{
   opacity: 0.8;
 }
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 .scroll-track{
@@ -126,7 +125,9 @@ body::-webkit-scrollbar {
   right: 0;
   width: 15px;
   height: 65px;
-  background-color: black;
+  background-color: var(--primary-color) ;
+  position: absolute;
+  transition: background-color 0.3s ease;
 }
 .scroll-thumb:hover,
 .scroll-thumb:focus {
