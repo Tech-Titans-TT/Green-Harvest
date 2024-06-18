@@ -28,6 +28,13 @@
     content: url("../../../img/img-standart/She-cutting-fruits-mobile.png");
   }
 
+  /* RETINA */
+  @media (min-resolution: 192dpi) {
+    .how-it-works-image {
+      content: url("../../../img/img-retina/she-cutting-fruits-mobile-2x.png");
+    }
+  }
+
   .main-text-span {
     font-weight: 600;
     font-size: 3.2rem;

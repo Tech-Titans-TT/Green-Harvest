@@ -31,6 +31,13 @@
     content: url("../../../img/image-2.png");
   }
 
+  /* RETINA */
+  @media (min-resolution: 192dpi) {
+    .how-it-works-image {
+      content: url("../../../img/img-retina/image-2-2x.png");
+    }
+  }
+
   .main-text-span {
     font-weight: 600;
     font-size: 3.2rem;
