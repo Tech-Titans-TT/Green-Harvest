@@ -42,8 +42,6 @@ window.addEventListener("scroll", () => {
   //need to for circle calculate
   let offsetHeight = document.documentElement.offsetHeight;
   calculateCircle(offsetHeight, scrollTop);
-  
-
   // scroll ile navbar gizlenmesi
   scrollTop > lastScrollTop
     ? navbar.classList.add("header-section-active")
@@ -58,7 +56,7 @@ window.addEventListener("scroll", () => {
     hamburgerMenu.classList.remove("header-drop-shadow");
     headerShopButton.classList.remove("box-shadow-effect");
     headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 5 && scrollTop <= 1834) {
+  } else if (scrollTop > 5 && scrollTop <= 1964) {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-green", "border-scroll");
       link.classList.add("bg-bordo", "box-shadow-effect");
@@ -67,19 +65,27 @@ window.addEventListener("scroll", () => {
     hamburgerMenu.classList.add("header-drop-shadow");
     headerShopButton.classList.add("box-shadow-effect");
     headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 3139 && scrollTop <= 3831) {
+  } else if (scrollTop > 1965 && scrollTop <= 3300) {
     headerLinks.forEach((link) => {
-      link.classList.add("bg-bordo");
-      link.classList.remove("bg-green");
+      link.classList.add("bg-green");
+      link.classList.remove("bg-bordo");
     });
+    headerShopButton.classList.add("bg-green");
+  } else if (scrollTop > 3301 && scrollTop <= 3980) {
+    headerLinks.forEach((link) => {
+      link.classList.remove("bg-green");
+      link.classList.add("bg-bordo");
+    });
+    headerShopButton.classList.add("bg-bordo");
     headerShopButton.classList.remove("bg-green");
-  } else {
+  } else{
     headerLinks.forEach((link) => {
       link.classList.remove("bg-bordo");
       link.classList.add("bg-green");
     });
     headerShopButton.classList.add("bg-green");
-  } 
+    headerShopButton.classList.remove("bg-bordo");
+  }
 
   //Circle
   if (scrollTop < 100) {
