@@ -29,8 +29,9 @@ window.onload = function () {
 const calculateCircle = (viewHeight, scrollHeight) => {
   if (circleDOM !== null && circleDOM !== undefined) {
     let dashArray = Math.floor((scrollHeight * 315) / viewHeight);
+    let stroleDashOfSet = 315 - (dashArray + dashArray * 0.152);
     circleDOM.style.strokeDashoffset = `${
-      (315 - (dashArray + dashArray * 0.152) >= 0 ? 315 - (dashArray + dashArray * 0.152) : 0)
+      (stroleDashOfSet >= 0 ? stroleDashOfSet : 0)
     }`;
   }
 };
