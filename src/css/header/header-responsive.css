@@ -17,12 +17,11 @@
     transform: translateX(0);
   }
 .responsive-close-button{
-    height: 30px;
-    width: 30px;
     position: absolute;
     top: 30px;
     right: 35px;
     cursor: pointer;
+    transition: 1s all ease-in-out;
 }
 .responsive-menu .header-nav{
     position: static;
@@ -166,5 +165,5 @@
   .header-drop-shadow{
     filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.8)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.6));
   }
-  
+ 
   

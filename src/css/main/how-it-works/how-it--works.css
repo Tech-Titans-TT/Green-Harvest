@@ -1,0 +1,133 @@
+.how-it-works-container {
+  display: flex;
+}
+
+.how-it-works-container .container {
+  padding: 0;
+}
+
+.how-it-works-container .left-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--thirth-color);
+  z-index: -1;
+}
+
+.how-it-works-container .right-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: -1;
+}
+
+.how-it-works-image-container {
+  background-color: var(--thirth-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px;
+}
+
+.how-it-works-text-container {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 100px;
+  flex: 1 1 50%;
+  row-gap: 25px;
+}
+
+.how-it-works-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 30px;
+  color: rgba(104, 49, 49, 0.3);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text-container {
+}
+
+.main-text-span {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 32px;
+  letter-spacing: -1.5%;
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.how-it-works-main-text {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -1.5%;
+  color: var(--fourth-color);
+}
+
+.support-text-container {
+}
+
+.how-it-works-support-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--fourth-color);
+}
+
+.ordered-list-text {
+  gap: 24px;
+}
+
+.list-text {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.6);
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+  padding: 12px 25px 12px 24px;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.ordered-list-span-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 20px;
+  letter-spacing: -2%;
+  color: rgba(20, 20, 20, 1);
+}
+
+.list-container {
+}
+
+.list-items-images {
+  width: 52px;
+  height: 52px;
+}
+
+.list-item-paragraph-text {
+  padding: 6px 0px;
+  line-height: 20px;
+  font-size: 16px;
+}

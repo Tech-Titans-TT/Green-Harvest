@@ -3,9 +3,9 @@
 <section class="your-order inter-tight">
   <div class="container">
     <div class="your-order-title-text">
-      <h1>
+      <h2>
         FRESH <span class="span-harvest">HARVEST</span> BOX HAS GOT YOU COVERED
-      </h1>
+      </h2>
       <p>
         Our boxes are packed with delicious, nutritious vegetables, perfect for
         anyone looking to eat healthier or support local farmers. Order your box
@@ -29,6 +29,7 @@
               class="your-order-input"
               type="text"
               placeholder="Full Name"
+              pattern="[A-Za-z]"
               required
             />
             <p id="error-message-name" class="hidden"></p>
@@ -40,6 +41,7 @@
               class="your-order-input"
               type="email"
               placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               required
             />
             <p id="error-message-email" class="hidden"></p>
@@ -65,11 +67,13 @@
       </div>
 
       <div class="your-order-right-card">
-        <img
-          class="your-order-image"
-          src="../../img/image-4.png"
-          alt="your-order-image"
-        />
+        <div class="your-order-image">
+          <img
+            class="your-order-image"
+            src="../../img/image-4.png"
+            alt="your-order-image"
+          />
+        </div>
 
         <div class="your-order-right-card-text">
           <p class="you-order-card-text-p">Follow us on our social networks:</p>
