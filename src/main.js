@@ -22,8 +22,6 @@ let startY;
 let startThumbTop;
 let startX;
 
-console.log(window.innerHeight)
-
 window.onload = function () {
   viewHeight = document.documentElement.offsetHeight;
 };
