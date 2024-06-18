@@ -74,7 +74,6 @@
 
     .how-it-works-container {
         display: flex;
-        position: relative;
     }
 
     .how-it-works-container .container {
@@ -112,5 +111,6 @@
 
         color: rgba(20, 20, 20, 1);
     }
+
 
 }
