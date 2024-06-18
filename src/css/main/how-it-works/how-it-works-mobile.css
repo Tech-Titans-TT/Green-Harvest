@@ -27,6 +27,13 @@
     content: url("../../../img/img-standart/She-cutting-fruits-mobile.png");
 }
 
+/* RETINA */
+@media (min-resolution: 192dpi) {
+    .how-it-works-image {
+        content: url("../../../img/img-retina/she-cutting-fruits-mobile-2x.png");
+    }
+}
+
 .main-text-span {
     font-weight: 600;
     font-size: 3.2rem;
@@ -56,7 +63,7 @@
     border-radius: 15px;
     padding: 12px 24px;
 
-    gap: 10px;
+    gap: 24px;
 }
 
 .list-item-paragraph-text {
@@ -113,9 +120,6 @@
 }
 
 .list-div {
-
-
-
     /* Yuvarlak köşeler */
     /* Yarı saydam gölge */
     /* Ortalamak için */
@@ -129,7 +133,7 @@
     justify-content: center;
     min-width: 52px;
     min-height: 52px;
-    background-color: #7A3145;
+    background-color: #7a3145;
     /* Arka plan rengi */
     border-radius: 50%;
     color: rgba(251, 251, 251, 1);

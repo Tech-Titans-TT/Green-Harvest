@@ -43,4 +43,11 @@
   .how-it-works-image {
     content: url("../../../img/img-standart/She-cutting-fruits-tablet.png");
   }
+
+  /* RETINA */
+  @media (min-resolution: 192dpi) {
+    .how-it-works-image {
+      content: url("../../../img/img-retina/she-cutting-fruits-tablet-2x.png");
+    }
+  }
 }
