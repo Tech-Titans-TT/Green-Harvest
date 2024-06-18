@@ -2,12 +2,16 @@
 <section class="header-section inter-tight">
   <nav class="header-nav">
     <a href="#hero">
-      <img src="../../svg/logo.svg" alt="logo" />
+      <svg width="168" height="16" class="header-logo">
+        <use  href="../../svg/sprite.svg#icon-logo-responsive" alt="logo"></use>
+      </svg>
     </a>
     <div class="header-menu">
       <ul class="header-menu-list">
         <li class="header-menu-list-item">
-          <a class="header-menu-list-item-link" href="#hero">how it works</a>
+          <a class="header-menu-list-item-link" href="#how-it-works"
+            >how it works</a
+          >
         </li>
         <li class="header-menu-list-item">
           <a class="header-menu-list-item-link" href="#vegetables"
@@ -20,31 +24,35 @@
       </ul>
       <button class="header-menu-button">shop now</button>
     </div>
-    <img
-      class="header-hamburger-bar"
-      src="../../svg/menu-bar.svg"
-      alt="hamburger"
-    />
+    <svg width="32" height="32" class="header-hamburger-bar">
+      <use
+        href="../../svg/sprite.svg#icon-menu-bar-responsive"
+        alt="hamburger"
+      ></use>
+    </svg>
   </nav>
+  <div class="responsive-menu">
+    <svg width="32" height="32" class="responsive-close-button">
+      <use
+        href="../../svg/sprite.svg#icon-close-menu-responsive"
+        alt="logo"
+      ></use>
+    </svg>
+    <nav class="header-nav">
+      <ul class="header-menu-list">
+        <li class="header-menu-list-item">
+          <a class="header-menu-list-item-link" href="">how it works</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a class="header-menu-list-item-link" href="#vegetables"
+            >vegetables</a
+          >
+        </li>
+        <li class="header-menu-list-item">
+          <a class="header-menu-list-item-link" href="#reviews">reviews</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header-menu-button">shop now</button>
+  </div>
 </section>
-<div class="responsive-menu">
-  <img
-    class="responsive-close-button"
-    src="../../svg/close-menu-1.svg"
-    alt="logo"
-  />
-  <nav class="header-nav">
-    <ul class="header-menu-list">
-      <li class="header-menu-list-item">
-        <a class="header-menu-list-item-link" href="">how it works</a>
-      </li>
-      <li class="header-menu-list-item">
-        <a class="header-menu-list-item-link" href="#vegetables">vegetables</a>
-      </li>
-      <li class="header-menu-list-item">
-        <a class="header-menu-list-item-link" href="#reviews">reviews</a>
-      </li>
-    </ul>
-  </nav>
-  <button class="header-menu-button">shop now</button>
-</div>
