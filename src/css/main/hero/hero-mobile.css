@@ -8,14 +8,11 @@
   padding: 0;
 }
 
-
-
 .hero-right {
-  background-image: url("../../../img/image-3.png");
+  background-image: url("../../../img/img-standart/image-3.png");
   min-height: 370px;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .hero-left {

@@ -1,55 +1,54 @@
-@import url('./how-it-works-mobile.css');
-@import url('./how-it-works-tablet.css');
+@import url("./how-it-works-mobile.css");
+@import url("./how-it-works-tablet.css");
 
-@media screen and (min-width :1280px) {
-    .how-it-works-container {
-        display: flex;
-        justify-content: center;
-    }
+@media screen and (min-width: 1280px) {
+  .how-it-works-container {
+    display: flex;
+    justify-content: center;
+  }
 
-    .how-it-works-container .container {
-        padding: 0;
-    }
+  .how-it-works-container .container {
+    padding: 0;
+  }
 
-    .how-it-works-image-container {
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 50%;
-    }
+  .how-it-works-image-container {
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+  }
 
-    .how-it-works-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        padding: 100px;
-        flex: 1 1 50%;
-    }
+  .how-it-works-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 100px;
+    flex: 1 1 50%;
+  }
 
-    .how-it-works-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        color: rgba(104, 49, 49, 0.3);
-        content: url('../../../img/She-cutting-fruits-desktop.png');  
-    }
+  .how-it-works-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: rgba(104, 49, 49, 0.3);
+    content: url("../../../img/img-standart/She-cutting-fruits-desktop.png");
+  }
 
-    .flex-container {
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-    }
+  .flex-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
 
-    .how-it-works-support-text {
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 20px;
-        color: var(--fourth-color);
-    }
+  .how-it-works-support-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--fourth-color);
+  }
 
-    .how-it-works-container .left-bg,
-    .how-it-works-container .right-bg {
-        width: 50%;
-    }
-   
+  .how-it-works-container .left-bg,
+  .how-it-works-container .right-bg {
+    width: 50%;
+  }
 }
