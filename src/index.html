@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="author"
-      content="Şubat, Bekir, Heza, Mustafa, Bahattin, Gülay, Pınar, Mehmet"
-    />
-    <meta
-      name="description"
-      content="This page is about Green Harvest, and Healtly shopping page."
-    />
-    <title>Green Harvest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Header CSS -->
-    <link rel="stylesheet" href="./css/header/header-desktop.css" />
-    <!-- Hero CSS -->
-    <link rel="stylesheet" href="./css/main/hero/hero-desktop.css" />
-    <!-- How It Works-->
-    <link
-      rel="stylesheet"
-      href="./css/main/how-it-works/how-it-works-desktop.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/main/advertisement/advertisement-desktop.css"
-    />
-    <!-- Organic Vegetables CSS -->
-    <link
-      rel="stylesheet"
-      href="./css/main/organic-vegetables/organic-vegetables-desktop.css"
-    />
-    <!-- Reviews CSS -->
-    <link rel="stylesheet" href="./css/main/reviews/reviews-desktop.css" />
 
-    <!-- Your Order CSS -->
-    <link
-      rel="stylesheet"
-      href="./css/main/your-order/desktop-your-order.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Şubat, Bekir, Heza, Mustafa, Bahattin, Gülay, Pınar, Mehmet" />
+  <meta name="description" content="This page is about Green Harvest, and Healtly shopping page." />
+  <title>Green Harvest</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Header CSS -->
+  <link rel="stylesheet" href="./css/header/header-desktop.css" />
+  <!-- Hero CSS -->
+  <link rel="stylesheet" href="./css/main/hero/hero-desktop.css" />
+  <!-- How It Works-->
+  <link rel="stylesheet" href="./css/main/how-it-works/how-it-works-desktop.css" />
+  <link rel="stylesheet" href="./css/main/advertisement/advertisement-desktop.css" />
+  <!-- Organic Vegetables CSS -->
+  <link rel="stylesheet" href="./css/main/organic-vegetables/organic-vegetables-desktop.css" />
+  <!-- Reviews CSS -->
+  <link rel="stylesheet" href="./css/main/reviews/reviews-desktop.css" />
 
-    <!-- Footer CSS -->
-    <link rel="stylesheet" href="./css/footer/footer-desktop.css" />
-  </head>
-  <body>
-    <header>
-      <load ="partials/header/header.html" />
-    </header>
-    <main>
-      <load ="partials/main/hero/hero.html" />
-      <load ="partials/main/how-it-works/how-it-works.html" />
-      <load ="partials/main/advertisement/advertisement.html" />
-      <load ="partials/main/vegetable/vegetable.html" />
-      <load ="partials/main/reviews/reviews.html" />
-      <load ="partials/main/your-order/your-order.html" />
-    </main>
-    <footer class="footer-main-container inter-tight">
-      <load ="partials/footer/footer.html" />
-    </footer>
-    <script type="module" src="/main.js"></script>
-  </body>
+  <!-- Your Order CSS -->
+  <link rel="stylesheet" href="./css/main/your-order/desktop-your-order.css" />
+
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="./css/footer/footer-desktop.css" />
+</head>
+
+<body>
+  <header>
+    <load="partials/header/header.html" />
+  </header>
+  <main>
+    <load="partials/main/hero/hero.html" />
+    <load="partials/main/how-it-works/how-it-works.html" />
+    <load="partials/main/advertisement/advertisement.html" />
+    <load="partials/main/vegetable/vegetable.html" />
+    <load="partials/main/reviews/reviews.html" />
+    <load="partials/main/your-order/your-order.html" />
+  </main>
+  <footer class="footer-main-container inter-tight">
+    <load="partials/footer/footer.html" />
+  </footer>
+  <div class="back-to-top-container">
+    <div class="back-to-top-inner-container">
+      <a href="#hero" class="chevron-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="red" class="bi bi-chevron-up"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+        </svg>
+      </a>
+
+      <svg class="circleSVG" width="50" height="50  " viewBox="0 0 100 100">
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#5d9933" />
+          <stop offset="100%" stop-color="#5d9933" />
+        </linearGradient>
+        <circle stroke-linecap="round" cx="50" cy="50" r="48" stroke="url(#linear)" stroke-width="3" fill="none"
+          stroke-dasharray="315" stroke-dashoffset="315" stroke-mitterlimit="0"
+          transform="rotate(-90 ) translate(-100 0)" />
+      </svg>
+    </div>
+  </div>
+  <div class="scroll-track">
+    <div id="scroll-thumb" class="scroll-thumb"></div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

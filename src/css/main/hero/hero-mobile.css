@@ -1,15 +1,23 @@
 .section-hero {
   background-color: var(--secondary-color);
 }
+
 .section-hero .container {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 
-.hero-right img {
-  width: 100%;
+
+
+.hero-right {
+  background-image: url("../../../img/image-3.png");
+  min-height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
+
 .hero-left {
   flex: 1 1 50%;
 
@@ -18,6 +26,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .hero-left-text-box {
   display: flex;
   flex-direction: column;
@@ -27,6 +36,7 @@
   gap: 20px;
   padding: 100px 20px 40px 20px;
 }
+
 .hero-left h1 {
   font-size: 4.8rem;
   font-weight: 600;
@@ -34,12 +44,14 @@
   letter-spacing: -0.015em;
   text-align: left;
 }
+
 .hero-left p {
   font-size: 1.4rem;
   line-height: 18px;
   font-weight: 500;
   text-align: left;
 }
+
 .hero-right img {
   max-width: 100%;
   height: 100%;

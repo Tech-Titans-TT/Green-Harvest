@@ -75,6 +75,8 @@
     opacity: 40%;
   }
 
+  /* ANIMATIONS */
+
   @keyframes autoscroll {
     from {
       left: 0;
