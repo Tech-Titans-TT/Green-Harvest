@@ -3,6 +3,10 @@
     padding: 100px 32px;
   }
 
+  .reviews-text-container {
+    margin-bottom: 50px;
+  }
+
   .reviews-heading {
     font-size: 6.4rem;
     line-height: 6.4rem;
