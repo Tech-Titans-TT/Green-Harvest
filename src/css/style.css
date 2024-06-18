@@ -27,6 +27,7 @@ input {
 
 html {
   font-size: 10px;
+  scrollbar-width: none;
 }
 body {
   font-family: var(--font-family-standard);
@@ -92,6 +93,7 @@ a {
   background-color: var(--primary-color);
   position: absolute;
   transition: background-color 0.3s ease;
+  will-change: transform;
 }
 .scroll-thumb:hover,
 .scroll-thumb:focus {
@@ -138,7 +140,6 @@ a {
   display: none;
 }
 
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
