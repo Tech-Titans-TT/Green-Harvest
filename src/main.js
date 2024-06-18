@@ -30,7 +30,7 @@ const calculateCircle = (viewHeight, scrollHeight) => {
   if (circleDOM !== null && circleDOM !== undefined) {
     let dashArray = Math.floor((scrollHeight * 315) / viewHeight);
     circleDOM.style.strokeDashoffset = `${
-      315 - (dashArray + dashArray * 0.152)
+      (315 - (dashArray + dashArray * 0.152) >= 0 ? 315 - (dashArray + dashArray * 0.152) : 0)
     }`;
   }
 };
