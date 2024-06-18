@@ -50,10 +50,6 @@
     color: var(--fourth-color);
   }
 
-  .how-it-works-container .left-bg,
-  .how-it-works-container .right-bg {
-  }
-
   .how-it-works-container .left-bg {
     position: absolute;
     left: 0;
