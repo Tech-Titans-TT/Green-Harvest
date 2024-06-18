@@ -1,5 +1,4 @@
-@media screen and (min-width: 375px) {
-  .reviews-text-container {
+.reviews-text-container {
     max-width: 553px;
     display: flex;
     flex-direction: column;
@@ -95,4 +94,4 @@
     left: 0;
     animation: autoscroll 14s linear 1s infinite alternate forwards;
   }
-}
+
