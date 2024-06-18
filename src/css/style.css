@@ -94,8 +94,8 @@ a {
 .scroll-thumb {
   top: 0;
   right: 0;
-  width: 15px;
-  height: 65px;
+  width: 0.6vw;
+  height: 10vh;
   background-color: var(--primary-color);
   position: absolute;
   transition: background-color 0.3s ease;
