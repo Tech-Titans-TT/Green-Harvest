@@ -1,41 +1,42 @@
 @media screen and (min-width: 320px) {
+  .how-it-works-image-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--thirth-color);
+    padding: 40px 20px;
+  }
 
+  .how-it-works-text-container {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+  }
 
-    .how-it-works-image-container {
-        width: 100%;
-        height: 100%;
-        background-color: var(--thirth-color);
-        padding: 40px 20px;
-    }
+  .main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .how-it-works-text-container {
-        background-color: var(--secondary-color);
-        display: flex;
-        flex-direction: column;
-        padding: 80px 20px;
-        gap: 40px;
-        width: 100%;
-        height: 100%;
-    }
+  .how-it-works-image {
+    width: 100%;
+    border-radius: 30px;
+    content: url("../../../img/She-cutting-fruits-mobile.png");
+  }
 
-    .main-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .how-it-works-image {
-        width: 100%;
-        border-radius: 30px;
-        content: url('../../../img/She-cutting-fruits-mobile.png');
-    }
-    .main-text-span {
-        font-weight: 600;
-        font-size: 2.8rem;
-        line-height: 28px;
-        letter-spacing: -0.015rem;
-        color: rgba(251, 251, 251, 0.3);
-    }
+  .main-text-span {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    color: rgba(251, 251, 251, 0.3);
+  }
 
     .how-it-works-main-text {
         font-size: 2.8rem;
@@ -67,15 +68,14 @@
         letter-spacing: -0.02em;
     }
 
-    .list-items-images {
-        width: 52px;
-        height: 52px;
-    }
+  .list-items-images {
+    width: 52px;
+    height: 52px;
+  }
 
-    .how-it-works-container {
-        display: flex;
-
-    }
+  .how-it-works-container {
+    display: flex;
+  }
 
     .how-it-works-container .container {
         padding: 0;

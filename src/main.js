@@ -29,8 +29,9 @@ window.onload = function () {
 const calculateCircle = (viewHeight, scrollHeight) => {
   if (circleDOM !== null && circleDOM !== undefined) {
     let dashArray = Math.floor((scrollHeight * 315) / viewHeight);
+    let stroleDashOfSet = 315 - (dashArray + dashArray * 0.152);
     circleDOM.style.strokeDashoffset = `${
-      315 - (dashArray + dashArray * 0.152)
+      (stroleDashOfSet >= 0 ? stroleDashOfSet : 0)
     }`;
   }
 };
@@ -41,6 +42,7 @@ window.addEventListener("scroll", () => {
   //need to for circle calculate
   let offsetHeight = document.documentElement.offsetHeight;
   calculateCircle(offsetHeight, scrollTop);
+  
 
   // scroll ile navbar gizlenmesi
   scrollTop > lastScrollTop
@@ -168,8 +170,19 @@ document.addEventListener("DOMContentLoaded", function () {
       document.addEventListener("mousemove", onMouseMove);
       document.addEventListener("mouseup", onMouseUp);
   });
+
+  let isScrolling;
     window.addEventListener("scroll", () => {
-      if (isDragging) return;
+      if (isScrolling) return;
+    
+    isScrolling = true;
+
+    requestAnimationFrame(() => {
+        if (isDragging) {
+            isScrolling = false;
+            return;
+        }
+      
     
       const scrollHeight = document.documentElement.scrollHeight;
       const viewportHeight = window.innerHeight;
@@ -178,9 +191,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const maxThumbTop = viewportHeight - thumbHeight;
       const thumbTop = scrollPercentage * maxThumbTop;
       scrollThumb.style.transform = `translateY(${thumbTop}px)`;
+      isScrolling = false;
+    }, { passive: true });
     });
-  } else {
-    console.error("Element with id 'scroll-thumb' not found");
   }
 });
 

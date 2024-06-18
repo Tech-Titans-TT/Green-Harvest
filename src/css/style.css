@@ -27,6 +27,7 @@ input {
 
 html {
   font-size: 10px;
+  scrollbar-width: none;
 }
 body {
   font-family: var(--font-family-standard);
@@ -66,7 +67,7 @@ a {
   .container {
     padding: 100px 100px;
   }
-  .scroll-track{
+  .scroll-track {
     display: flex !important;
   }
 }
@@ -74,7 +75,7 @@ a {
 .scale-card {
   transition: transform 0.3s ease;
 }
-.scroll-track{
+.scroll-track {
   position: fixed;
   top: 0;
   right: 0;
@@ -84,14 +85,15 @@ a {
   z-index: 51;
   display: none;
 }
-.scroll-thumb{
+.scroll-thumb {
   top: 0;
   right: 0;
   width: 15px;
   height: 65px;
-  background-color: var(--primary-color) ;
+  background-color: var(--primary-color);
   position: absolute;
   transition: background-color 0.3s ease;
+  will-change: transform;
 }
 .scroll-thumb:hover,
 .scroll-thumb:focus {
@@ -131,9 +133,13 @@ a {
 .back-to-top-container:hover {
   opacity: 1;
 }
-.opacity-half{
+.opacity-half {
   opacity: 0.8;
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
