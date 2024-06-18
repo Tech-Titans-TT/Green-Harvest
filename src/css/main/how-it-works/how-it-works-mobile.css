@@ -24,6 +24,8 @@
 .how-it-works-image {
   width: 100%;
   border-radius: 30px;
+  height: 450px;
+  object-fit: cover;
 }
 
 .main-text-span {

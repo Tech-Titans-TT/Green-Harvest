@@ -3,6 +3,11 @@
     padding: 100px 64px;
   }
 
+  .how-it-works-image {
+    object-fit: cover;
+    height: 640px;
+  }
+
   .how-it-works-text-container {
     padding: 100px 159px 100px 159px;
   }
