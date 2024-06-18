@@ -4,7 +4,7 @@
 @media screen and (min-width: 1280px) {
     .how-it-works-container {
         display: flex;
-        justify-content: center;
+        position: relative;
     }
 
     .how-it-works-container .container {
@@ -51,7 +51,25 @@
     }
 
     .how-it-works-container .left-bg,
+    .how-it-works-container .right-bg {}
+
+    .how-it-works-container .left-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        height: 100%;
+        background-color: var(--thirth-color);
+        z-index: -1;
+    }
+
     .how-it-works-container .right-bg {
-        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50vw;
+        height: 100%;
+        background-color: var(--secondary-color);
+        z-index: -1;
     }
 }
