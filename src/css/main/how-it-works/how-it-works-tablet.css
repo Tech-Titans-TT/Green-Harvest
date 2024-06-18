@@ -39,5 +39,7 @@
     .how-it-works-image {
         content: url('../../../img/She-cutting-fruits-tablet.png');
     }
-
+    .list-text {
+        padding: 12px 25px 12px 24px;
+    }
 }

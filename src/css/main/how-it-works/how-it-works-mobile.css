@@ -81,26 +81,12 @@
         padding: 0;
     }
 
-
-
-
-
-
-
     .flex-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-
-
-
-
-
-
-
 
     .how-it-works-support-text {
         font-size: 1.4rem;
@@ -125,10 +111,5 @@
         letter-spacing: -0.02em;
         color: rgba(20, 20, 20, 1);
     }
-
-
-
-
-
 
 }
