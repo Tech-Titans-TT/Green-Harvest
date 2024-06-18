@@ -16,6 +16,12 @@
   --fourth-color-rgb: 251, 251, 251;
   --font-family-standard: "Inter Tight", sans-serif;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 button {
   border: none;
   outline: none;
