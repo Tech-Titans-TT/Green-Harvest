@@ -1,34 +1,19 @@
 @media screen and (min-width:768px) {
 
-
-
     .how-it-works-image-container {
         padding: 100px 64px;
 
     }
-
     .how-it-works-text-container {
-
-        padding: 100px 159px 100px 159px;
-
-
-
+       padding: 100px 159px;
     }
-
-    .how-it-works-text-container-div {
-        gap: 50px;
-    }
-
     .how-it-works-text-container-div {
         gap: 25px;
     }
-
     .how-it-works-main-text {
 
         font-size: 3.2rem;
         line-height: 32px;
-
-
 
     }
 
@@ -37,7 +22,7 @@
         line-height: 32px;
     }
 
-    .support-text-container {
+    .how-it-works-support-text {
         font-size: 1.6rem;
         line-height: 20px;
     }
@@ -51,7 +36,6 @@
         font-size: 1.6rem;
         line-height: 20px;
     }
-
     .how-it-works-image {
         content: url('../../../img/She-cutting-fruits-tablet.png');
     }
