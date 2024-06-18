@@ -20,11 +20,14 @@
     padding-top: 238px;
     padding-bottom: 50px;
   }
+
   .hero-left-text-box {
     align-items: end;
     justify-content: space-between;
     gap: 128px;
+    padding: 0;
   }
+
   .hero-left h1 {
     font-size: 7.6rem;
     font-weight: 600;
@@ -32,13 +35,15 @@
     letter-spacing: -0.015em;
     text-align: left;
   }
+
   .hero-left p {
     font-size: 1.6rem;
     line-height: 20px;
     font-weight: 500;
     text-align: left;
-    margin-right: 28px;
+    margin-right: 30px;
   }
+
   .hero-right {
     flex: 1 1 50%;
     display: flex;
