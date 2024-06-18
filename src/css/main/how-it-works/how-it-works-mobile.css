@@ -1,155 +1,114 @@
 @media screen and (min-width: 320px) {
+  .how-it-works-image-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--thirth-color);
+    padding: 40px 20px;
+  }
 
+  .how-it-works-text-container {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 40px;
+  }
 
-    .how-it-works-image-container {
-        width: 100%;
-        height: 100%;
-        background-color: var(--thirth-color);
-        padding: 40px 20px;
-    }
+  .main-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .how-it-works-text-container {
-        background-color: var(--secondary-color);
-        display: flex;
-        flex-direction: column;
-        padding: 80px 20px;
-        gap: 40px;
-    }
+  .how-it-works-image {
+    width: 100%;
+    border-radius: 30px;
+    content: url("../../../img/She-cutting-fruits-mobile.png");
+  }
 
-    .main-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+  .main-text-span {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 32px;
+    letter-spacing: -1.5%;
+    color: rgba(251, 251, 251, 0.3);
+  }
 
+  .how-it-works-main-text {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.015rem;
+    color: var(--fourth-color);
+  }
 
-    }
+  .how-it-works-text-container-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .list-text {
+    display: flex;
+    align-items: center;
+    background-color: var(--fourth-color);
+    border-radius: 15px;
+    padding: 12px 24px;
 
+    gap: 10px;
+  }
 
+  .list-item-paragraph-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+  }
 
-    .how-it-works-image {
+  .list-items-images {
+    width: 52px;
+    height: 52px;
+  }
 
-        width: 100%;
-        border-radius: 30px;
-        content: url('../../../img/She-cutting-fruits-mobile.png');
-    }
+  .how-it-works-container {
+    display: flex;
+  }
 
-    .main-text-span {
-        font-weight: 600;
-        font-size: 3.2rem;
-        line-height: 32px;
-        letter-spacing: -1.5%;
-        color: rgba(251, 251, 251, 0.3);
-    }
+  .how-it-works-container .container {
+    padding: 0;
+  }
 
-    .how-it-works-main-text {
-        font-size: 3.2rem;
-        font-weight: 600;
-        line-height: 32px;
-        letter-spacing: -0.015rem;
-        color: var(--fourth-color);
-    }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .how-it-works-text-container-div {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+  .how-it-works-support-text {
+    color: var(--primary-color-rgb);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
 
+    color: var(--fourth-color);
+  }
 
+  .ordered-list-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 
-    .list-text {
-        display: flex;
-        align-items: center;
-        background-color: var(--fourth-color);
-        border-radius: 15px;
-        padding: 12px 27px 12px 24px;
+  .ordered-list-span-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: -0.02em;
 
-        gap: 10px;
-    }
-
-
-
-    .list-item-paragraph-text {
-
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 14px;
-        letter-spacing: -0.02em;
-
-
-    }
-
-    .list-items-images {
-        width: 52px;
-        height: 52px;
-    }
-
-    .how-it-works-container {
-        display: flex;
-
-    }
-
-    .how-it-works-container .container {
-        padding: 0;
-    }
-
-
-
-
-
-
-
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-
-
-
-
-
-
-    .how-it-works-support-text {
-        color: var(--primary-color-rgb);
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 18px;
-        text-align: left;
-
-        color: var(--fourth-color);
-    }
-
-
-    .ordered-list-text {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-    }
-
-
-
-    .ordered-list-span-text {
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 14px;
-        letter-spacing: -0.02em;
-
-
-        color: rgba(20, 20, 20, 1);
-    }
-
-
-
-
-
-
+    color: rgba(20, 20, 20, 1);
+  }
 }
