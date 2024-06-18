@@ -52,6 +52,8 @@
         line-height: 20px;
     }
 
-
+    .how-it-works-image {
+        content: url('../../../img/She-cutting-fruits-tablet.png');
+    }
 
 }
