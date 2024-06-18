@@ -22,14 +22,33 @@
 
         <form class="your-order-form">
           <label for="name">
-            <input id="name" autocomplete="name" class="your-order-input" type="text" placeholder="Full Name" />
+            <input
+              id="name"
+              autocomplete="name"
+              class="your-order-input"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
           </label>
           <label for="email">
-            <input id="email" autocomplete="email" class="your-order-input" type="email" placeholder="Email" />
+            <input
+              id="email"
+              autocomplete="email"
+              class="your-order-input"
+              type="email"
+              placeholder="Email"
+              pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+              required
+            />
           </label>
           <label for="comment">
-            <textarea id="comment" class="your-order-input your-order-textarea inter-tight"
-              placeholder="Comment"></textarea>
+            <textarea
+              id="comment"
+              class="your-order-input your-order-textarea inter-tight"
+              placeholder="Comment"
+              required
+            ></textarea>
           </label>
           <button class="header-menu-button" type="submit">SEND</button>
         </form>
@@ -37,7 +56,11 @@
 
       <div class="your-order-right-card">
         <figure class="image-container">
-          <img class="your-order-image" src="../../img/image-4.png" alt="your-order-image" />
+          <img
+            class="your-order-image"
+            src="../../img/image-4.png"
+            alt="your-order-image"
+          />
         </figure>
 
         <div class="your-order-right-card-text">
