@@ -12,5 +12,5 @@ export default defineConfig({
     outDir: "../dist",
   },
   plugins: [injectHTML(), FullReload(["./src/**/**.html"])],
-  base: "/green-harvest/",
+  base: "/Green-Harvest/",
 });
