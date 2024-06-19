@@ -4,11 +4,9 @@
   .reviews-container {
     padding: 100px;
   }
-
   .reviews-card-container {
     gap: 25px;
   }
-
   .reviews-card {
     flex: 1;
     animation: none;
