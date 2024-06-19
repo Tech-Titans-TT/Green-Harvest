@@ -98,27 +98,3 @@
 .organic-vegetables-img-png {
   width: 100%;
 }
-
-.vegetables-eggplant {
-  content: url(../../../img/eggplant.png);
-}
-
-.vegetables-leek {
-  content: url(../../../img/leek.png);
-}
-
-.vegetables-mashroom {
-  content: url(../../../img/mushroom.png);
-}
-
-.vegetables-corn {
-  content: url(../../../img/corn.png);
-}
-
-.vegetables-potatoes {
-  content: url(../../../img/sweet-potatoes.png);
-}
-
-.vegetables-carrot {
-  content: url(../../../img/carrot.png);
-}

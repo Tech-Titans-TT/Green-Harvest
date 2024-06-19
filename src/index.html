@@ -24,11 +24,12 @@
     <link rel="stylesheet" href="./css/header/header-desktop.css" />
     <!-- Hero CSS -->
     <link rel="stylesheet" href="./css/main/hero/hero-desktop.css" />
-    <!-- How It Works-->
+    <!-- How It Works -->
     <link
       rel="stylesheet"
       href="./css/main/how-it-works/how-it-works-desktop.css"
     />
+    <!-- Advertisement -->
     <link
       rel="stylesheet"
       href="./css/main/advertisement/advertisement-desktop.css"
@@ -50,6 +51,7 @@
     <!-- Footer CSS -->
     <link rel="stylesheet" href="./css/footer/footer-desktop.css" />
   </head>
+
   <body>
     <header>
       <load ="partials/header/header.html" />
@@ -65,12 +67,10 @@
     <footer class="footer-main-container inter-tight">
       <load ="partials/footer/footer.html" />
     </footer>
-
     <div class="back-to-top-container">
       <div class="back-to-top-inner-container">
         <a href="#hero" class="chevron-up">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="35"
             fill="red"
@@ -86,8 +86,8 @@
 
         <svg class="circleSVG" width="50" height="50  " viewBox="0 0 100 100">
           <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop  offset="0%" stop-color="var(--fourth-color)" />
-            <stop  offset="100%" stop-color="var(--fourth-color)" />
+            <stop offset="0%" stop-color="#5d9933" />
+            <stop offset="100%" stop-color="#5d9933" />
           </linearGradient>
           <circle
             stroke-linecap="round"
@@ -104,6 +104,9 @@
           />
         </svg>
       </div>
+    </div>
+    <div class="scroll-track">
+      <div id="scroll-thumb" class="scroll-thumb"></div>
     </div>
 
     <script type="module" src="/main.js"></script>
