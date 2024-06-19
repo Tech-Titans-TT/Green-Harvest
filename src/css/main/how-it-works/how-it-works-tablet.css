@@ -3,6 +3,11 @@
     padding: 100px 64px;
   }
 
+  .how-it-works-image {
+    object-fit: cover;
+    height: 640px;
+  }
+
   .how-it-works-text-container {
     padding: 100px 159px 100px 159px;
   }
@@ -38,16 +43,5 @@
   .ordered-list-span-text {
     font-size: 1.6rem;
     line-height: 20px;
-  }
-
-  .how-it-works-image {
-    content: url("../../../img/img-standart/She-cutting-fruits-tablet.png");
-  }
-
-  /* RETINA */
-  @media (min-resolution: 192dpi) {
-    .how-it-works-image {
-      content: url("../../../img/img-retina/she-cutting-fruits-tablet-2x.png");
-    }
   }
 }
