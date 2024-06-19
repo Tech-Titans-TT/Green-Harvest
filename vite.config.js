@@ -4,7 +4,8 @@ import injectHTML from "vite-plugin-html-inject";
 import FullReload from "vite-plugin-full-reload";
 
 export default defineConfig({
-  root: "src",
+  root: 'src',
+  base: './Green-Harvest/',
   build: {
     rollupOptions: {
       input: glob.sync("./src/*.html"),

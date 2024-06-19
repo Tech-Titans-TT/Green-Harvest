@@ -1,4 +1,3 @@
-@import url('./header-desktop.css');
 @import url('./header-responsive.css');
 @import url('./header-tablet.css');
 @media screen and (min-width: 1280px) {
@@ -27,7 +26,6 @@
   .header-menu-button::after{
     background-color: var(--fourth-color);
   }
-
   .bg-bordo{
     background-color: var(--thirth-color);
     border-color: transparent;
@@ -48,6 +46,4 @@
   .border-scroll{
     border: 1px solid rgba(var(--fourth-color-rgb), 0.5);
   }
-  
-  
 }

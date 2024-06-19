@@ -27,6 +27,7 @@ button {
   outline: none;
   cursor: pointer;
 }
+
 input {
   outline: none;
 }
@@ -35,9 +36,11 @@ html {
   font-size: 10px;
   scrollbar-width: none;
 }
+
 body {
   font-family: var(--font-family-standard);
 }
+
 ul {
   list-style: none;
 }
@@ -56,12 +59,14 @@ a {
   padding: 80px 20px;
   margin: 0 auto;
 }
+
 .hidden-title {
   visibility: hidden;
   height: 0;
   width: 0;
   overflow: hidden;
 }
+
 /*QUERIES*/
 @media screen and (min-width: 768px) {
   .container {
@@ -73,6 +78,7 @@ a {
   .container {
     padding: 100px 100px;
   }
+
   .scroll-track {
     display: flex !important;
   }
@@ -81,6 +87,7 @@ a {
 .scale-card {
   transition: transform 0.3s ease;
 }
+
 .scroll-track {
   position: fixed;
   top: 0;
@@ -91,6 +98,7 @@ a {
   z-index: 51;
   display: none;
 }
+
 .scroll-thumb {
   top: 0;
   right: 0;
@@ -101,6 +109,7 @@ a {
   transition: background-color 0.3s ease;
   will-change: transform;
 }
+
 .scroll-thumb:hover,
 .scroll-thumb:focus {
   background-color: #5d9933;
@@ -110,6 +119,7 @@ a {
 .scale-card:focus {
   transform: scale(1.05);
 }
+
 .back-to-top-container {
   width: 50px;
   height: 50px;
@@ -119,6 +129,7 @@ a {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
+
 .back-to-top-inner-container {
   position: relative;
   opacity: 1;
@@ -129,6 +140,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .bi-chevron-up {
   position: absolute;
   top: 50%;
@@ -136,16 +148,20 @@ a {
   transform: translate(-50%, -55%);
   fill: #5d9933;
 }
+
 .back-to-top-container:hover {
   opacity: 1;
 }
+
 .opacity-half {
   opacity: 0.8;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  display: none;
+  /* Safari and Chrome */
 }

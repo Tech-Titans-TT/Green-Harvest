@@ -1,52 +1,50 @@
-@import url('./footer-mobile.css');
-@import url('./footer-tablet.css');
-@media screen and (min-width :1280px) {
-    .footer-main-div {
-        display: flex;
-        gap: 302px;
-    }
+@import url("./footer-mobile.css");
+@import url("./footer-tablet.css");
+@media screen and (min-width: 1280px) {
+  .footer-main-div {
+    display: flex;
+    gap: 302px;
+  }
 
-    .footer-logo-div {
-        width: calc(100% / 2);
-        gap: 25px;
-    }
+  .footer-logo-div {
+    width: calc(100% / 2);
+    gap: 25px;
+  }
 
-    .footer-list-contact {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+  .footer-list-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 
+    gap: 121px;
+    width: calc(100% / 2);
+  }
 
-        gap: 121px;
-        width: calc(100% / 2);
-    }
+  .footer-logo {
+    max-width: 194px;
+    max-height: 18px;
+  }
 
-    .footer-logo {
-        max-width: 194px;
-        max-height: 18px;
-    }
+  .footer-logo-div-whether {
+    font-size: 1.6rem;
+  }
 
-    .footer-logo-div-whether {
-        font-size: 1.6rem;
-    }
+  .footer-contacts {
+    gap: 25px;
+  }
 
-    .footer-contacts {
-        gap: 25px;
-    }
+  .footer-contacts-p,
+  .footer-contacts-p>a {
+    font-size: 1.8rem;
+  }
 
-    .footer-contacts-p,
-    .footer-contacts-p>a {
-        font-size: 1.8rem;
-    }
+  .footer-list {
+    width: 70%;
+    gap: 25px;
+  }
 
-    .footer-list {
-        width: 50%;
-        gap: 25px;
-    }
-
-    .footer-main-container .container {
-        padding-bottom: 50px;
-        padding-top: 50px;
-    }
-
+  .footer-main-container .container {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
 }
