@@ -5,6 +5,7 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
+  base: './Green-Harvest/',
   build: {
     rollupOptions: {
       input: glob.sync('./src/*.html'),
