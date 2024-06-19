@@ -1,5 +1,5 @@
-@import url('./hero-mobile.css');
-@import url('./hero-tablet.css');
+@import url("hero-mobile.css");
+@import url("hero-tablet.css");
 
 @media screen and (min-width: 1280px) {
   .section-hero .container {
@@ -7,7 +7,6 @@
     flex-direction: row;
     padding: 0;
   }
-
   .hero-left {
     flex: 1 1 50%;
     background-color: var(--secondary-color);
@@ -20,14 +19,12 @@
     padding-top: 238px;
     padding-bottom: 50px;
   }
-
   .hero-left-text-box {
     align-items: end;
     justify-content: space-between;
     gap: 128px;
     padding: 0;
   }
-
   .hero-left h1 {
     font-size: 7.6rem;
     font-weight: 600;
@@ -35,7 +32,6 @@
     letter-spacing: -0.015em;
     text-align: left;
   }
-
   .hero-left p {
     font-size: 1.6rem;
     line-height: 20px;
@@ -43,17 +39,14 @@
     text-align: left;
     margin-right: 30px;
   }
-
   .hero-right {
     flex: 1 1 50%;
     display: flex;
     align-items: center;
     padding: 0;
   }
-
   .hero-right img {
     max-width: 100%;
-    /* height: 100%; */
     object-fit: cover;
   }
 }

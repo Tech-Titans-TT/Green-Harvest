@@ -34,6 +34,7 @@
             />
             <p id="error-message-name" class="hidden"></p>
           </label>
+
           <label for="email">
             <input
               id="email"
@@ -46,6 +47,7 @@
             />
             <p id="error-message-email" class="hidden"></p>
           </label>
+
           <label for="comment">
             <textarea
               id="comment"
@@ -55,12 +57,8 @@
             ></textarea>
             <p id="error-message-comment" class="hidden"></p>
           </label>
-          <button
-            id="submitButton"
-            class="header-menu-button"
-            type="button"
-            onclick="validateForm(event)"
-          >
+
+          <button id="submitButton" class="header-menu-button" type="button">
             SEND
           </button>
         </form>
@@ -70,11 +68,11 @@
         <div class="your-order-image">
           <img
             srcset="
-              ../../../img/img-standart/image-4.png  1x,
-              ../../../img/img-retina/image-4-2x.png 2x
+              img/img-standart/image-4.png  1x,
+              img/img-retina/image-4-2x.png 2x
             "
             class="your-order-image"
-            src="../../../img/img-standart/image-4.png"
+            src="img/img-standart/image-4.png"
             alt="your-order-image"
           />
         </div>
@@ -102,5 +100,4 @@
       </div>
     </div>
   </div>
-  <script src="../../../main.js"></script>
 </section>

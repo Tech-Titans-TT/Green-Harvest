@@ -31,19 +31,16 @@ const calculateCircle = (viewHeight, scrollHeight) => {
     let dashArray = Math.floor((scrollHeight * 315) / viewHeight);
     let stroleDashOfSet = 315 - (dashArray + dashArray * 0.152);
     circleDOM.style.strokeDashoffset = `${
-      (stroleDashOfSet >= 0 ? stroleDashOfSet : 0)
+      stroleDashOfSet >= 0 ? stroleDashOfSet : 0
     }`;
   }
 };
 //scroll ile navbar gizlenmesi ve aktif edilmesi
-
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
   //need to for circle calculate
   let offsetHeight = document.documentElement.offsetHeight;
   calculateCircle(offsetHeight, scrollTop);
-  
-
   // scroll ile navbar gizlenmesi
   scrollTop > lastScrollTop
     ? navbar.classList.add("header-section-active")
@@ -58,7 +55,7 @@ window.addEventListener("scroll", () => {
     hamburgerMenu.classList.remove("header-drop-shadow");
     headerShopButton.classList.remove("box-shadow-effect");
     headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 5 && scrollTop <= 1834) {
+  } else if (scrollTop > 5 && scrollTop <= 1964) {
     headerLinks.forEach((link) => {
       link.classList.remove("bg-green", "border-scroll");
       link.classList.add("bg-bordo", "box-shadow-effect");
@@ -67,11 +64,18 @@ window.addEventListener("scroll", () => {
     hamburgerMenu.classList.add("header-drop-shadow");
     headerShopButton.classList.add("box-shadow-effect");
     headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 3139 && scrollTop <= 3831) {
+  } else if (scrollTop > 1965 && scrollTop <= 3300) {
     headerLinks.forEach((link) => {
-      link.classList.add("bg-bordo");
-      link.classList.remove("bg-green");
+      link.classList.add("bg-green");
+      link.classList.remove("bg-bordo");
     });
+    headerShopButton.classList.add("bg-green");
+  } else if (scrollTop > 3301 && scrollTop <= 3980) {
+    headerLinks.forEach((link) => {
+      link.classList.remove("bg-green");
+      link.classList.add("bg-bordo");
+    });
+    headerShopButton.classList.add("bg-bordo");
     headerShopButton.classList.remove("bg-green");
   } else {
     headerLinks.forEach((link) => {
@@ -79,8 +83,8 @@ window.addEventListener("scroll", () => {
       link.classList.add("bg-green");
     });
     headerShopButton.classList.add("bg-green");
-  } 
-
+    headerShopButton.classList.remove("bg-bordo");
+  }
   //Circle
   if (scrollTop < 100) {
     backToTop?.classList.remove("opacity-half");
@@ -102,7 +106,6 @@ headerLinks.forEach((link) => {
     responsiveMenu.classList.remove("active-responsive-menu");
   });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const scrollThumb = document.getElementById("scroll-thumb");
   const anchors = document.querySelectorAll('a[href^="#"]');
@@ -113,10 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
   anchors.forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-
       const targetId = this.getAttribute("href").substring(1); // href icindeki yazinin onundeki # isaretini kaldiriyoruz
       const targetElement = document.getElementById(targetId); // gelen yazi hangi idye esitse orasi artik target element
-
       if (targetElement) {
         //gidecegi yer.
         window.scrollTo({
@@ -130,37 +131,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const maxDistance = 100;
     const onMouseMove = (e) => {
       if (!isDragging) return;
-  
       if (Math.abs(e.clientX - startX) > maxDistance) {
-          isDragging = false;
-          document.removeEventListener("mousemove", onMouseMove);
-          document.removeEventListener("mouseup", onMouseUp);
-          return;
+        isDragging = false;
+        document.removeEventListener("mousemove", onMouseMove);
+        document.removeEventListener("mouseup", onMouseUp);
+        return;
       }
-  
       const viewportHeight = window.innerHeight;
       const thumbHeight = scrollThumb.offsetHeight;
       const maxThumbTop = viewportHeight - thumbHeight;
-  
       let newThumbTop = startThumbTop + (e.clientY - startY);
-  
       // Ensure the thumb stays within bounds
       newThumbTop = Math.max(0, Math.min(newThumbTop, maxThumbTop));
-  
       scrollThumb.style.transform = `translateY(${newThumbTop}px)`;
-  
       // Calculate the new scroll position
       const scrollHeight = document.documentElement.scrollHeight;
       const scrollPercentage = newThumbTop / maxThumbTop;
       const newScrollY = scrollPercentage * (scrollHeight - viewportHeight);
-  
       window.scrollTo(0, newScrollY);
-  };
+    };
     const onMouseUp = () => {
       isDragging = false;
       document.removeEventListener("mousemove", onMouseMove);
       document.removeEventListener("mouseup", onMouseUp);
-  };
+    };
     scrollThumb.addEventListener("mousedown", (e) => {
       e.preventDefault();
       isDragging = true;
@@ -169,30 +163,30 @@ document.addEventListener("DOMContentLoaded", function () {
       startX = e.clientX;
       document.addEventListener("mousemove", onMouseMove);
       document.addEventListener("mouseup", onMouseUp);
-  });
-
-  let isScrolling;
+    });
+    let isScrolling;
     window.addEventListener("scroll", () => {
       if (isScrolling) return;
-    
-    isScrolling = true;
+      isScrolling = true;
 
-    requestAnimationFrame(() => {
-        if (isDragging) {
+      requestAnimationFrame(
+        () => {
+          if (isDragging) {
             isScrolling = false;
             return;
-        }
-      
-    
-      const scrollHeight = document.documentElement.scrollHeight;
-      const viewportHeight = window.innerHeight;
-      const scrollPercentage = window.scrollY / (scrollHeight - viewportHeight);
-      const thumbHeight = scrollThumb.offsetHeight;
-      const maxThumbTop = viewportHeight - thumbHeight;
-      const thumbTop = scrollPercentage * maxThumbTop;
-      scrollThumb.style.transform = `translateY(${thumbTop}px)`;
-      isScrolling = false;
-    }, { passive: true });
+          }
+          const scrollHeight = document.documentElement.scrollHeight;
+          const viewportHeight = window.innerHeight;
+          const scrollPercentage =
+            window.scrollY / (scrollHeight - viewportHeight);
+          const thumbHeight = scrollThumb.offsetHeight;
+          const maxThumbTop = viewportHeight - thumbHeight;
+          const thumbTop = scrollPercentage * maxThumbTop;
+          scrollThumb.style.transform = `translateY(${thumbTop}px)`;
+          isScrolling = false;
+        },
+        { passive: true }
+      );
     });
   }
 });
@@ -209,7 +203,6 @@ const setText = (field, message) => {
     errorMessageComment.classList.add("show");
   }
 };
-
 const setDefaultText = () => {
   errorMessageName.textContent = "";
   errorMessageEmail.textContent = "";
@@ -218,13 +211,10 @@ const setDefaultText = () => {
   errorMessageEmail.classList.remove("show");
   errorMessageComment.classList.remove("show");
 };
-
 function validateForm(event) {
   event.preventDefault();
   setDefaultText();
-
   let isValid = true;
-
   if (inputname.value.trim() === "") {
     setText("name", "* Please do not leave the Name Surname field blank.");
     inputname.classList.remove("success");
@@ -234,7 +224,6 @@ function validateForm(event) {
     inputname.classList.remove("error");
     inputname.classList.add("success");
   }
-
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(inputemail.value.trim())) {
     setText("email", "* Please enter a valid Email address");
@@ -245,7 +234,6 @@ function validateForm(event) {
     inputemail.classList.remove("error");
     inputemail.classList.add("success");
   }
-
   if (inputcomment.value.trim() === "") {
     setText("comment", "* Please do not leave the Description field blank");
     inputcomment.classList.remove("success");
@@ -255,12 +243,14 @@ function validateForm(event) {
     inputcomment.classList.remove("error");
     inputcomment.classList.add("success");
   }
-
   if (isValid) {
     console.log("Form submitted successfully!");
     // Burada formu AJAX ile sunucuya gönderebilirsiniz
   }
 }
+
+submitButton.addEventListener('click', e => validateForm(e));
+
 document
   .getElementById("myForm")
   .addEventListener("keydown", function (event1) {

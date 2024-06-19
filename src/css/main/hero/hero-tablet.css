@@ -5,34 +5,28 @@
     padding-left: 0;
     padding-right: 0;
   }
-
   .hero-left {
     padding-top: 122px;
     padding-bottom: 50px;
   }
-
   .hero-right img {
     width: 100%;
   }
-
   .hero-right {
     flex-basis: 100%;
     min-height: 539px;
   }
-
   .hero-left-text-box {
     width: 100%;
     gap: 50px;
     padding: 0 32px;
   }
-
   .hero-left-text-box p {
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 500;
     text-align: left;
   }
-
   .hero-left-text-box h1 {
     font-size: 7.6rem;
     font-weight: 600;
