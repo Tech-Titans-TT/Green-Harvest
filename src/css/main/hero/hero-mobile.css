@@ -11,6 +11,7 @@
   min-height: 370px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 /* RETINA */
 @media (min-resolution: 192dpi) {

@@ -1,3 +1,15 @@
+  .reviews-container{
+    content-visibility: hidden;
+  }
+  .reviews-card-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    position: relative;
+    height: 238px;
+    
+  }
   .reviews-text-container {
     max-width: 553px;
     display: flex;
@@ -24,14 +36,7 @@
     text-align: left;
     color: var(--primary-color);
   }
-  .reviews-card-container {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    gap: 10px;
-    position: relative;
-    height: 238px;
-  }
+
   .reviews-card-container::-webkit-scrollbar {
     display: none;
   }
