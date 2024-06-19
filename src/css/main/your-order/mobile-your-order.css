@@ -5,6 +5,7 @@
   gap: 40px;
   width: 100%;
   background-color: var(--thirth-color);
+  content-visibility: hidden;
 }
 .your-order .container {
   display: flex;

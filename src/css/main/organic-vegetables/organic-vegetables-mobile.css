@@ -1,11 +1,12 @@
-.organic-vegetables {
-  width: 100%;
-  background-color: var(--thirth-color);
-}
 .organic-vegetables-div {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  content-visibility: hidden;
+}
+.organic-vegetables {
+  width: 100%;
+  background-color: var(--thirth-color);
 }
 .organic-vegetables-section-header-content {
   display: flex;

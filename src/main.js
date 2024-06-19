@@ -15,6 +15,26 @@ const inputemail = document.getElementById("email");
 const inputcomment = document.getElementById("comment");
 const submitButton = document.getElementById("submitButton");
 
+const howItWorksImagesDOM= document.querySelector('.how-it-works-image-container ');
+const vegetablesDOM = document.querySelector(' .organic-vegetables-div');
+const yourOrderDOM = document.querySelector('.your-order');
+const reviewsDOM = document.querySelector('.reviews-container');
+let isShowContainers = false;
+
+function setVisibility(){
+  if(!isShowContainers){
+    vegetablesDOM.style.contentVisibility = 'visible';
+    setTimeout(_=>{
+      reviewsDOM.style.contentVisibility = 'visible';
+    },1000)
+    setTimeout(_=>{
+      yourOrderDOM.style.contentVisibility = 'visible';
+    },2000)
+    isShowContainers = true;
+  }
+ 
+}
+
 let viewHeight;
 let lastScrollTop = 0;
 let isDragging = false;
@@ -149,6 +169,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const scrollPercentage = newThumbTop / maxThumbTop;
       const newScrollY = scrollPercentage * (scrollHeight - viewportHeight);
       window.scrollTo(0, newScrollY);
+      if(newScrollY > 30){
+        setVisibility();
+      }
     };
     const onMouseUp = () => {
       isDragging = false;
@@ -184,6 +207,9 @@ document.addEventListener("DOMContentLoaded", function () {
           const thumbTop = scrollPercentage * maxThumbTop;
           scrollThumb.style.transform = `translateY(${thumbTop}px)`;
           isScrolling = false;
+          if(Math.floor(scrollPercentage*100) > 30){
+            setVisibility();
+          }
         },
         { passive: true }
       );
