@@ -1,5 +1,5 @@
-@import url("./footer-mobile.css");
-@import url("./footer-tablet.css");
+@import url("footer-mobile.css");
+@import url("footer-tablet.css");
 @media screen and (min-width: 768px) {
   .footer-logo-div {
     max-width: 265px;

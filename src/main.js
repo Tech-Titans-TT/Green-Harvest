@@ -190,6 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
 const setText = (field, message) => {
   if (field === "name") {
     errorMessageName.textContent = message;
@@ -247,6 +248,9 @@ function validateForm(event) {
     // Burada formu AJAX ile sunucuya gönderebilirsiniz
   }
 }
+
+submitButton.addEventListener('click', e => validateForm(e));
+
 document
   .getElementById("myForm")
   .addEventListener("keydown", function (event1) {

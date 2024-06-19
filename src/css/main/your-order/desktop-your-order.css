@@ -1,5 +1,5 @@
-@import url("./mobile-your-order.css");
-@import url("./tablet-your-order.css");
+@import url("mobile-your-order.css");
+@import url("tablet-your-order.css");
 @media screen and (min-width: 1280px) {
     .your-order {
         display: flex;

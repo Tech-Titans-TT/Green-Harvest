@@ -1,5 +1,5 @@
-@import url("./how-it-works-mobile.css");
-@import url("./how-it-works-tablet.css");
+@import url("how-it-works-mobile.css");
+@import url("how-it-works-tablet.css");
 
 @media screen and (min-width: 1280px) {
   .how-it-works-container {

@@ -1,5 +1,5 @@
-@import url("./footer-mobile.css");
-@import url("./footer-tablet.css");
+@import url("footer-mobile.css");
+@import url("footer-tablet.css");
 @media screen and (min-width: 1280px) {
   .footer-main-div {
     display: flex;

@@ -1,5 +1,5 @@
-@import url("./hero-mobile.css");
-@import url("./hero-tablet.css");
+@import url("hero-mobile.css");
+@import url("hero-tablet.css");
 
 @media screen and (min-width: 1280px) {
   .section-hero .container {

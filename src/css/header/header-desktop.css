@@ -1,5 +1,5 @@
-@import url('./header-responsive.css');
-@import url('./header-tablet.css');
+@import url('header-responsive.css');
+@import url('header-tablet.css');
 @media screen and (min-width: 1280px) {
   .header-nav {
     background-color: transparent;

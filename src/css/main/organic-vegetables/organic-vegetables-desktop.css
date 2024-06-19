@@ -1,5 +1,5 @@
-@import url("./organic-vegetables-mobile.css");
-@import url("./organic-vegetables-tablet.css");
+@import url("organic-vegetables-mobile.css");
+@import url("organic-vegetables-tablet.css");
 
 @media screen and (min-width: 1280px) {
   .organic-vegetables-div {
