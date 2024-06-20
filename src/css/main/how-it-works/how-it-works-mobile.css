@@ -28,7 +28,7 @@
   font-weight: 600;
   font-size: 3.2rem;
   line-height: 32px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015rem;
   color: rgba(251, 251, 251, 0.3);
 }
 .how-it-works-main-text {
@@ -55,7 +55,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 14px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02rem;
 }
 .list-items-images {
   width: 52px;
@@ -91,7 +91,7 @@
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 14px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02rem;
   color: rgba(20, 20, 20, 1);
 }
 .list-div {
@@ -110,7 +110,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 20px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02rem;
 }
 .ordered-list-text li .list-div::before {
   content: counter(item) "";
