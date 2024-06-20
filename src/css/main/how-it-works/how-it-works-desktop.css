@@ -15,9 +15,8 @@
     }
     
     .how-it-works-image {
-        content: url('../../../img/She-cutting-fruits-desktop.png');  
+        content: url('../../../img/img-standart/She-cutting-fruits-desktop.png');  
     }
-
     .flex-container {
         flex-direction: row;
     }

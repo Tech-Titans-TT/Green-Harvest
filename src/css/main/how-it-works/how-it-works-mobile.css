@@ -5,6 +5,7 @@
     background-color: var(--thirth-color);
     padding: 40px 20px;
   }
+ 
 
   .how-it-works-text-container {
     background-color: var(--secondary-color);
@@ -24,33 +25,32 @@
     gap: 20px;
   }
 
+
   .how-it-works-image {
     width: 100%;
     border-radius: 30px;
-    content: url("../../../img/She-cutting-fruits-mobile.png");
+    content: url('../../../img/img-standart/She-cutting-fruits-mobile.png');
   }
+ 
 
   .main-text-span {
     font-weight: 600;
-    font-size: 3.2rem;
-    line-height: 32px;
-    letter-spacing: -1.5%;
+    font-size: 2.8rem;
+    line-height: 28px;
+    letter-spacing: -0.015em;
     color: rgba(251, 251, 251, 0.3);
   }
+
 
     .how-it-works-main-text {
         font-size: 2.8rem;
         font-weight: 600;
         line-height: 28px;
-        letter-spacing: -0.015rem;
+        letter-spacing: -0.015em;
         color: var(--fourth-color);
     }
 
-    .how-it-works-text-container-div {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+  
     .list-text {
         display: flex;
         align-items: center;
@@ -59,19 +59,25 @@
         padding: 12px 27px 12px 24px;
         gap: 10px;
     }
+  .how-it-works-text-container-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .list-item-paragraph-text {
 
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 14px;
-        letter-spacing: -0.02em;
-    }
+  .list-item-paragraph-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+  }
 
   .list-items-images {
     width: 52px;
     height: 52px;
   }
+
 
   .how-it-works-container {
     display: flex;
@@ -104,12 +110,12 @@
 
 
 
-    .ordered-list-span-text {
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 14px;
-        letter-spacing: -0.02em;
-        color: rgba(20, 20, 20, 1);
-    }
+  .ordered-list-span-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: -0.02em;
 
+    color: rgba(20, 20, 20, 1);
+  }
 }
