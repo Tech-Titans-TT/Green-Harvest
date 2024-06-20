@@ -14,25 +14,32 @@ const backToTop = document.querySelector(".back-to-top-container");
 const inputemail = document.getElementById("email");
 const inputcomment = document.getElementById("comment");
 const submitButton = document.getElementById("submitButton");
+const vegetablesSection= document.querySelector("#vegetables");
+const howItWorksSection = document.querySelector(".how-it-works-container");
+const reviewsSection = document.querySelector("#reviews");
+const yourOrderSection = document.querySelector(".your-order");
+const heroSection = document.querySelector("#hero");
+const header = document.querySelector("#header");
 
-const howItWorksImagesDOM= document.querySelector('.how-it-works-image-container ');
-const vegetablesDOM = document.querySelector(' .organic-vegetables-div');
-const yourOrderDOM = document.querySelector('.your-order');
-const reviewsDOM = document.querySelector('.reviews-container');
-let isShowContainers = false;
+const sections= [
+  heroSection,
+  howItWorksSection,
+  vegetablesSection,
+  reviewsSection,
+  yourOrderSection
+]
 
-function setVisibility(){
-  if(!isShowContainers){
-    vegetablesDOM.style.contentVisibility = 'visible';
-    setTimeout(_=>{
-      reviewsDOM.style.contentVisibility = 'visible';
-    },1000)
-    setTimeout(_=>{
-      yourOrderDOM.style.contentVisibility = 'visible';
-    },2000)
+function setVisibility() {
+  if (!isShowContainers) {
+    vegetablesSection.style.contentVisibility = "visible";
+    setTimeout((_) => {
+      reviewsSection.style.contentVisibility = "visible";
+    }, 1000);
+    setTimeout((_) => {
+      yourOrderSection.style.contentVisibility = "visible";
+    }, 2000);
     isShowContainers = true;
   }
- 
 }
 
 let viewHeight;
@@ -41,6 +48,7 @@ let isDragging = false;
 let startY;
 let startThumbTop;
 let startX;
+let isShowContainers = false;
 
 window.onload = function () {
   viewHeight = document.documentElement.offsetHeight;
@@ -55,6 +63,58 @@ const calculateCircle = (viewHeight, scrollHeight) => {
     }`;
   }
 };
+const checkSectionUnderHeader = () => {
+  const headerHeight = header.offsetHeight;
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top + scrollY - headerHeight;
+    if (scrollY >= sectionTop && scrollY < sectionTop + section.offsetHeight) {
+      if(scrollY === 0){
+        headerLinks.forEach(link => {
+          link.classList.add("border-scroll");
+          link.classList.remove("bg-green","bg-bordo");
+        });
+        headerLogo.classList.remove("header-drop-shadow");
+        hamburgerMenu.classList.remove("header-drop-shadow");
+        headerShopButton.classList.remove("bg-green");
+      } else if (section === heroSection || section === howItWorksSection) {
+        headerLinks.forEach(link => {
+          link.classList.add("bg-bordo");
+          link.classList.remove("bg-green","border-scroll");
+        });
+        headerLogo.classList.add("header-drop-shadow");
+        hamburgerMenu.classList.add("header-drop-shadow");
+        headerShopButton.classList.remove("bg-green");
+        headerShopButton.classList.add("bg-bordo");
+      } else if (section === vegetablesSection) {
+        headerLinks.forEach(link => {
+          link.classList.add("bg-green");
+          link.classList.remove("bg-bordo");
+        });
+        headerShopButton.classList.remove("bg-bordo");
+        headerShopButton.classList.add("bg-green");
+      } else if (section === reviewsSection) {
+        headerLinks.forEach(link => {
+          link.classList.remove("bg-green");
+          link.classList.add("bg-bordo");
+        });
+        headerShopButton.classList.add("bg-bordo");
+        headerShopButton.classList.remove("bg-green");
+      } else if (section === yourOrderSection) {
+        headerLinks.forEach(link => {
+          link.classList.add("bg-green");
+          link.classList.remove("bg-bordo");
+        });
+        headerShopButton.classList.remove("bg-bordo");
+        headerShopButton.classList.add("bg-green");
+      } else{console.log('error')}
+    }
+  });
+};
+window.addEventListener('scroll', checkSectionUnderHeader);
+checkSectionUnderHeader();
+
 //scroll ile navbar gizlenmesi ve aktif edilmesi
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
@@ -66,45 +126,6 @@ window.addEventListener("scroll", () => {
     ? navbar.classList.add("header-section-active")
     : navbar.classList.remove("header-section-active");
   lastScrollTop = scrollTop;
-  if (scrollTop == 0) {
-    headerLinks.forEach((link) => {
-      link.classList.remove("bg-green", "bg-bordo", "box-shadow-effect");
-      link.classList.add("border-scroll");
-    });
-    headerLogo.classList.remove("header-drop-shadow");
-    hamburgerMenu.classList.remove("header-drop-shadow");
-    headerShopButton.classList.remove("box-shadow-effect");
-    headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 5 && scrollTop <= 1964) {
-    headerLinks.forEach((link) => {
-      link.classList.remove("bg-green", "border-scroll");
-      link.classList.add("bg-bordo", "box-shadow-effect");
-    });
-    headerLogo.classList.add("header-drop-shadow");
-    hamburgerMenu.classList.add("header-drop-shadow");
-    headerShopButton.classList.add("box-shadow-effect");
-    headerShopButton.classList.remove("bg-green");
-  } else if (scrollTop > 1965 && scrollTop <= 3300) {
-    headerLinks.forEach((link) => {
-      link.classList.add("bg-green");
-      link.classList.remove("bg-bordo");
-    });
-    headerShopButton.classList.add("bg-green");
-  } else if (scrollTop > 3301 && scrollTop <= 3980) {
-    headerLinks.forEach((link) => {
-      link.classList.remove("bg-green");
-      link.classList.add("bg-bordo");
-    });
-    headerShopButton.classList.add("bg-bordo");
-    headerShopButton.classList.remove("bg-green");
-  } else {
-    headerLinks.forEach((link) => {
-      link.classList.remove("bg-bordo");
-      link.classList.add("bg-green");
-    });
-    headerShopButton.classList.add("bg-green");
-    headerShopButton.classList.remove("bg-bordo");
-  }
   //Circle
   if (scrollTop < 100) {
     backToTop?.classList.remove("opacity-half");
@@ -169,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const scrollPercentage = newThumbTop / maxThumbTop;
       const newScrollY = scrollPercentage * (scrollHeight - viewportHeight);
       window.scrollTo(0, newScrollY);
-      if(newScrollY > 30){
+      if (newScrollY > 30) {
         setVisibility();
       }
     };
@@ -207,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const thumbTop = scrollPercentage * maxThumbTop;
           scrollThumb.style.transform = `translateY(${thumbTop}px)`;
           isScrolling = false;
-          if(Math.floor(scrollPercentage*100) > 30){
+          if (Math.floor(scrollPercentage * 100) > 30) {
             setVisibility();
           }
         },
@@ -275,7 +296,7 @@ function validateForm(event) {
   }
 }
 
-submitButton.addEventListener('click', e => validateForm(e));
+submitButton.addEventListener("click", (e) => validateForm(e));
 
 document
   .getElementById("myForm")
