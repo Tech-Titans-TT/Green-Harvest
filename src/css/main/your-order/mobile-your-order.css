@@ -23,7 +23,7 @@
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 50px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015rem;
 }
 .your-order .span-harvest {
   color: var(--fourth-color);
@@ -59,7 +59,7 @@
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 26px;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.015rem;
 }
 .your-order .span-from-us {
   color: var(--thirth-color);
@@ -78,7 +78,7 @@
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 18px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02rem;
   color: var(--secondary-color);
   padding: 14px 16px;
   border: 1px solid rgba(var(--primary-color-rgb), 0.2);
@@ -95,7 +95,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015rem;
   color: var(--fourth-color);
   padding: 16px;
   border: none;
@@ -106,13 +106,11 @@
   background-color: var(--secondary-color);
   color: var(--fourth-color);
 }
-.your-order-form .header-menu-button:hover {
-  scale: 0.98;
-}
+
 .you-order-card-text-p {
   font-size: 1.4rem;
   line-height: 18px;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.015rem;
 }
 .your-order-right-card {
   background-color: var(--secondary-color);
@@ -136,14 +134,14 @@
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 18px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015rem;
   color: rgba(var(--fourth-color-rgb), 0.5);
 }
 .your-order-social-networks {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 26px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015rem;
   color: var(--fourth-color);
   gap: 8px;
 }

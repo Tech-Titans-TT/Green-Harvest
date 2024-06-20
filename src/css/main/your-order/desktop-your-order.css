@@ -83,7 +83,7 @@
     }
     .your-order-input::placeholder {
         color: var(--primary-color);
-        letter-spacing: -0.015em;
+        letter-spacing: -0.015rem;
     }
     #comment {
         border-radius: 15px;
