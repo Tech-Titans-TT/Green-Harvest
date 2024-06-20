@@ -106,9 +106,7 @@
   background-color: var(--secondary-color);
   color: var(--fourth-color);
 }
-.your-order-form .header-menu-button:hover {
-  scale: 1;
-}
+
 .you-order-card-text-p {
   font-size: 1.4rem;
   line-height: 18px;
