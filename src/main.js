@@ -14,14 +14,14 @@ const backToTop = document.querySelector(".back-to-top-container");
 const inputemail = document.getElementById("email");
 const inputcomment = document.getElementById("comment");
 const submitButton = document.getElementById("submitButton");
-const vegetablesSection= document.querySelector("#vegetables");
+const vegetablesSection = document.querySelector("#vegetables");
 const howItWorksSection = document.querySelector(".how-it-works-container");
 const reviewsSection = document.querySelector("#reviews");
 const yourOrderSection = document.querySelector(".your-order");
 const heroSection = document.querySelector("#hero");
 const header = document.querySelector("#header");
 
-const sections= [
+const sections = [
   heroSection,
   howItWorksSection,
   vegetablesSection,
@@ -58,9 +58,8 @@ const calculateCircle = (viewHeight, scrollHeight) => {
   if (circleDOM !== null && circleDOM !== undefined) {
     let dashArray = Math.floor((scrollHeight * 315) / viewHeight);
     let stroleDashOfSet = 315 - (dashArray + dashArray * 0.152);
-    circleDOM.style.strokeDashoffset = `${
-      stroleDashOfSet >= 0 ? stroleDashOfSet : 0
-    }`;
+    circleDOM.style.strokeDashoffset = `${stroleDashOfSet >= 0 ? stroleDashOfSet : 0
+      }`;
   }
 };
 const checkSectionUnderHeader = () => {
@@ -70,10 +69,10 @@ const checkSectionUnderHeader = () => {
   sections.forEach(section => {
     const sectionTop = section.getBoundingClientRect().top + scrollY - headerHeight;
     if (scrollY >= sectionTop && scrollY < sectionTop + section.offsetHeight) {
-      if(scrollY === 0){
+      if (scrollY === 0) {
         headerLinks.forEach(link => {
           link.classList.add("border-scroll");
-          link.classList.remove("bg-green","bg-bordo");
+          link.classList.remove("bg-green", "bg-bordo");
         });
         headerLogo.classList.remove("header-drop-shadow");
         hamburgerMenu.classList.remove("header-drop-shadow");
@@ -81,7 +80,7 @@ const checkSectionUnderHeader = () => {
       } else if (section === heroSection || section === howItWorksSection) {
         headerLinks.forEach(link => {
           link.classList.add("bg-bordo");
-          link.classList.remove("bg-green","border-scroll");
+          link.classList.remove("bg-green", "border-scroll");
         });
         headerLogo.classList.add("header-drop-shadow");
         hamburgerMenu.classList.add("header-drop-shadow");
@@ -108,7 +107,7 @@ const checkSectionUnderHeader = () => {
         });
         headerShopButton.classList.remove("bg-bordo");
         headerShopButton.classList.add("bg-green");
-      } else{console.log('error')}
+      } else { console.log('error') }
     }
   });
 };
@@ -271,7 +270,7 @@ function validateForm(event) {
     inputname.classList.remove("error");
     inputname.classList.add("success");
   }
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[^0-9][a-zA-z0-9_]+([.][a-zA-z0-9_]+)*[@][a-zA-z0-9_]+([.][a-zA-z0-9_]+)*[.][a-zA-Z]{2,4}$/i;
   if (!emailRegex.test(inputemail.value.trim())) {
     setText("email", "* Please enter a valid Email address");
     inputemail.classList.remove("success");
