@@ -2,35 +2,44 @@
   .how-it-works-image-container {
     padding: 100px 64px;
   }
+
   .how-it-works-image {
     object-fit: cover;
     height: 640px;
   }
+
   .how-it-works-text-container {
     padding: 100px 159px 100px 159px;
   }
+
   .how-it-works-text-container-div {
     gap: 50px;
   }
+
   .how-it-works-text-container-div {
     gap: 25px;
   }
+
   .how-it-works-main-text {
     font-size: 3.2rem;
     line-height: 32px;
   }
+
   .main-text-span {
     font-size: 3.2rem;
     line-height: 32px;
   }
+
   .support-text-container {
     font-size: 1.6rem;
     line-height: 20px;
   }
+
   .list-item-paragraph-text {
     font-size: 1.6rem;
     line-height: 20px;
   }
+
   .ordered-list-span-text {
     font-size: 1.6rem;
     line-height: 20px;
