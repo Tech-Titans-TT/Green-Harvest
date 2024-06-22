@@ -152,11 +152,11 @@
 .your-order-social-networks a:hover {
   color: var(--thirth-color);
 }
-.your-order-input:hover{
-    border-color : var(--thirth-color);
+input:hover {
+  border-color: rgba(122, 49, 69, 1);
 }
-.your-order-input:focus {
-  border-color : var(--secondary-color);
+input:focus {
+  border-color: rgba(122, 49, 69, 1);
 }
 .hidden {
   display: none;
@@ -173,9 +173,9 @@
 }
 input.error,
 textarea.error {
-  border-color: var(--error-color);
+  border-color: rgba(231, 74, 59, 1);
 }
 input.success,
 textarea.success {
-  border-color: var(--success-color);
+  border-color: rgba(60, 188, 129, 1);
 }
