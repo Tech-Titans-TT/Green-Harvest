@@ -77,7 +77,10 @@
         width: 100%;
         color: var(--primary-color);
     }
-    
+    .your-order-input:focus {
+        outline: none;
+        border-color: var(--secondary-color);
+    }
     .your-order-input::placeholder {
         color: var(--primary-color);
         letter-spacing: -0.015rem;

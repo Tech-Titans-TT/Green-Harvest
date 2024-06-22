@@ -178,5 +178,5 @@ textarea.error {
 }
 input.success,
 textarea.success {
-  border-color: var(--success-color);
+  border-color: rgba(60, 188, 129, 1);
 }
