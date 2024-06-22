@@ -21,9 +21,15 @@
           CONTACT YOU !
         </h2>
 
-        <form class="your-order-form" id="myForm">
+        <form
+          action="https://formspree.io/f/manwwedy"
+          method="post"
+          class="your-order-form"
+          id="myForm"
+        >
           <label for="name">
             <input
+              name="name"
               id="name"
               autocomplete="name"
               class="your-order-input"
@@ -36,6 +42,7 @@
           <p id="error-message-name" class="hidden"></p>
           <label for="email">
             <input
+              name="email"
               id="email"
               autocomplete="email"
               class="your-order-input"
@@ -48,6 +55,7 @@
           <p id="error-message-email" class="hidden"></p>
           <label for="comment">
             <textarea
+              name="comment"
               id="comment"
               class="your-order-input your-order-textarea inter-tight"
               placeholder="Comment"
