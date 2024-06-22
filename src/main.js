@@ -20,6 +20,8 @@ const reviewsSection = document.querySelector("#reviews");
 const yourOrderSection = document.querySelector(".your-order");
 const heroSection = document.querySelector("#hero");
 const header = document.querySelector("#header");
+const yourOrderFormDOM =  document.querySelector('#myForm');
+
 
 const sections = [
   heroSection,
@@ -257,8 +259,8 @@ const setDefaultText = () => {
   errorMessageEmail.classList.remove("show");
   errorMessageComment.classList.remove("show");
 };
-function validateForm(event) {
-  event.preventDefault();
+function validateForm(e) {
+  console.log("event : ", e);
   setDefaultText();
   let isValid = true;
   if (inputname.value.trim() === "") {
@@ -270,7 +272,7 @@ function validateForm(event) {
     inputname.classList.remove("error");
     inputname.classList.add("success");
   }
-  const emailRegex = /^[^0-9][a-zA-z0-9_]+([.][a-zA-z0-9_]+)*[@][a-zA-z0-9_]+([.][a-zA-z0-9_]+)*[.][a-zA-Z]{2,4}$/i;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.(com|org|net|edu|gov|mil|biz|info|mobi|name|aero|asia|jobs|museum)$/;
   if (!emailRegex.test(inputemail.value.trim())) {
     setText("email", "* Please enter a valid Email address");
     inputemail.classList.remove("success");
@@ -291,17 +293,22 @@ function validateForm(event) {
   }
   if (isValid) {
     console.log("Form submitted successfully!");
-    // Burada formu AJAX ile sunucuya gönderebilirsiniz
+    e.currentTarget.submit();
   }
 }
 
-submitButton.addEventListener("click", (e) => validateForm(e));
 
-document
-  .getElementById("myForm")
-  .addEventListener("keydown", function (event1) {
-    if (event1.key === "Enter") {
-      event.preventDefault();
-      submitButton.click();
-    }
-  });
+yourOrderFormDOM.addEventListener('submit', e =>{
+  e.preventDefault();
+  validateForm(e);
+})
+ 
+// submitButton.addEventListener("click", (e) => validateForm(e));
+// document
+//   .getElementById("myForm")
+//   .addEventListener("keydown", function (event1) {
+//     if (event1.key === "Enter") {
+//       event.preventDefault();
+//       submitButton.click();
+//     }
+//   });

@@ -12,6 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  animation: rightToLeft 1s ease;
 }
 /* RETINA */
 @media (min-resolution: 192dpi) {
@@ -25,6 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: leftToRight 1s ease;
 }
 .hero-left-text-box {
   display: flex;
@@ -52,4 +54,23 @@
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+@keyframes leftToRight {
+  from {
+    transform: translate(-100%,-100%);
+  }
+  to {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translate(100%,-100%);
+  }
+  to {
+    transform: translate(0,0);
+  }
 }
