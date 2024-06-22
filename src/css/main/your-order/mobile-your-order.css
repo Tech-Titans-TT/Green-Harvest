@@ -152,11 +152,12 @@
 .your-order-social-networks a:hover {
   color: var(--thirth-color);
 }
-.your-order-input:hover{
-    border-color : var(--thirth-color);
+.your-order-input:hover {
+  border-color: var(--thirth-color);
 }
 .your-order-input:focus {
-  border-color : var(--secondary-color);
+  outline: none;
+  border-color: var(--secondary-color);
 }
 .hidden {
   display: none;
@@ -173,7 +174,7 @@
 }
 input.error,
 textarea.error {
-  border-color: var(--error-color);
+  border-color:  var( --error-color);
 }
 input.success,
 textarea.success {
