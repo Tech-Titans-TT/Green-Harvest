@@ -67,23 +67,6 @@ a {
   overflow: hidden;
 }
 
-/*QUERIES*/
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    padding: 100px 100px;
-  }
-
-  .scroll-track {
-    display: flex !important;
-  }
-}
-
 .scale-card {
   transition: transform 0.3s ease;
 }
@@ -130,6 +113,25 @@ a {
 .scale-card:focus {
   transform: scale(1.05);
 }
+
+
+/*QUERIES*/
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 100px 100px;
+  }
+
+  .scroll-track {
+    display: flex;
+  }
+}
+
 
 .back-to-top-container {
   width: 50px;
