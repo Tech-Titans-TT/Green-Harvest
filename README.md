@@ -1,6 +1,6 @@
 # Green Harvest
 
-Welcome to the Green Harvest repository. This project is a team effort from Tech-Titans-TT for a tech school project.
+Welcome to the [Green Harvest](https://tech-titans-tt.github.io/Green-Harvest/) repository. This project is a team effort from Tech-Titans-TT for GoIT tech school project.
 
 ## Project Overview
 
